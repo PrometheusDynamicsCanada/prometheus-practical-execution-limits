@@ -1,0 +1,3445 @@
+{
+  "scored_utc": "2026-11-17T14:51:03.500114+00:00",
+  "stage": "Stage_5.3B_IBM_Marrakesh_Plus32h_Temporal_Stability_Unchanged_Published_Calibration",
+  "replication_mode": "Plus32h_Temporal_Stability_Unchanged_Published_Calibration",
+  "same_published_calibration_as_window_1": true,
+  "backend": "ibm_marrakesh",
+  "calibration_and_execution_conditions": {
+    "window_1_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+    "window_2_compiled_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+    "window_2_settlement_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+    "per_job_calibration_and_queue_log": [
+      {
+        "job_manifest_id": "Stage_5.3B_MarW2_Primary__Job01",
+        "pass_type": "Primary",
+        "backend": "ibm_marrakesh",
+        "hardware_job_id": "dbu6cvc9po4c73cek9eg",
+        "submitted_utc": "2026-11-17T14:36:47.031443+00:00",
+        "pending_jobs_at_submission": 5,
+        "compiled_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "submission_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "n_pubs": 60,
+        "forecast_billed_seconds": 19,
+        "post_wave_calibration_timestamp": "2026-11-13T14:22:56-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3B_MarW2_Primary__Job02",
+        "pass_type": "Primary",
+        "backend": "ibm_marrakesh",
+        "hardware_job_id": "dbu6d049po4c73cek9fg",
+        "submitted_utc": "2026-11-17T14:36:49.375916+00:00",
+        "pending_jobs_at_submission": 5,
+        "compiled_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "submission_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "n_pubs": 60,
+        "forecast_billed_seconds": 19,
+        "post_wave_calibration_timestamp": "2026-11-13T14:22:56-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3B_MarW2_Confirm__Job01",
+        "pass_type": "Confirm",
+        "backend": "ibm_marrakesh",
+        "hardware_job_id": "dbu6eks9po4c73cekbcg",
+        "submitted_utc": "2026-11-17T14:40:20.707643+00:00",
+        "pending_jobs_at_submission": 3,
+        "compiled_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "submission_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "n_pubs": 60,
+        "forecast_billed_seconds": 19,
+        "post_wave_calibration_timestamp": "2026-11-13T14:22:56-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3B_MarW2_Confirm__Job02",
+        "pass_type": "Confirm",
+        "backend": "ibm_marrakesh",
+        "hardware_job_id": "dbu6elae8crs738b4rig",
+        "submitted_utc": "2026-11-17T14:40:22.867901+00:00",
+        "pending_jobs_at_submission": 3,
+        "compiled_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "submission_calibration_timestamp": "2026-11-13T14:22:56-03:00",
+        "n_pubs": 60,
+        "forecast_billed_seconds": 19,
+        "post_wave_calibration_timestamp": "2026-11-13T14:22:56-03:00"
+      }
+    ]
+  },
+  "billing_audit": {
+    "forecast_billed_seconds": 76,
+    "settled_billed_seconds": 80.0
+  },
+  "raw_counts_archive_sha256": "0020861b5a4f17cd0441676095d14ca51e5dfed7aaf6eacfa274d24e88ff5e77",
+  "settled_jobs": [
+    {
+      "job_manifest_id": "Stage_5.3B_MarW2_Primary__Job01",
+      "hardware_job_id": "dbu6cvc9po4c73cek9eg",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 20,
+      "execution_timestamps": {
+        "created": "2026-11-17T14:36:46.081008Z",
+        "finished": "2026-11-17T14:39:52.492188Z",
+        "running": "2026-11-17T14:36:48.105457Z"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.3B_MarW2_Primary__Job02",
+      "hardware_job_id": "dbu6d049po4c73cek9fg",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 20,
+      "execution_timestamps": {
+        "created": "2026-11-17T14:36:48.309189Z",
+        "finished": "2026-11-17T14:40:10.717629Z",
+        "running": "2026-11-17T14:36:50.445617Z"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.3B_MarW2_Confirm__Job01",
+      "hardware_job_id": "dbu6eks9po4c73cekbcg",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 20,
+      "execution_timestamps": {
+        "created": "2026-11-17T14:40:19.73245Z",
+        "finished": "2026-11-17T14:49:43.593731Z",
+        "running": "2026-11-17T14:40:21.719389Z"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.3B_MarW2_Confirm__Job02",
+      "hardware_job_id": "dbu6elae8crs738b4rig",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 20,
+      "execution_timestamps": {
+        "created": "2026-11-17T14:40:21.806797Z",
+        "finished": "2026-11-17T14:50:02.039428Z",
+        "running": "2026-11-17T14:40:24.003846Z"
+      }
+    }
+  ],
+  "point_results": [
+    {
+      "boundary_id": "B1",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 14,
+      "rounds": 1,
+      "n_instances": 5,
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.324526,
+          "confirm_mean": 0.316462,
+          "combined_mean": 0.320494,
+          "combined_median": 0.301269,
+          "window1_matched_s2_s6_mean": 0.383552,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.246818,
+            0.407155
+          ],
+          "hierarchical_ci95_confirm": [
+            0.24779,
+            0.390135
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.246818,
+              0.407155
+            ],
+            "point_ci95_confirm": [
+              0.24779,
+              0.390135
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.111333,
+            "fh_hellinger": 0.016602,
+            "tvd": 0.983398,
+            "hop": 0.016602,
+            "linear_xeb": 271.0,
+            "shannon_entropy_bits": 9.368874
+          },
+          "structural_mean": {
+            "native_2q": 339.4,
+            "depth_total": 469.2,
+            "scheduled_duration_us": 20.087
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.458008,
+              "primary_ci95": [
+                0.437915,
+                0.479213
+              ],
+              "confirm_metric": 0.429269,
+              "confirm_ci95": [
+                0.409316,
+                0.448668
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.492048,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.220285,
+              "primary_ci95": [
+                0.200607,
+                0.238979
+              ],
+              "confirm_metric": 0.21875,
+              "confirm_ci95": [
+                0.198657,
+                0.237451
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.227957,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.253627,
+              "primary_ci95": [
+                0.237305,
+                0.271066
+              ],
+              "confirm_metric": 0.233538,
+              "confirm_ci95": [
+                0.216375,
+                0.249166
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.312221,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.40918,
+              "primary_ci95": [
+                0.392017,
+                0.4262
+              ],
+              "confirm_metric": 0.379743,
+              "confirm_ci95": [
+                0.361886,
+                0.397182
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.469657,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.281529,
+              "primary_ci95": [
+                0.263668,
+                0.298968
+              ],
+              "confirm_metric": 0.32101,
+              "confirm_ci95": [
+                0.303289,
+                0.339565
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.415876,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.220117,
+          "confirm_mean": 0.208148,
+          "combined_mean": 0.214132,
+          "combined_median": 0.212332,
+          "window1_matched_s2_s6_mean": 0.105399,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.202985,
+            0.238396
+          ],
+          "hierarchical_ci95_confirm": [
+            0.182197,
+            0.234683
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.202985,
+              0.238396
+            ],
+            "point_ci95_confirm": [
+              0.182197,
+              0.234683
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.070225,
+            "fh_hellinger": 0.005078,
+            "tvd": 0.994922,
+            "hop": 0.005078,
+            "linear_xeb": 82.2,
+            "shannon_entropy_bits": 9.743844
+          },
+          "structural_mean": {
+            "native_2q": 590.0,
+            "depth_total": 799.0,
+            "scheduled_duration_us": 23.38
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.24442,
+              "primary_ci95": [
+                0.224742,
+                0.263257
+              ],
+              "confirm_metric": 0.253488,
+              "confirm_ci95": [
+                0.233956,
+                0.272321
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.108817,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.197824,
+              "primary_ci95": [
+                0.177452,
+                0.218331
+              ],
+              "confirm_metric": 0.167411,
+              "confirm_ci95": [
+                0.147182,
+                0.189174
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.107143,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.218331,
+              "primary_ci95": [
+                0.200889,
+                0.236611
+              ],
+              "confirm_metric": 0.206334,
+              "confirm_ci95": [
+                0.188334,
+                0.223636
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.12221,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.225865,
+              "primary_ci95": [
+                0.208008,
+                0.243164
+              ],
+              "confirm_metric": 0.220006,
+              "confirm_ci95": [
+                0.202563,
+                0.2387
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.072823,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.214146,
+              "primary_ci95": [
+                0.19615,
+                0.232003
+              ],
+              "confirm_metric": 0.193499,
+              "confirm_ci95": [
+                0.175216,
+                0.210941
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.116002,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.537807,
+          "confirm_mean": 0.538393,
+          "combined_mean": 0.5381,
+          "combined_median": 0.545759,
+          "window1_matched_s2_s6_mean": 0.639007,
+          "window1_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.508648,
+            0.565154
+          ],
+          "hierarchical_ci95_confirm": [
+            0.517736,
+            0.557199
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 4,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.508648,
+              0.565154
+            ],
+            "point_ci95_confirm": [
+              0.517736,
+              0.557199
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.304545,
+            "fh_hellinger": 0.092969,
+            "tvd": 0.907031,
+            "hop": 0.092969,
+            "linear_xeb": 1522.2,
+            "shannon_entropy_bits": 8.120187
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 278.0,
+            "scheduled_duration_us": 12.54
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.554129,
+              "primary_ci95": [
+                0.534595,
+                0.573661
+              ],
+              "confirm_metric": 0.542411,
+              "confirm_ci95": [
+                0.523574,
+                0.561666
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.638741,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.490234,
+              "primary_ci95": [
+                0.468188,
+                0.511443
+              ],
+              "confirm_metric": 0.506278,
+              "confirm_ci95": [
+                0.483667,
+                0.528048
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.649554,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.575195,
+              "primary_ci95": [
+                0.555525,
+                0.594312
+              ],
+              "confirm_metric": 0.554129,
+              "confirm_ci95": [
+                0.534312,
+                0.572269
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.638811,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.528599,
+              "primary_ci95": [
+                0.509902,
+                0.547576
+              ],
+              "confirm_metric": 0.538504,
+              "confirm_ci95": [
+                0.519388,
+                0.557478
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.625349,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.540876,
+              "primary_ci95": [
+                0.520368,
+                0.560271
+              ],
+              "confirm_metric": 0.550642,
+              "confirm_ci95": [
+                0.532645,
+                0.570173
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.642578,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.539788,
+          "confirm_mean": 0.535686,
+          "combined_mean": 0.537737,
+          "combined_median": 0.537528,
+          "window1_matched_s2_s6_mean": 0.643903,
+          "window1_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.52112,
+            0.558484
+          ],
+          "hierarchical_ci95_confirm": [
+            0.515624,
+            0.557757
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 4,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.52112,
+              0.558484
+            ],
+            "point_ci95_confirm": [
+              0.515624,
+              0.557757
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.311721,
+            "fh_hellinger": 0.097559,
+            "tvd": 0.902442,
+            "hop": 0.097559,
+            "linear_xeb": 1597.4,
+            "shannon_entropy_bits": 8.125768
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 278.0,
+            "scheduled_duration_us": 12.54
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.541295,
+              "primary_ci95": [
+                0.522035,
+                0.56055
+              ],
+              "confirm_metric": 0.533761,
+              "confirm_ci95": [
+                0.512974,
+                0.552459
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.654855,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.523856,
+              "primary_ci95": [
+                0.501535,
+                0.545619
+              ],
+              "confirm_metric": 0.509347,
+              "confirm_ci95": [
+                0.486743,
+                0.530835
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.643136,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.568359,
+              "primary_ci95": [
+                0.55022,
+                0.587472
+              ],
+              "confirm_metric": 0.564453,
+              "confirm_ci95": [
+                0.544224,
+                0.582589
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.651228,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.529855,
+              "primary_ci95": [
+                0.510181,
+                0.550223
+              ],
+              "confirm_metric": 0.523717,
+              "confirm_ci95": [
+                0.504321,
+                0.541717
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.625139,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.535575,
+              "primary_ci95": [
+                0.517575,
+                0.554408
+              ],
+              "confirm_metric": 0.547154,
+              "confirm_ci95": [
+                0.528038,
+                0.56641
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.645159,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B2",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 15,
+      "rounds": 1,
+      "n_instances": 5,
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.27125,
+          "confirm_mean": 0.238464,
+          "combined_mean": 0.254857,
+          "combined_median": 0.255078,
+          "window1_matched_s2_s6_mean": 0.294219,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.257731,
+            0.283755
+          ],
+          "hierarchical_ci95_confirm": [
+            0.215438,
+            0.257527
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.257731,
+              0.283755
+            ],
+            "point_ci95_confirm": [
+              0.215438,
+              0.257527
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.052396,
+            "fh_hellinger": 0.00293,
+            "tvd": 0.99707,
+            "hop": 0.00293,
+            "linear_xeb": 95.0,
+            "shannon_entropy_bits": 9.728719
+          },
+          "structural_mean": {
+            "native_2q": 340.2,
+            "depth_total": 449.6,
+            "scheduled_duration_us": 18.916
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.267839,
+              "primary_ci95": [
+                0.252083,
+                0.284248
+              ],
+              "confirm_metric": 0.199349,
+              "confirm_ci95": [
+                0.182679,
+                0.217448
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.268099,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.253906,
+              "primary_ci95": [
+                0.236068,
+                0.270967
+              ],
+              "confirm_metric": 0.249219,
+              "confirm_ci95": [
+                0.231768,
+                0.267578
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.243359,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.279948,
+              "primary_ci95": [
+                0.262109,
+                0.296745
+              ],
+              "confirm_metric": 0.248958,
+              "confirm_ci95": [
+                0.23099,
+                0.265755
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.317122,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.276562,
+              "primary_ci95": [
+                0.25833,
+                0.294531
+              ],
+              "confirm_metric": 0.233594,
+              "confirm_ci95": [
+                0.215882,
+                0.250394
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.340234,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.277995,
+              "primary_ci95": [
+                0.261188,
+                0.294014
+              ],
+              "confirm_metric": 0.261198,
+              "confirm_ci95": [
+                0.243874,
+                0.277865
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.302279,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.109037,
+          "confirm_mean": 0.115886,
+          "combined_mean": 0.112461,
+          "combined_median": 0.111589,
+          "window1_matched_s2_s6_mean": 0.11543,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.089922,
+            0.129115
+          ],
+          "hierarchical_ci95_confirm": [
+            0.095024,
+            0.133777
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.089922,
+              0.129115
+            ],
+            "point_ci95_confirm": [
+              0.095024,
+              0.133777
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.007544,
+            "fh_hellinger": 0.000293,
+            "tvd": 0.999707,
+            "hop": 0.000293,
+            "linear_xeb": 8.6,
+            "shannon_entropy_bits": 9.903859
+          },
+          "structural_mean": {
+            "native_2q": 702.0,
+            "depth_total": 1207.0,
+            "scheduled_duration_us": 34.14
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.105339,
+              "primary_ci95": [
+                0.091143,
+                0.11901
+              ],
+              "confirm_metric": 0.117839,
+              "confirm_ci95": [
+                0.101953,
+                0.1336
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.112174,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.078255,
+              "primary_ci95": [
+                0.061719,
+                0.09401
+              ],
+              "confirm_metric": 0.078776,
+              "confirm_ci95": [
+                0.063278,
+                0.094144
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.132943,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.116406,
+              "primary_ci95": [
+                0.100381,
+                0.131774
+              ],
+              "confirm_metric": 0.131641,
+              "confirm_ci95": [
+                0.116143,
+                0.147135
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.138607,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.140495,
+              "primary_ci95": [
+                0.124603,
+                0.155472
+              ],
+              "confirm_metric": 0.135026,
+              "confirm_ci95": [
+                0.119141,
+                0.150521
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.110677,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.104688,
+              "primary_ci95": [
+                0.089062,
+                0.120573
+              ],
+              "confirm_metric": 0.116146,
+              "confirm_ci95": [
+                0.101042,
+                0.131123
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.082748,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.578542,
+          "confirm_mean": 0.553255,
+          "combined_mean": 0.565898,
+          "combined_median": 0.569271,
+          "window1_matched_s2_s6_mean": 0.583685,
+          "window1_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.561561,
+            0.594145
+          ],
+          "hierarchical_ci95_confirm": [
+            0.537447,
+            0.568672
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.561561,
+              0.594145
+            ],
+            "point_ci95_confirm": [
+              0.537447,
+              0.568672
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.376728,
+            "fh_hellinger": 0.142676,
+            "tvd": 0.857324,
+            "hop": 0.142676,
+            "linear_xeb": 4674.2,
+            "shannon_entropy_bits": 7.905875
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 300.0,
+            "scheduled_duration_us": 12.696
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.593359,
+              "primary_ci95": [
+                0.572002,
+                0.614326
+              ],
+              "confirm_metric": 0.552474,
+              "confirm_ci95": [
+                0.531764,
+                0.572917
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.583138,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.571224,
+              "primary_ci95": [
+                0.547783,
+                0.59389
+              ],
+              "confirm_metric": 0.536979,
+              "confirm_ci95": [
+                0.514971,
+                0.558854
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.57194,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.589063,
+              "primary_ci95": [
+                0.567835,
+                0.612243
+              ],
+              "confirm_metric": 0.549479,
+              "confirm_ci95": [
+                0.527077,
+                0.570182
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.601172,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.571615,
+              "primary_ci95": [
+                0.548434,
+                0.592451
+              ],
+              "confirm_metric": 0.571745,
+              "confirm_ci95": [
+                0.551299,
+                0.593102
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.594466,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.567448,
+              "primary_ci95": [
+                0.547002,
+                0.587109
+              ],
+              "confirm_metric": 0.555599,
+              "confirm_ci95": [
+                0.533724,
+                0.576048
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.567708,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.575703,
+          "confirm_mean": 0.546823,
+          "combined_mean": 0.561263,
+          "combined_median": 0.560221,
+          "window1_matched_s2_s6_mean": 0.589076,
+          "window1_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.555779,
+            0.593417
+          ],
+          "hierarchical_ci95_confirm": [
+            0.526796,
+            0.564662
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 4,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.555779,
+              0.593417
+            ],
+            "point_ci95_confirm": [
+              0.526796,
+              0.564662
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.378637,
+            "fh_hellinger": 0.144141,
+            "tvd": 0.855859,
+            "hop": 0.144141,
+            "linear_xeb": 4722.2,
+            "shannon_entropy_bits": 7.917249
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 300.0,
+            "scheduled_duration_us": 12.696
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.561719,
+              "primary_ci95": [
+                0.539193,
+                0.584248
+              ],
+              "confirm_metric": 0.558724,
+              "confirm_ci95": [
+                0.537236,
+                0.580078
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.61237,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.558724,
+              "primary_ci95": [
+                0.534635,
+                0.581901
+              ],
+              "confirm_metric": 0.519401,
+              "confirm_ci95": [
+                0.497396,
+                0.540107
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.567383,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.593359,
+              "primary_ci95": [
+                0.571865,
+                0.613932
+              ],
+              "confirm_metric": 0.561328,
+              "confirm_ci95": [
+                0.540231,
+                0.582689
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.607683,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.593099,
+              "primary_ci95": [
+                0.572262,
+                0.613678
+              ],
+              "confirm_metric": 0.556641,
+              "confirm_ci95": [
+                0.536589,
+                0.576696
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.579036,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.571615,
+              "primary_ci95": [
+                0.550127,
+                0.592578
+              ],
+              "confirm_metric": 0.538021,
+              "confirm_ci95": [
+                0.515755,
+                0.558594
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.578906,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B3",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 16,
+      "rounds": 1,
+      "n_instances": 5,
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.209863,
+          "confirm_mean": 0.228613,
+          "combined_mean": 0.219238,
+          "combined_median": 0.222473,
+          "window1_matched_s2_s6_mean": 0.386548,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.166625,
+            0.254713
+          ],
+          "hierarchical_ci95_confirm": [
+            0.196867,
+            0.258156
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.166625,
+              0.254713
+            ],
+            "point_ci95_confirm": [
+              0.196867,
+              0.258156
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.026908,
+            "fh_hellinger": 0.00127,
+            "tvd": 0.99873,
+            "hop": 0.00127,
+            "linear_xeb": 82.2,
+            "shannon_entropy_bits": 9.86271
+          },
+          "structural_mean": {
+            "native_2q": 375.0,
+            "depth_total": 468.6,
+            "scheduled_duration_us": 19.226
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.275269,
+              "primary_ci95": [
+                0.257443,
+                0.29187
+              ],
+              "confirm_metric": 0.241089,
+              "confirm_ci95": [
+                0.224484,
+                0.257812
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.279663,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.200439,
+              "primary_ci95": [
+                0.185056,
+                0.215701
+              ],
+              "confirm_metric": 0.244507,
+              "confirm_ci95": [
+                0.228516,
+                0.260745
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.437805,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.153687,
+              "primary_ci95": [
+                0.138062,
+                0.169687
+              ],
+              "confirm_metric": 0.200195,
+              "confirm_ci95": [
+                0.18335,
+                0.216797
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.405151,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.26062,
+              "primary_ci95": [
+                0.245361,
+                0.275641
+              ],
+              "confirm_metric": 0.275269,
+              "confirm_ci95": [
+                0.258667,
+                0.291995
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.443054,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.159302,
+              "primary_ci95": [
+                0.143185,
+                0.175052
+              ],
+              "confirm_metric": 0.182007,
+              "confirm_ci95": [
+                0.164795,
+                0.198001
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.367065,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.07688,
+          "confirm_mean": 0.081738,
+          "combined_mean": 0.079309,
+          "combined_median": 0.090149,
+          "window1_matched_s2_s6_mean": -0.021472,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.038956,
+            0.116262
+          ],
+          "hierarchical_ci95_confirm": [
+            0.041226,
+            0.129117
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.038956,
+              0.116262
+            ],
+            "point_ci95_confirm": [
+              0.041226,
+              0.129117
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.003125,
+            "fh_hellinger": 9.8e-05,
+            "tvd": 0.999902,
+            "hop": 9.8e-05,
+            "linear_xeb": 5.4,
+            "shannon_entropy_bits": 9.965404
+          },
+          "structural_mean": {
+            "native_2q": 801.0,
+            "depth_total": 1352.0,
+            "scheduled_duration_us": 37.356
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.100342,
+              "primary_ci95": [
+                0.084961,
+                0.115726
+              ],
+              "confirm_metric": 0.093872,
+              "confirm_ci95": [
+                0.078369,
+                0.109497
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": -0.085938,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.036621,
+              "primary_ci95": [
+                0.021237,
+                0.052008
+              ],
+              "confirm_metric": 0.037598,
+              "confirm_ci95": [
+                0.021112,
+                0.052979
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": -0.051086,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.020386,
+              "primary_ci95": [
+                0.004758,
+                0.035889
+              ],
+              "confirm_metric": 0.022827,
+              "confirm_ci95": [
+                0.007324,
+                0.038699
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": -0.066956,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.137329,
+              "primary_ci95": [
+                0.122433,
+                0.153323
+              ],
+              "confirm_metric": 0.163818,
+              "confirm_ci95": [
+                0.148434,
+                0.179199
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.030151,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.089722,
+              "primary_ci95": [
+                0.075314,
+                0.105225
+              ],
+              "confirm_metric": 0.090576,
+              "confirm_ci95": [
+                0.075436,
+                0.106448
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.066467,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.541529,
+          "confirm_mean": 0.527637,
+          "combined_mean": 0.534583,
+          "combined_median": 0.521424,
+          "window1_matched_s2_s6_mean": 0.552698,
+          "window1_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.50654,
+            0.574098
+          ],
+          "hierarchical_ci95_confirm": [
+            0.499676,
+            0.556819
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.50654,
+              0.574098
+            ],
+            "point_ci95_confirm": [
+              0.499676,
+              0.556819
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.336007,
+            "fh_hellinger": 0.11543,
+            "tvd": 0.88457,
+            "hop": 0.11543,
+            "linear_xeb": 7563.8,
+            "shannon_entropy_bits": 8.371191
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 322.0,
+            "scheduled_duration_us": 13.464
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.532227,
+              "primary_ci95": [
+                0.511472,
+                0.552002
+              ],
+              "confirm_metric": 0.498657,
+              "confirm_ci95": [
+                0.476562,
+                0.520755
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.535828,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.535889,
+              "primary_ci95": [
+                0.514886,
+                0.556641
+              ],
+              "confirm_metric": 0.506958,
+              "confirm_ci95": [
+                0.486325,
+                0.527954
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.533508,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.482178,
+              "primary_ci95": [
+                0.46106,
+                0.503787
+              ],
+              "confirm_metric": 0.503784,
+              "confirm_ci95": [
+                0.4823,
+                0.524295
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.520813,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.582642,
+              "primary_ci95": [
+                0.562131,
+                0.605225
+              ],
+              "confirm_metric": 0.573486,
+              "confirm_ci95": [
+                0.554074,
+                0.593146
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.603333,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.574707,
+              "primary_ci95": [
+                0.552246,
+                0.598145
+              ],
+              "confirm_metric": 0.555298,
+              "confirm_ci95": [
+                0.534293,
+                0.577393
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.570007,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.530591,
+          "confirm_mean": 0.527466,
+          "combined_mean": 0.529028,
+          "combined_median": 0.534485,
+          "window1_matched_s2_s6_mean": 0.550549,
+          "window1_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.503344,
+            0.55738
+          ],
+          "hierarchical_ci95_confirm": [
+            0.505051,
+            0.549879
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 3,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.503344,
+              0.55738
+            ],
+            "point_ci95_confirm": [
+              0.505051,
+              0.549879
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.330548,
+            "fh_hellinger": 0.111133,
+            "tvd": 0.888867,
+            "hop": 0.111133,
+            "linear_xeb": 7282.2,
+            "shannon_entropy_bits": 8.419406
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 322.0,
+            "scheduled_duration_us": 13.464
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.495728,
+              "primary_ci95": [
+                0.473264,
+                0.517825
+              ],
+              "confirm_metric": 0.501221,
+              "confirm_ci95": [
+                0.479977,
+                0.522461
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.533996,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.534424,
+              "primary_ci95": [
+                0.514401,
+                0.554691
+              ],
+              "confirm_metric": 0.534546,
+              "confirm_ci95": [
+                0.516724,
+                0.554324
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.536987,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.505005,
+              "primary_ci95": [
+                0.482666,
+                0.524661
+              ],
+              "confirm_metric": 0.504639,
+              "confirm_ci95": [
+                0.48364,
+                0.526123
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.515991,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.558838,
+              "primary_ci95": [
+                0.53772,
+                0.580322
+              ],
+              "confirm_metric": 0.556274,
+              "confirm_ci95": [
+                0.533688,
+                0.577762
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.60614,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.55896,
+              "primary_ci95": [
+                0.535522,
+                0.581302
+              ],
+              "confirm_metric": 0.540649,
+              "confirm_ci95": [
+                0.51709,
+                0.56189
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.559632,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B4",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 17,
+      "rounds": 1,
+      "n_instances": 5,
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.171737,
+          "confirm_mean": 0.186489,
+          "combined_mean": 0.179113,
+          "combined_median": 0.19313,
+          "window1_matched_s2_s6_mean": 0.349609,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.115439,
+            0.210626
+          ],
+          "hierarchical_ci95_confirm": [
+            0.139257,
+            0.221945
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.115439,
+              0.210626
+            ],
+            "point_ci95_confirm": [
+              0.139257,
+              0.221945
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.012957,
+            "fh_hellinger": 0.000586,
+            "tvd": 0.999414,
+            "hop": 0.000586,
+            "linear_xeb": 75.8,
+            "shannon_entropy_bits": 9.9429
+          },
+          "structural_mean": {
+            "native_2q": 431.8,
+            "depth_total": 492.4,
+            "scheduled_duration_us": 20.361
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.208869,
+              "primary_ci95": [
+                0.193704,
+                0.224265
+              ],
+              "confirm_metric": 0.193015,
+              "confirm_ci95": [
+                0.176585,
+                0.208755
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.276712,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.189223,
+              "primary_ci95": [
+                0.172449,
+                0.205426
+              ],
+              "confirm_metric": 0.197036,
+              "confirm_ci95": [
+                0.181753,
+                0.21335
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.403895,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.181066,
+              "primary_ci95": [
+                0.165556,
+                0.197036
+              ],
+              "confirm_metric": 0.20278,
+              "confirm_ci95": [
+                0.187612,
+                0.218299
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.418083,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.063649,
+              "primary_ci95": [
+                0.047102,
+                0.080426
+              ],
+              "confirm_metric": 0.098805,
+              "confirm_ci95": [
+                0.082258,
+                0.11489
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.370175,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.215878,
+              "primary_ci95": [
+                0.201051,
+                0.230584
+              ],
+              "confirm_metric": 0.240809,
+              "confirm_ci95": [
+                0.224839,
+                0.257583
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.279182,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.136902,
+          "confirm_mean": 0.134949,
+          "combined_mean": 0.135926,
+          "combined_median": 0.145738,
+          "window1_matched_s2_s6_mean": 0.127838,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.083153,
+            0.18567
+          ],
+          "hierarchical_ci95_confirm": [
+            0.074531,
+            0.188514
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.083153,
+              0.18567
+            ],
+            "point_ci95_confirm": [
+              0.074531,
+              0.188514
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.003125,
+            "fh_hellinger": 9.8e-05,
+            "tvd": 0.999902,
+            "hop": 9.8e-05,
+            "linear_xeb": 11.8,
+            "shannon_entropy_bits": 9.970872
+          },
+          "structural_mean": {
+            "native_2q": 905.0,
+            "depth_total": 1399.0,
+            "scheduled_duration_us": 39.536
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.200712,
+              "primary_ci95": [
+                0.185547,
+                0.216108
+              ],
+              "confirm_metric": 0.201746,
+              "confirm_ci95": [
+                0.186463,
+                0.21703
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.196346,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.193819,
+              "primary_ci95": [
+                0.179685,
+                0.20876
+              ],
+              "confirm_metric": 0.19784,
+              "confirm_ci95": [
+                0.182327,
+                0.212434
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.173196,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.052045,
+              "primary_ci95": [
+                0.036187,
+                0.066984
+              ],
+              "confirm_metric": 0.036994,
+              "confirm_ci95": [
+                0.022059,
+                0.05216
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.002068,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.091452,
+              "primary_ci95": [
+                0.075023,
+                0.106621
+              ],
+              "confirm_metric": 0.093176,
+              "confirm_ci95": [
+                0.078355,
+                0.10754
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.116498,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.146484,
+              "primary_ci95": [
+                0.131201,
+                0.161305
+              ],
+              "confirm_metric": 0.144991,
+              "confirm_ci95": [
+                0.129825,
+                0.159585
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.15108,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.539246,
+          "confirm_mean": 0.517762,
+          "combined_mean": 0.528504,
+          "combined_median": 0.522174,
+          "window1_matched_s2_s6_mean": 0.54568,
+          "window1_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.521737,
+            0.556204
+          ],
+          "hierarchical_ci95_confirm": [
+            0.499099,
+            0.537506
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.521737,
+              0.556204
+            ],
+            "point_ci95_confirm": [
+              0.499099,
+              0.537506
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.319995,
+            "fh_hellinger": 0.103711,
+            "tvd": 0.896289,
+            "hop": 0.103711,
+            "linear_xeb": 13592.6,
+            "shannon_entropy_bits": 8.53575
+          },
+          "structural_mean": {
+            "native_2q": 407.0,
+            "depth_total": 344.0,
+            "scheduled_duration_us": 14.232
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.529642,
+              "primary_ci95": [
+                0.507927,
+                0.552737
+              ],
+              "confirm_metric": 0.511259,
+              "confirm_ci95": [
+                0.489654,
+                0.53229
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.556296,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.558594,
+              "primary_ci95": [
+                0.536765,
+                0.581345
+              ],
+              "confirm_metric": 0.542165,
+              "confirm_ci95": [
+                0.521367,
+                0.563764
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.558421,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.535501,
+              "primary_ci95": [
+                0.514936,
+                0.556411
+              ],
+              "confirm_metric": 0.508847,
+              "confirm_ci95": [
+                0.488735,
+                0.528381
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.521714,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.524816,
+              "primary_ci95": [
+                0.503332,
+                0.547105
+              ],
+              "confirm_metric": 0.498736,
+              "confirm_ci95": [
+                0.476677,
+                0.520568
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.53125,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.547679,
+              "primary_ci95": [
+                0.527459,
+                0.567788
+              ],
+              "confirm_metric": 0.527803,
+              "confirm_ci95": [
+                0.508272,
+                0.549061
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.560719,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.528378,
+          "confirm_mean": 0.519531,
+          "combined_mean": 0.523955,
+          "combined_median": 0.517176,
+          "window1_matched_s2_s6_mean": 0.539189,
+          "window1_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.514567,
+            0.54212
+          ],
+          "hierarchical_ci95_confirm": [
+            0.499217,
+            0.539824
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.514567,
+              0.54212
+            ],
+            "point_ci95_confirm": [
+              0.499217,
+              0.539824
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.314473,
+            "fh_hellinger": 0.099902,
+            "tvd": 0.900098,
+            "hop": 0.099902,
+            "linear_xeb": 13093.4,
+            "shannon_entropy_bits": 8.576797
+          },
+          "structural_mean": {
+            "native_2q": 407.0,
+            "depth_total": 344.0,
+            "scheduled_duration_us": 14.232
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.52608,
+              "primary_ci95": [
+                0.504481,
+                0.548828
+              ],
+              "confirm_metric": 0.508272,
+              "confirm_ci95": [
+                0.485983,
+                0.530449
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.515108,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.534122,
+              "primary_ci95": [
+                0.51057,
+                0.555836
+              ],
+              "confirm_metric": 0.549403,
+              "confirm_ci95": [
+                0.528375,
+                0.569164
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.567325,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.522059,
+              "primary_ci95": [
+                0.501031,
+                0.542742
+              ],
+              "confirm_metric": 0.503562,
+              "confirm_ci95": [
+                0.482537,
+                0.524598
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.527689,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.525161,
+              "primary_ci95": [
+                0.501379,
+                0.5478
+              ],
+              "confirm_metric": 0.507008,
+              "confirm_ci95": [
+                0.484949,
+                0.529308
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.534639,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.534467,
+              "primary_ci95": [
+                0.513209,
+                0.555612
+              ],
+              "confirm_metric": 0.529412,
+              "confirm_ci95": [
+                0.509191,
+                0.549632
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.551184,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B5",
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 10,
+      "rounds": 2,
+      "n_instances": 5,
+      "primary_metric_name": "r_approx",
+      "viability_threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.183523,
+          "confirm_mean": 0.235104,
+          "combined_mean": 0.209314,
+          "combined_median": 0.220993,
+          "window1_matched_s2_s6_mean": 0.149603,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.156821,
+            0.21047
+          ],
+          "hierarchical_ci95_confirm": [
+            0.209492,
+            0.26127
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.156821,
+              0.21047
+            ],
+            "point_ci95_confirm": [
+              0.209492,
+              0.26127
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.607081,
+            "fh_hellinger": 0.369928,
+            "tvd": 0.66942,
+            "hop": 0.682129,
+            "linear_xeb": 2.484201,
+            "shannon_entropy_bits": 8.802323
+          },
+          "structural_mean": {
+            "native_2q": 466.6,
+            "depth_total": 661.2,
+            "scheduled_duration_us": 28.322
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.200738,
+              "primary_ci95": [
+                0.175201,
+                0.225264
+              ],
+              "confirm_metric": 0.25774,
+              "confirm_ci95": [
+                0.231769,
+                0.284654
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.166015,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.164565,
+              "primary_ci95": [
+                0.144976,
+                0.184551
+              ],
+              "confirm_metric": 0.195368,
+              "confirm_ci95": [
+                0.175944,
+                0.215294
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.116015,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.187066,
+              "primary_ci95": [
+                0.16182,
+                0.21123
+              ],
+              "confirm_metric": 0.254919,
+              "confirm_ci95": [
+                0.231695,
+                0.279371
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.169596,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.220325,
+              "primary_ci95": [
+                0.197704,
+                0.244016
+              ],
+              "confirm_metric": 0.252583,
+              "confirm_ci95": [
+                0.228957,
+                0.274762
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.163054,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.144922,
+              "primary_ci95": [
+                0.123438,
+                0.167187
+              ],
+              "confirm_metric": 0.214909,
+              "confirm_ci95": [
+                0.193293,
+                0.237697
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.133333,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.205208,
+          "confirm_mean": 0.203521,
+          "combined_mean": 0.204365,
+          "combined_median": 0.211987,
+          "window1_matched_s2_s6_mean": 0.21911,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.182512,
+            0.225928
+          ],
+          "hierarchical_ci95_confirm": [
+            0.179121,
+            0.226172
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.182512,
+              0.225928
+            ],
+            "point_ci95_confirm": [
+              0.179121,
+              0.226172
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.591923,
+            "fh_hellinger": 0.350555,
+            "tvd": 0.679188,
+            "hop": 0.676465,
+            "linear_xeb": 2.308416,
+            "shannon_entropy_bits": 8.76789
+          },
+          "structural_mean": {
+            "native_2q": 554.0,
+            "depth_total": 772.0,
+            "scheduled_duration_us": 23.448
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.215061,
+              "primary_ci95": [
+                0.190023,
+                0.240162
+              ],
+              "confirm_metric": 0.219473,
+              "confirm_ci95": [
+                0.194801,
+                0.244001
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.253146,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.177679,
+              "primary_ci95": [
+                0.15625,
+                0.199219
+              ],
+              "confirm_metric": 0.162388,
+              "confirm_ci95": [
+                0.142132,
+                0.18114
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.175167,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.205295,
+              "primary_ci95": [
+                0.180049,
+                0.229677
+              ],
+              "confirm_metric": 0.218678,
+              "confirm_ci95": [
+                0.194298,
+                0.243707
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.244394,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.230154,
+              "primary_ci95": [
+                0.206337,
+                0.251399
+              ],
+              "confirm_metric": 0.216545,
+              "confirm_ci95": [
+                0.193923,
+                0.239355
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.223853,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.197852,
+              "primary_ci95": [
+                0.17487,
+                0.220708
+              ],
+              "confirm_metric": 0.200521,
+              "confirm_ci95": [
+                0.178643,
+                0.222852
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.198991,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.410162,
+          "confirm_mean": 0.363375,
+          "combined_mean": 0.386769,
+          "combined_median": 0.385773,
+          "window1_matched_s2_s6_mean": 0.26523,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.383087,
+            0.441904
+          ],
+          "hierarchical_ci95_confirm": [
+            0.341353,
+            0.386342
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.383087,
+              0.441904
+            ],
+            "point_ci95_confirm": [
+              0.341353,
+              0.386342
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.777196,
+            "fh_hellinger": 0.604506,
+            "tvd": 0.479326,
+            "hop": 0.816601,
+            "linear_xeb": 6.828359,
+            "shannon_entropy_bits": 8.343844
+          },
+          "structural_mean": {
+            "native_2q": 262.0,
+            "depth_total": 219.2,
+            "scheduled_duration_us": 9.638
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.464916,
+              "primary_ci95": [
+                0.439813,
+                0.489516
+              ],
+              "confirm_metric": 0.393302,
+              "confirm_ci95": [
+                0.366316,
+                0.419922
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.311704,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.375893,
+              "primary_ci95": [
+                0.353962,
+                0.396655
+              ],
+              "confirm_metric": 0.339453,
+              "confirm_ci95": [
+                0.317967,
+                0.361328
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.22899,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.412326,
+              "primary_ci95": [
+                0.388166,
+                0.434612
+              ],
+              "confirm_metric": 0.360966,
+              "confirm_ci95": [
+                0.336947,
+                0.384333
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.268736,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.393901,
+              "primary_ci95": [
+                0.370272,
+                0.416468
+              ],
+              "confirm_metric": 0.377646,
+              "confirm_ci95": [
+                0.355404,
+                0.39995
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.262066,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.403776,
+              "primary_ci95": [
+                0.381185,
+                0.426304
+              ],
+              "confirm_metric": 0.345508,
+              "confirm_ci95": [
+                0.322132,
+                0.367451
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.254655,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.4101,
+          "confirm_mean": 0.36008,
+          "combined_mean": 0.38509,
+          "combined_median": 0.393996,
+          "window1_matched_s2_s6_mean": 0.263379,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.38168,
+            0.437661
+          ],
+          "hierarchical_ci95_confirm": [
+            0.336714,
+            0.385431
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.38168,
+              0.437661
+            ],
+            "point_ci95_confirm": [
+              0.336714,
+              0.385431
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.778988,
+            "fh_hellinger": 0.607063,
+            "tvd": 0.478841,
+            "hop": 0.809863,
+            "linear_xeb": 6.855162,
+            "shannon_entropy_bits": 8.332555
+          },
+          "structural_mean": {
+            "native_2q": 262.0,
+            "depth_total": 219.2,
+            "scheduled_duration_us": 9.638
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.44524,
+              "primary_ci95": [
+                0.421513,
+                0.468969
+              ],
+              "confirm_metric": 0.389685,
+              "confirm_ci95": [
+                0.364292,
+                0.415439
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.297019,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.369699,
+              "primary_ci95": [
+                0.347987,
+                0.39191
+              ],
+              "confirm_metric": 0.334375,
+              "confirm_ci95": [
+                0.31361,
+                0.355082
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.230887,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.410735,
+              "primary_ci95": [
+                0.388525,
+                0.433236
+              ],
+              "confirm_metric": 0.381727,
+              "confirm_ci95": [
+                0.358073,
+                0.404588
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.285952,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.431074,
+              "primary_ci95": [
+                0.407822,
+                0.453569
+              ],
+              "confirm_metric": 0.356918,
+              "confirm_ci95": [
+                0.333542,
+                0.380481
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.260553,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.39375,
+              "primary_ci95": [
+                0.370703,
+                0.41582
+              ],
+              "confirm_metric": 0.337695,
+              "confirm_ci95": [
+                0.313605,
+                0.360286
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.24248,
+              "window1_matched_outcome": "Confirmed Fail"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B6",
+      "family": "F3_Random_SU4",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 15,
+      "rounds": 2,
+      "n_instances": 5,
+      "primary_metric_name": "hop",
+      "viability_threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.614258,
+          "confirm_mean": 0.602344,
+          "combined_mean": 0.608301,
+          "combined_median": 0.594238,
+          "window1_matched_s2_s6_mean": 0.610644,
+          "window1_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.58125,
+            0.650781
+          ],
+          "hierarchical_ci95_confirm": [
+            0.574409,
+            0.633594
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.58125,
+              0.650781
+            ],
+            "point_ci95_confirm": [
+              0.574409,
+              0.633594
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.181434,
+            "fh_hellinger": 0.032979,
+            "tvd": 0.95521,
+            "hop": 0.608301,
+            "linear_xeb": 0.480468,
+            "shannon_entropy_bits": 9.964696
+          },
+          "structural_mean": {
+            "native_2q": 159.8,
+            "depth_total": 153.0,
+            "scheduled_duration_us": 8.022
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.585938,
+              "primary_ci95": [
+                0.555664,
+                0.616211
+              ],
+              "confirm_metric": 0.580078,
+              "confirm_ci95": [
+                0.551758,
+                0.610352
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.590332,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.626953,
+              "primary_ci95": [
+                0.597656,
+                0.656274
+              ],
+              "confirm_metric": 0.607422,
+              "confirm_ci95": [
+                0.577148,
+                0.637695
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.628418,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.579102,
+              "primary_ci95": [
+                0.548804,
+                0.609375
+              ],
+              "confirm_metric": 0.588867,
+              "confirm_ci95": [
+                0.557617,
+                0.620117
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.578614,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.606445,
+              "primary_ci95": [
+                0.576172,
+                0.636719
+              ],
+              "confirm_metric": 0.582031,
+              "confirm_ci95": [
+                0.552734,
+                0.611328
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.629883,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.672852,
+              "primary_ci95": [
+                0.644531,
+                0.701172
+              ],
+              "confirm_metric": 0.65332,
+              "confirm_ci95": [
+                0.624023,
+                0.68457
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.625976,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.530078,
+          "confirm_mean": 0.533398,
+          "combined_mean": 0.531738,
+          "combined_median": 0.524414,
+          "window1_matched_s2_s6_mean": 0.534668,
+          "window1_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.500967,
+            0.563682
+          ],
+          "hierarchical_ci95_confirm": [
+            0.510347,
+            0.558213
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 3,
+            "point_ci95_primary": [
+              0.500967,
+              0.563682
+            ],
+            "point_ci95_confirm": [
+              0.510347,
+              0.558213
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.157854,
+            "fh_hellinger": 0.024928,
+            "tvd": 0.966116,
+            "hop": 0.531738,
+            "linear_xeb": 0.105423,
+            "shannon_entropy_bits": 9.961424
+          },
+          "structural_mean": {
+            "native_2q": 332.2,
+            "depth_total": 446.4,
+            "scheduled_duration_us": 14.642
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.513672,
+              "primary_ci95": [
+                0.482422,
+                0.543945
+              ],
+              "confirm_metric": 0.520508,
+              "confirm_ci95": [
+                0.49021,
+                0.550806
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.534668,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.583008,
+              "primary_ci95": [
+                0.552734,
+                0.613281
+              ],
+              "confirm_metric": 0.552734,
+              "confirm_ci95": [
+                0.520508,
+                0.582056
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.517578,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.530273,
+              "primary_ci95": [
+                0.499023,
+                0.560547
+              ],
+              "confirm_metric": 0.518555,
+              "confirm_ci95": [
+                0.489258,
+                0.548828
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.53418,
+              "window1_matched_outcome": "Confirmed Fail"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.498047,
+              "primary_ci95": [
+                0.46875,
+                0.52832
+              ],
+              "confirm_metric": 0.519531,
+              "confirm_ci95": [
+                0.489258,
+                0.550806
+              ],
+              "instance_mece_outcome": "Confirmed Fail",
+              "window1_matched_metric": 0.536621,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.525391,
+              "primary_ci95": [
+                0.495117,
+                0.557617
+              ],
+              "confirm_metric": 0.555664,
+              "confirm_ci95": [
+                0.524414,
+                0.586914
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.550293,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.614453,
+          "confirm_mean": 0.620508,
+          "combined_mean": 0.617481,
+          "combined_median": 0.604492,
+          "window1_matched_s2_s6_mean": 0.632129,
+          "window1_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.58144,
+            0.657036
+          ],
+          "hierarchical_ci95_confirm": [
+            0.580654,
+            0.664062
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.58144,
+              0.657036
+            ],
+            "point_ci95_confirm": [
+              0.580654,
+              0.664062
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.182798,
+            "fh_hellinger": 0.033545,
+            "tvd": 0.954667,
+            "hop": 0.61748,
+            "linear_xeb": 0.493641,
+            "shannon_entropy_bits": 9.961255
+          },
+          "structural_mean": {
+            "native_2q": 172.4,
+            "depth_total": 155.8,
+            "scheduled_duration_us": 8.337
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.609375,
+              "primary_ci95": [
+                0.579102,
+                0.639648
+              ],
+              "confirm_metric": 0.599609,
+              "confirm_ci95": [
+                0.570312,
+                0.629883
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.603515,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.604492,
+              "primary_ci95": [
+                0.574219,
+                0.633789
+              ],
+              "confirm_metric": 0.641602,
+              "confirm_ci95": [
+                0.612305,
+                0.671875
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.661133,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.585938,
+              "primary_ci95": [
+                0.555664,
+                0.617212
+              ],
+              "confirm_metric": 0.576172,
+              "confirm_ci95": [
+                0.545898,
+                0.606445
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.594238,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.586914,
+              "primary_ci95": [
+                0.557617,
+                0.618164
+              ],
+              "confirm_metric": 0.588867,
+              "confirm_ci95": [
+                0.558594,
+                0.617212
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.626464,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.685547,
+              "primary_ci95": [
+                0.657227,
+                0.712891
+              ],
+              "confirm_metric": 0.696289,
+              "confirm_ci95": [
+                0.667969,
+                0.723633
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.675293,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.617774,
+          "confirm_mean": 0.627734,
+          "combined_mean": 0.622754,
+          "combined_median": 0.608887,
+          "window1_matched_s2_s6_mean": 0.624609,
+          "window1_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.588862,
+            0.650586
+          ],
+          "hierarchical_ci95_confirm": [
+            0.592373,
+            0.663867
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.588862,
+              0.650586
+            ],
+            "point_ci95_confirm": [
+              0.592373,
+              0.663867
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.183054,
+            "fh_hellinger": 0.033576,
+            "tvd": 0.954704,
+            "hop": 0.622754,
+            "linear_xeb": 0.49535,
+            "shannon_entropy_bits": 9.95786
+          },
+          "structural_mean": {
+            "native_2q": 161.0,
+            "depth_total": 146.2,
+            "scheduled_duration_us": 7.784
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.598633,
+              "primary_ci95": [
+                0.568359,
+                0.62793
+              ],
+              "confirm_metric": 0.589844,
+              "confirm_ci95": [
+                0.55957,
+                0.620117
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.590332,
+              "window1_matched_outcome": "Unresolved Within Budget"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.604492,
+              "primary_ci95": [
+                0.574219,
+                0.632812
+              ],
+              "confirm_metric": 0.668945,
+              "confirm_ci95": [
+                0.640625,
+                0.697266
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.682617,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.609375,
+              "primary_ci95": [
+                0.579102,
+                0.638672
+              ],
+              "confirm_metric": 0.595703,
+              "confirm_ci95": [
+                0.564453,
+                0.626001
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.616211,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.59668,
+              "primary_ci95": [
+                0.56543,
+                0.625977
+              ],
+              "confirm_metric": 0.621094,
+              "confirm_ci95": [
+                0.591797,
+                0.650391
+              ],
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "window1_matched_metric": 0.61377,
+              "window1_matched_outcome": "Confirmed Pass"
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.679688,
+              "primary_ci95": [
+                0.651367,
+                0.707056
+              ],
+              "confirm_metric": 0.663086,
+              "confirm_ci95": [
+                0.633789,
+                0.691406
+              ],
+              "instance_mece_outcome": "Confirmed Pass",
+              "window1_matched_metric": 0.620117,
+              "window1_matched_outcome": "Confirmed Pass"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "original_private_settled_ledger_sha256": "7b3d23f8a48adae0a4bd83e47ffd900e9cc35bd3786ba4bd2fd0865a864db4a2",
+  "raw_counts_file": "stage5_3b_ibm_marrakesh_recal_raw_pub_counts.json"
+}

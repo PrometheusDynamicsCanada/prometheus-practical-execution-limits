@@ -1,0 +1,4207 @@
+{
+  "scored_utc": "2026-11-16T14:04:34.690799+00:00",
+  "stage": "Stage_5.3A_IBM_Fez_Cross_Processor_Replication",
+  "backend": "ibm_fez",
+  "calibration_audit": {
+    "compiled_against_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+    "settlement_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+    "calibration_changed_between_compilation_and_execution": false,
+    "per_job_calibration_log": [
+      {
+        "job_manifest_id": "Stage_5.3A_Fez_Primary__Job01",
+        "hardware_job_id": "dbtbc89vvpic738mp28g",
+        "compiled_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "submission_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "post_wave_calibration_timestamp": "2026-11-13T13:27:59-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3A_Fez_Primary__Job02",
+        "hardware_job_id": "dbtbc8nasvbs73b9hlng",
+        "compiled_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "submission_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "post_wave_calibration_timestamp": "2026-11-13T13:27:59-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3A_Fez_Confirm__Job01",
+        "hardware_job_id": "dbtgpebeq3sc73evq000",
+        "compiled_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "submission_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "post_wave_calibration_timestamp": "2026-11-13T13:27:59-03:00"
+      },
+      {
+        "job_manifest_id": "Stage_5.3A_Fez_Confirm__Job02",
+        "hardware_job_id": "dbtgpepvvpic738mv710",
+        "compiled_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "submission_calibration_timestamp": "2026-11-13T13:27:59-03:00",
+        "post_wave_calibration_timestamp": "2026-11-13T13:27:59-03:00"
+      }
+    ]
+  },
+  "reporting_guardrails": {
+    "cross_family_primary_average_prohibited": true,
+    "strict_instance_mece_distinguished_from_majority_vote": true,
+    "tracked_strictly_as_portability_repeats_never_pooled_to_inflate_N": true
+  },
+  "n_jobs": 4,
+  "total_pubs": 240,
+  "total_physical_shots": 245760,
+  "billing_audit": {
+    "forecast_billed_seconds": 76,
+    "settled_billed_seconds": 76.0,
+    "delta_seconds": 0.0
+  },
+  "raw_counts_archive": "stage5_3a_ibm_fez_raw_pub_counts.json",
+  "raw_counts_archive_sha256": "4ec116fa588a28f19093b9167fc3befbcb333aabf41eedbfa3862b8a2ddda85c",
+  "settled_jobs": [
+    {
+      "job_manifest_id": "Stage_5.3A_Fez_Primary__Job01",
+      "hardware_job_id": "dbtbc89vvpic738mp28g",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 19
+    },
+    {
+      "job_manifest_id": "Stage_5.3A_Fez_Primary__Job02",
+      "hardware_job_id": "dbtbc8nasvbs73b9hlng",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 19
+    },
+    {
+      "job_manifest_id": "Stage_5.3A_Fez_Confirm__Job01",
+      "hardware_job_id": "dbtgpebeq3sc73evq000",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 19
+    },
+    {
+      "job_manifest_id": "Stage_5.3A_Fez_Confirm__Job02",
+      "hardware_job_id": "dbtgpepvvpic738mv710",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_seconds": 19,
+      "settled_billed_seconds": 19
+    }
+  ],
+  "point_results": [
+    {
+      "boundary_id": "B1",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 14,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.336049,
+          "confirm_mean": 0.24255,
+          "combined_mean": 0.2893,
+          "combined_median": 0.304548,
+          "marrakesh_matched_s2_s6_mean": 0.383552,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.268833,
+            0.381838
+          ],
+          "hierarchical_ci95_confirm": [
+            0.164788,
+            0.323159
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.268833,
+              0.381838
+            ],
+            "point_ci95_confirm": [
+              0.164788,
+              0.323159
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.098116,
+            "fh_hellinger": 0.010937,
+            "tvd": 0.989063,
+            "hop": 0.010937,
+            "linear_xeb": 178.2,
+            "shannon_entropy_bits": 9.500974
+          },
+          "observables_median": {
+            "fb_overlap": 0.093163,
+            "fh_hellinger": 0.008789,
+            "tvd": 0.991211,
+            "hop": 0.008789,
+            "linear_xeb": 143.0,
+            "shannon_entropy_bits": 9.499165
+          },
+          "structural_mean": {
+            "native_2q": 339.4,
+            "depth_total": 470.2,
+            "scheduled_duration_us": 16.485
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.368025,
+              "primary_ci95": [
+                0.348493,
+                0.38644
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.385742,
+              "confirm_ci95": [
+                0.366626,
+                0.403599
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.492048,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.128624,
+              "native_2q": 356,
+              "depth_total": 493
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.208566,
+              "primary_ci95": [
+                0.189031,
+                0.228519
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.136161,
+              "confirm_ci95": [
+                0.1183,
+                0.15346
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.227957,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.063437,
+              "native_2q": 320,
+              "depth_total": 457
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.349051,
+              "primary_ci95": [
+                0.330214,
+                0.367606
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.260045,
+              "confirm_ci95": [
+                0.242324,
+                0.277344
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.312221,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.10815,
+              "native_2q": 318,
+              "depth_total": 492
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.396205,
+              "primary_ci95": [
+                0.377926,
+                0.415182
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.270229,
+              "confirm_ci95": [
+                0.252651,
+                0.288372
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.469657,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.111485,
+              "native_2q": 365,
+              "depth_total": 387
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.358398,
+              "primary_ci95": [
+                0.34096,
+                0.376399
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.160575,
+              "confirm_ci95": [
+                0.143694,
+                0.177741
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.415876,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.078886,
+              "native_2q": 338,
+              "depth_total": 522
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.193331,
+          "confirm_mean": 0.183678,
+          "combined_mean": 0.188504,
+          "combined_median": 0.190918,
+          "marrakesh_matched_s2_s6_mean": 0.105399,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.179228,
+            0.208454
+          ],
+          "hierarchical_ci95_confirm": [
+            0.166657,
+            0.20257
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.179228,
+              0.208454
+            ],
+            "point_ci95_confirm": [
+              0.166657,
+              0.20257
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.062814,
+            "fh_hellinger": 0.004883,
+            "tvd": 0.995117,
+            "hop": 0.004883,
+            "linear_xeb": 79.0,
+            "shannon_entropy_bits": 9.783247
+          },
+          "observables_median": {
+            "fb_overlap": 0.054127,
+            "fh_hellinger": 0.00293,
+            "tvd": 0.99707,
+            "hop": 0.00293,
+            "linear_xeb": 47.0,
+            "shannon_entropy_bits": 9.807531
+          },
+          "structural_mean": {
+            "native_2q": 590.0,
+            "depth_total": 799.0,
+            "scheduled_duration_us": 19.976
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.205357,
+              "primary_ci95": [
+                0.186663,
+                0.224609
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.176479,
+              "confirm_ci95": [
+                0.157363,
+                0.194754
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.108817,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.076474,
+              "native_2q": 590,
+              "depth_total": 799
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.202706,
+              "primary_ci95": [
+                0.183172,
+                0.221819
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.196429,
+              "confirm_ci95": [
+                0.176754,
+                0.216936
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.107143,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.101001,
+              "native_2q": 590,
+              "depth_total": 799
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.194196,
+              "primary_ci95": [
+                0.175363,
+                0.21303
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.162807,
+              "confirm_ci95": [
+                0.144249,
+                0.181505
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.12221,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 590,
+              "depth_total": 799
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.186384,
+              "primary_ci95": [
+                0.167829,
+                0.20466
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.204799,
+              "confirm_ci95": [
+                0.186659,
+                0.22364
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.072823,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.060371,
+              "native_2q": 590,
+              "depth_total": 799
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.178013,
+              "primary_ci95": [
+                0.159459,
+                0.196432
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.177874,
+              "confirm_ci95": [
+                0.159734,
+                0.19713
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.116002,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.054127,
+              "native_2q": 590,
+              "depth_total": 799
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.539704,
+          "confirm_mean": 0.39587,
+          "combined_mean": 0.467787,
+          "combined_median": 0.473982,
+          "marrakesh_matched_s2_s6_mean": 0.639007,
+          "marrakesh_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.51559,
+            0.563449
+          ],
+          "hierarchical_ci95_confirm": [
+            0.362303,
+            0.434459
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 5,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.51559,
+              0.563449
+            ],
+            "point_ci95_confirm": [
+              0.362303,
+              0.434459
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.293235,
+            "fh_hellinger": 0.099219,
+            "tvd": 0.900781,
+            "hop": 0.099219,
+            "linear_xeb": 1624.6,
+            "shannon_entropy_bits": 8.231679
+          },
+          "observables_median": {
+            "fb_overlap": 0.305225,
+            "fh_hellinger": 0.094239,
+            "tvd": 0.905761,
+            "hop": 0.094239,
+            "linear_xeb": 1543.0,
+            "shannon_entropy_bits": 8.293851
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 278.0,
+            "scheduled_duration_us": 9.404
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.557757,
+              "primary_ci95": [
+                0.535575,
+                0.579803
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.458705,
+              "confirm_ci95": [
+                0.438198,
+                0.479496
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.638741,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.342324,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.517439,
+              "primary_ci95": [
+                0.492885,
+                0.541577
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.366769,
+              "confirm_ci95": [
+                0.345979,
+                0.387842
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.649554,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.307859,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.550084,
+              "primary_ci95": [
+                0.528871,
+                0.571014
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.415597,
+              "confirm_ci95": [
+                0.394392,
+                0.435826
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.638811,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.293981,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.511858,
+              "primary_ci95": [
+                0.489952,
+                0.533207
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.351702,
+              "confirm_ci95": [
+                0.33245,
+                0.371655
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.625349,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.23151,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.561384,
+              "primary_ci95": [
+                0.539478,
+                0.582868
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.386579,
+              "confirm_ci95": [
+                0.364397,
+                0.406669
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.642578,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.290501,
+              "native_2q": 272,
+              "depth_total": 278
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.544727,
+          "confirm_mean": 0.425112,
+          "combined_mean": 0.484919,
+          "combined_median": 0.484096,
+          "marrakesh_matched_s2_s6_mean": 0.643903,
+          "marrakesh_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.520199,
+            0.566832
+          ],
+          "hierarchical_ci95_confirm": [
+            0.391394,
+            0.461599
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 5,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.520199,
+              0.566832
+            ],
+            "point_ci95_confirm": [
+              0.391394,
+              0.461599
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.288138,
+            "fh_hellinger": 0.094336,
+            "tvd": 0.905664,
+            "hop": 0.094336,
+            "linear_xeb": 1544.6,
+            "shannon_entropy_bits": 8.178484
+          },
+          "observables_median": {
+            "fb_overlap": 0.305225,
+            "fh_hellinger": 0.094239,
+            "tvd": 0.905761,
+            "hop": 0.094239,
+            "linear_xeb": 1543.0,
+            "shannon_entropy_bits": 8.263365
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 278.0,
+            "scheduled_duration_us": 9.404
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.561244,
+              "primary_ci95": [
+                0.538923,
+                0.583705
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.48005,
+              "confirm_ci95": [
+                0.459678,
+                0.50112
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.654855,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.33994,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.53418,
+              "primary_ci95": [
+                0.510184,
+                0.558039
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.397182,
+              "confirm_ci95": [
+                0.37681,
+                0.417135
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.643136,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.297216,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.566267,
+              "primary_ci95": [
+                0.545197,
+                0.587057
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.460798,
+              "confirm_ci95": [
+                0.442519,
+                0.480476
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.651228,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.295162,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s5",
+              "primary_metric": 0.506836,
+              "primary_ci95": [
+                0.483674,
+                0.526646
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.374442,
+              "confirm_ci95": [
+                0.356163,
+                0.393136
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.625139,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.227473,
+              "native_2q": 272,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s6",
+              "primary_metric": 0.555106,
+              "primary_ci95": [
+                0.532087,
+                0.576451
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.413086,
+              "confirm_ci95": [
+                0.393694,
+                0.43178
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.645159,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.280898,
+              "native_2q": 272,
+              "depth_total": 278
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B2",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 15,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.256354,
+          "confirm_mean": 0.182318,
+          "combined_mean": 0.219336,
+          "combined_median": 0.20651,
+          "marrakesh_matched_s2_s6_mean": 0.294219,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.222199,
+            0.294142
+          ],
+          "hierarchical_ci95_confirm": [
+            0.140103,
+            0.229145
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.222199,
+              0.294142
+            ],
+            "point_ci95_confirm": [
+              0.140103,
+              0.229145
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.053308,
+            "fh_hellinger": 0.003906,
+            "tvd": 0.996094,
+            "hop": 0.003906,
+            "linear_xeb": 127.0,
+            "shannon_entropy_bits": 9.804063
+          },
+          "observables_median": {
+            "fb_overlap": 0.054127,
+            "fh_hellinger": 0.00293,
+            "tvd": 0.99707,
+            "hop": 0.00293,
+            "linear_xeb": 95.0,
+            "shannon_entropy_bits": 9.789577
+          },
+          "structural_mean": {
+            "native_2q": 340.2,
+            "depth_total": 449.2,
+            "scheduled_duration_us": 15.245
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.239323,
+              "primary_ci95": [
+                0.220833,
+                0.258203
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.173698,
+              "confirm_ci95": [
+                0.15625,
+                0.191149
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.268099,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.053347,
+              "native_2q": 387,
+              "depth_total": 499
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.21901,
+              "primary_ci95": [
+                0.199997,
+                0.2375
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.114714,
+              "confirm_ci95": [
+                0.096354,
+                0.132812
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.243359,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.027064,
+              "native_2q": 333,
+              "depth_total": 445
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.321094,
+              "primary_ci95": [
+                0.300781,
+                0.339974
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.266016,
+              "confirm_ci95": [
+                0.248047,
+                0.284639
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.317122,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.098697,
+              "native_2q": 329,
+              "depth_total": 402
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.282422,
+              "primary_ci95": [
+                0.264063,
+                0.301175
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.184245,
+              "confirm_ci95": [
+                0.166536,
+                0.200391
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.340234,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.038274,
+              "native_2q": 326,
+              "depth_total": 460
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.219922,
+              "primary_ci95": [
+                0.20182,
+                0.2375
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.172917,
+              "confirm_ci95": [
+                0.155596,
+                0.190368
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.302279,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.04916,
+              "native_2q": 326,
+              "depth_total": 440
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.114766,
+          "confirm_mean": 0.109635,
+          "combined_mean": 0.1122,
+          "combined_median": 0.125521,
+          "marrakesh_matched_s2_s6_mean": 0.11543,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.093983,
+            0.134896
+          ],
+          "hierarchical_ci95_confirm": [
+            0.088594,
+            0.129219
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.093983,
+              0.134896
+            ],
+            "point_ci95_confirm": [
+              0.088594,
+              0.129219
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.019207,
+            "fh_hellinger": 0.000781,
+            "tvd": 0.999219,
+            "hop": 0.000781,
+            "linear_xeb": 24.6,
+            "shannon_entropy_bits": 9.921585
+          },
+          "observables_median": {
+            "fb_overlap": 0.015625,
+            "fh_hellinger": 0.000489,
+            "tvd": 0.999511,
+            "hop": 0.000489,
+            "linear_xeb": 15.0,
+            "shannon_entropy_bits": 9.919663
+          },
+          "structural_mean": {
+            "native_2q": 708.0,
+            "depth_total": 1232.2,
+            "scheduled_duration_us": 29.994
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.117708,
+              "primary_ci95": [
+                0.10182,
+                0.134115
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.133594,
+              "confirm_ci95": [
+                0.117835,
+                0.149479
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.112174,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 732,
+              "depth_total": 1333
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.08776,
+              "primary_ci95": [
+                0.071351,
+                0.103906
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.079167,
+              "confirm_ci95": [
+                0.061458,
+                0.097656
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.132943,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 702,
+              "depth_total": 1207
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.141667,
+              "primary_ci95": [
+                0.124089,
+                0.158076
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.12513,
+              "confirm_ci95": [
+                0.109242,
+                0.142448
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.138607,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.042689,
+              "native_2q": 702,
+              "depth_total": 1207
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.134115,
+              "primary_ci95": [
+                0.117448,
+                0.150521
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.116927,
+              "confirm_ci95": [
+                0.100257,
+                0.134505
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.110677,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 702,
+              "depth_total": 1207
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.092578,
+              "primary_ci95": [
+                0.075908,
+                0.109378
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.093359,
+              "confirm_ci95": [
+                0.07734,
+                0.109375
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.082748,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 702,
+              "depth_total": 1207
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.522474,
+          "confirm_mean": 0.504531,
+          "combined_mean": 0.513503,
+          "combined_median": 0.513086,
+          "marrakesh_matched_s2_s6_mean": 0.583685,
+          "marrakesh_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.501219,
+            0.542215
+          ],
+          "hierarchical_ci95_confirm": [
+            0.482891,
+            0.524714
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.501219,
+              0.542215
+            ],
+            "point_ci95_confirm": [
+              0.482891,
+              0.524714
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.323987,
+            "fh_hellinger": 0.105566,
+            "tvd": 0.894434,
+            "hop": 0.105566,
+            "linear_xeb": 3458.2,
+            "shannon_entropy_bits": 8.388028
+          },
+          "observables_median": {
+            "fb_overlap": 0.323999,
+            "fh_hellinger": 0.104981,
+            "tvd": 0.895019,
+            "hop": 0.104981,
+            "linear_xeb": 3439.0,
+            "shannon_entropy_bits": 8.441149
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 300.0,
+            "scheduled_duration_us": 10.028
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.516276,
+              "primary_ci95": [
+                0.495703,
+                0.537113
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.509635,
+              "confirm_ci95": [
+                0.489193,
+                0.530729
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.583138,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.318674,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.492969,
+              "primary_ci95": [
+                0.469141,
+                0.517194
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.478646,
+              "confirm_ci95": [
+                0.454814,
+                0.50235
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.57194,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.33646,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.532161,
+              "primary_ci95": [
+                0.510677,
+                0.554948
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.495443,
+              "confirm_ci95": [
+                0.473561,
+                0.515628
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.601172,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.306335,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.55,
+              "primary_ci95": [
+                0.528255,
+                0.569798
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.533724,
+              "confirm_ci95": [
+                0.512106,
+                0.555472
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.594466,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.359012,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.520964,
+              "primary_ci95": [
+                0.499997,
+                0.540628
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.505208,
+              "confirm_ci95": [
+                0.485026,
+                0.525531
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.567708,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.299455,
+              "native_2q": 314,
+              "depth_total": 300
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.508385,
+          "confirm_mean": 0.492839,
+          "combined_mean": 0.500612,
+          "combined_median": 0.508529,
+          "marrakesh_matched_s2_s6_mean": 0.589076,
+          "marrakesh_matched_s2_s6_confirmed_passes": 5,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.475206,
+            0.538679
+          ],
+          "hierarchical_ci95_confirm": [
+            0.474348,
+            0.509792
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.475206,
+              0.538679
+            ],
+            "point_ci95_confirm": [
+              0.474348,
+              0.509792
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.317882,
+            "fh_hellinger": 0.10127,
+            "tvd": 0.89873,
+            "hop": 0.10127,
+            "linear_xeb": 3317.4,
+            "shannon_entropy_bits": 8.469282
+          },
+          "observables_median": {
+            "fb_overlap": 0.314835,
+            "fh_hellinger": 0.099121,
+            "tvd": 0.900879,
+            "hop": 0.099121,
+            "linear_xeb": 3247.0,
+            "shannon_entropy_bits": 8.515633
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 300.0,
+            "scheduled_duration_us": 10.028
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.486458,
+              "primary_ci95": [
+                0.465625,
+                0.507292
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.502865,
+              "confirm_ci95": [
+                0.481898,
+                0.523311
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.61237,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.317119,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.454427,
+              "primary_ci95": [
+                0.430596,
+                0.477868
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.466667,
+              "confirm_ci95": [
+                0.443359,
+                0.489193
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.567383,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.314835,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.545052,
+              "primary_ci95": [
+                0.523825,
+                0.565755
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.500781,
+              "confirm_ci95": [
+                0.478516,
+                0.522526
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.607683,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.328834,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s5",
+              "primary_metric": 0.53099,
+              "primary_ci95": [
+                0.510413,
+                0.552083
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.501823,
+              "confirm_ci95": [
+                0.479945,
+                0.522269
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.579036,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.321939,
+              "native_2q": 314,
+              "depth_total": 300
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s6",
+              "primary_metric": 0.525,
+              "primary_ci95": [
+                0.505856,
+                0.544665
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.492057,
+              "confirm_ci95": [
+                0.470697,
+                0.511986
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.578906,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.306684,
+              "native_2q": 314,
+              "depth_total": 300
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B3",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 16,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.252881,
+          "confirm_mean": 0.192896,
+          "combined_mean": 0.222888,
+          "combined_median": 0.245788,
+          "marrakesh_matched_s2_s6_mean": 0.386548,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.203137,
+            0.292686
+          ],
+          "hierarchical_ci95_confirm": [
+            0.158076,
+            0.224
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.203137,
+              0.292686
+            ],
+            "point_ci95_confirm": [
+              0.158076,
+              0.224
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.036237,
+            "fh_hellinger": 0.001856,
+            "tvd": 0.998144,
+            "hop": 0.001856,
+            "linear_xeb": 120.6,
+            "shannon_entropy_bits": 9.897433
+          },
+          "observables_median": {
+            "fb_overlap": 0.03125,
+            "fh_hellinger": 0.000977,
+            "tvd": 0.999023,
+            "hop": 0.000977,
+            "linear_xeb": 63.0,
+            "shannon_entropy_bits": 9.894383
+          },
+          "structural_mean": {
+            "native_2q": 375.0,
+            "depth_total": 469.0,
+            "scheduled_duration_us": 15.83
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.244019,
+              "primary_ci95": [
+                0.227045,
+                0.26062
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.165527,
+              "confirm_ci95": [
+                0.148312,
+                0.182983
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.279663,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.038274,
+              "native_2q": 375,
+              "depth_total": 472
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.295288,
+              "primary_ci95": [
+                0.278687,
+                0.313358
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.21106,
+              "confirm_ci95": [
+                0.195312,
+                0.227661
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.437805,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.027064,
+              "native_2q": 376,
+              "depth_total": 473
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.265381,
+              "primary_ci95": [
+                0.248166,
+                0.282959
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.226196,
+              "confirm_ci95": [
+                0.209961,
+                0.24353
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.405151,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.03125,
+              "native_2q": 382,
+              "depth_total": 461
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.300049,
+              "primary_ci95": [
+                0.282834,
+                0.317139
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.225342,
+              "confirm_ci95": [
+                0.208612,
+                0.243042
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.443054,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.037722,
+              "native_2q": 371,
+              "depth_total": 447
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.159668,
+              "primary_ci95": [
+                0.141479,
+                0.177499
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.136353,
+              "confirm_ci95": [
+                0.11853,
+                0.154297
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.367065,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.046875,
+              "native_2q": 371,
+              "depth_total": 492
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.06394,
+          "confirm_mean": 0.0625,
+          "combined_mean": 0.06322,
+          "combined_median": 0.072022,
+          "marrakesh_matched_s2_s6_mean": -0.021472,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.029221,
+            0.100984
+          ],
+          "hierarchical_ci95_confirm": [
+            0.026194,
+            0.104883
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.029221,
+              0.100984
+            ],
+            "point_ci95_confirm": [
+              0.026194,
+              0.104883
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.003125,
+            "fh_hellinger": 9.8e-05,
+            "tvd": 0.999902,
+            "hop": 9.8e-05,
+            "linear_xeb": 5.4,
+            "shannon_entropy_bits": 9.972509
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.970703
+          },
+          "structural_mean": {
+            "native_2q": 801.0,
+            "depth_total": 1352.0,
+            "scheduled_duration_us": 32.16
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.078613,
+              "primary_ci95": [
+                0.062622,
+                0.09595
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.073853,
+              "confirm_ci95": [
+                0.059079,
+                0.089603
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": -0.085938,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 801,
+              "depth_total": 1352
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.034424,
+              "primary_ci95": [
+                0.018188,
+                0.049808
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.010864,
+              "confirm_ci95": [
+                -0.005249,
+                0.02771
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": -0.051086,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 801,
+              "depth_total": 1352
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.011963,
+              "primary_ci95": [
+                -0.004031,
+                0.027588
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.019897,
+              "confirm_ci95": [
+                0.005615,
+                0.03479
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": -0.066956,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 801,
+              "depth_total": 1352
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.127319,
+              "primary_ci95": [
+                0.111816,
+                0.142822
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.131226,
+              "confirm_ci95": [
+                0.115479,
+                0.146484
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.030151,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 801,
+              "depth_total": 1352
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.067383,
+              "primary_ci95": [
+                0.052368,
+                0.08374
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.07666,
+              "confirm_ci95": [
+                0.060669,
+                0.092896
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.066467,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 801,
+              "depth_total": 1352
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.476221,
+          "confirm_mean": 0.404053,
+          "combined_mean": 0.440137,
+          "combined_median": 0.429748,
+          "marrakesh_matched_s2_s6_mean": 0.552698,
+          "marrakesh_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.450659,
+            0.505939
+          ],
+          "hierarchical_ci95_confirm": [
+            0.373458,
+            0.44124
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.450659,
+              0.505939
+            ],
+            "point_ci95_confirm": [
+              0.373458,
+              0.44124
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.190599,
+            "fh_hellinger": 0.041699,
+            "tvd": 0.958301,
+            "hop": 0.041699,
+            "linear_xeb": 2731.8,
+            "shannon_entropy_bits": 9.054025
+          },
+          "observables_median": {
+            "fb_overlap": 0.197082,
+            "fh_hellinger": 0.039062,
+            "tvd": 0.960938,
+            "hop": 0.039062,
+            "linear_xeb": 2559.0,
+            "shannon_entropy_bits": 9.062935
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 322.0,
+            "scheduled_duration_us": 10.652
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.471924,
+              "primary_ci95": [
+                0.451535,
+                0.49183
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.387573,
+              "confirm_ci95": [
+                0.367676,
+                0.406253
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.535828,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.173857,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.456909,
+              "primary_ci95": [
+                0.436523,
+                0.477539
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.360718,
+              "confirm_ci95": [
+                0.341187,
+                0.379517
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.533508,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.147314,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.444946,
+              "primary_ci95": [
+                0.424921,
+                0.465701
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.388794,
+              "confirm_ci95": [
+                0.369382,
+                0.407596
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.520813,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.168946,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.530884,
+              "primary_ci95": [
+                0.510739,
+                0.55079
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.473633,
+              "confirm_ci95": [
+                0.455075,
+                0.493542
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.603333,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.230862,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.47644,
+              "primary_ci95": [
+                0.456052,
+                0.497681
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.409546,
+              "confirm_ci95": [
+                0.389157,
+                0.430426
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.570007,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.232014,
+              "native_2q": 359,
+              "depth_total": 322
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.469898,
+          "confirm_mean": 0.410254,
+          "combined_mean": 0.440076,
+          "combined_median": 0.435303,
+          "marrakesh_matched_s2_s6_mean": 0.550549,
+          "marrakesh_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.448162,
+            0.492749
+          ],
+          "hierarchical_ci95_confirm": [
+            0.381201,
+            0.448048
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.448162,
+              0.492749
+            ],
+            "point_ci95_confirm": [
+              0.381201,
+              0.448048
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.193395,
+            "fh_hellinger": 0.042578,
+            "tvd": 0.957422,
+            "hop": 0.042578,
+            "linear_xeb": 2789.4,
+            "shannon_entropy_bits": 9.042174
+          },
+          "observables_median": {
+            "fb_overlap": 0.193518,
+            "fh_hellinger": 0.038086,
+            "tvd": 0.961914,
+            "hop": 0.038086,
+            "linear_xeb": 2495.0,
+            "shannon_entropy_bits": 9.000602
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 322.0,
+            "scheduled_duration_us": 10.652
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.469849,
+              "primary_ci95": [
+                0.447998,
+                0.489996
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.411011,
+              "confirm_ci95": [
+                0.392209,
+                0.429321
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.533996,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.18636,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.466064,
+              "primary_ci95": [
+                0.446045,
+                0.485962
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.378662,
+              "confirm_ci95": [
+                0.358759,
+                0.397827
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.536987,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.163274,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.438843,
+              "primary_ci95": [
+                0.418085,
+                0.459109
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.381226,
+              "confirm_ci95": [
+                0.361328,
+                0.400638
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.515991,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.171875,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s5",
+              "primary_metric": 0.506836,
+              "primary_ci95": [
+                0.486316,
+                0.52637
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.477661,
+              "confirm_ci95": [
+                0.459229,
+                0.496341
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.60614,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.229043,
+              "native_2q": 359,
+              "depth_total": 322
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s6",
+              "primary_metric": 0.467896,
+              "primary_ci95": [
+                0.446533,
+                0.489017
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.40271,
+              "confirm_ci95": [
+                0.380737,
+                0.423096
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.559632,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.216425,
+              "native_2q": 359,
+              "depth_total": 322
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B4",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 17,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.217877,
+          "confirm_mean": 0.182491,
+          "combined_mean": 0.200184,
+          "combined_median": 0.205538,
+          "marrakesh_matched_s2_s6_mean": 0.349609,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.182904,
+            0.252023
+          ],
+          "hierarchical_ci95_confirm": [
+            0.156821,
+            0.204689
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.182904,
+              0.252023
+            ],
+            "point_ci95_confirm": [
+              0.156821,
+              0.204689
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.036126,
+            "fh_hellinger": 0.001758,
+            "tvd": 0.998242,
+            "hop": 0.001758,
+            "linear_xeb": 229.4,
+            "shannon_entropy_bits": 9.950435
+          },
+          "observables_median": {
+            "fb_overlap": 0.037722,
+            "fh_hellinger": 0.001465,
+            "tvd": 0.998535,
+            "hop": 0.001465,
+            "linear_xeb": 191.0,
+            "shannon_entropy_bits": 9.951411
+          },
+          "structural_mean": {
+            "native_2q": 431.0,
+            "depth_total": 501.0,
+            "scheduled_duration_us": 17.214
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.15648,
+              "primary_ci95": [
+                0.139812,
+                0.173716
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.138212,
+              "confirm_ci95": [
+                0.122699,
+                0.154527
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.276712,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.03125,
+              "native_2q": 429,
+              "depth_total": 513
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.193359,
+              "primary_ci95": [
+                0.176123,
+                0.211512
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.176815,
+              "confirm_ci95": [
+                0.160156,
+                0.193822
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.403895,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 433,
+              "depth_total": 523
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.248736,
+              "primary_ci95": [
+                0.231962,
+                0.265062
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.19761,
+              "confirm_ci95": [
+                0.18187,
+                0.212893
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.418083,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.03125,
+              "native_2q": 434,
+              "depth_total": 495
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.227482,
+              "primary_ci95": [
+                0.209444,
+                0.24506
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.183594,
+              "confirm_ci95": [
+                0.167394,
+                0.200253
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.370175,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.037722,
+              "native_2q": 432,
+              "depth_total": 483
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.263327,
+              "primary_ci95": [
+                0.246665,
+                0.28102
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.216222,
+              "confirm_ci95": [
+                0.200132,
+                0.233459
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.279182,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.058314,
+              "native_2q": 427,
+              "depth_total": 491
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.081939,
+          "confirm_mean": 0.078217,
+          "combined_mean": 0.080078,
+          "combined_median": 0.09329,
+          "marrakesh_matched_s2_s6_mean": 0.127838,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.036829,
+            0.12227
+          ],
+          "hierarchical_ci95_confirm": [
+            0.022906,
+            0.121396
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.036829,
+              0.12227
+            ],
+            "point_ci95_confirm": [
+              0.022906,
+              0.121396
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.982934
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.983398
+          },
+          "structural_mean": {
+            "native_2q": 905.0,
+            "depth_total": 1399.0,
+            "scheduled_duration_us": 34.108
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.15154,
+              "primary_ci95": [
+                0.135797,
+                0.166823
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.141314,
+              "confirm_ci95": [
+                0.125227,
+                0.1566
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.196346,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 905,
+              "depth_total": 1399
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.085938,
+              "primary_ci95": [
+                0.06985,
+                0.10145
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.112592,
+              "confirm_ci95": [
+                0.097998,
+                0.126953
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.173196,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 905,
+              "depth_total": 1399
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": -0.00023,
+              "primary_ci95": [
+                -0.015283,
+                0.013902
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": -0.023782,
+              "confirm_ci95": [
+                -0.038603,
+                -0.009071
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.002068,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 905,
+              "depth_total": 1399
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.077091,
+              "primary_ci95": [
+                0.060892,
+                0.093408
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.069738,
+              "confirm_ci95": [
+                0.055262,
+                0.08364
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.116498,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 905,
+              "depth_total": 1399
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.095358,
+              "primary_ci95": [
+                0.08042,
+                0.109837
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.091222,
+              "confirm_ci95": [
+                0.075939,
+                0.105357
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.15108,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 905,
+              "depth_total": 1399
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.433502,
+          "confirm_mean": 0.362063,
+          "combined_mean": 0.397783,
+          "combined_median": 0.386604,
+          "marrakesh_matched_s2_s6_mean": 0.54568,
+          "marrakesh_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.411834,
+            0.459516
+          ],
+          "hierarchical_ci95_confirm": [
+            0.324619,
+            0.39638
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.411834,
+              0.459516
+            ],
+            "point_ci95_confirm": [
+              0.324619,
+              0.39638
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.172022,
+            "fh_hellinger": 0.033301,
+            "tvd": 0.966699,
+            "hop": 0.033301,
+            "linear_xeb": 4363.8,
+            "shannon_entropy_bits": 9.322019
+          },
+          "observables_median": {
+            "fb_overlap": 0.175247,
+            "fh_hellinger": 0.031739,
+            "tvd": 0.968261,
+            "hop": 0.031739,
+            "linear_xeb": 4159.0,
+            "shannon_entropy_bits": 9.354993
+          },
+          "structural_mean": {
+            "native_2q": 407.0,
+            "depth_total": 344.0,
+            "scheduled_duration_us": 11.276
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.415671,
+              "primary_ci95": [
+                0.394072,
+                0.436466
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.35409,
+              "confirm_ci95": [
+                0.333177,
+                0.375115
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.556296,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.158942,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.431985,
+              "primary_ci95": [
+                0.411411,
+                0.454274
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.398093,
+              "confirm_ci95": [
+                0.378553,
+                0.417854
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.558421,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.194188,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.420956,
+              "primary_ci95": [
+                0.399922,
+                0.441062
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.352252,
+              "confirm_ci95": [
+                0.332258,
+                0.371556
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.521714,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.159981,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.419807,
+              "primary_ci95": [
+                0.399124,
+                0.440947
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.297679,
+              "confirm_ci95": [
+                0.277803,
+                0.317443
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.53125,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.14846,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.47909,
+              "primary_ci95": [
+                0.45818,
+                0.498509
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.408203,
+              "confirm_ci95": [
+                0.389246,
+                0.427163
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.560719,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.198541,
+              "native_2q": 407,
+              "depth_total": 344
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.428217,
+          "confirm_mean": 0.365487,
+          "combined_mean": 0.396852,
+          "combined_median": 0.394014,
+          "marrakesh_matched_s2_s6_mean": 0.539189,
+          "marrakesh_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.409903,
+            0.446438
+          ],
+          "hierarchical_ci95_confirm": [
+            0.322775,
+            0.406182
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.409903,
+              0.446438
+            ],
+            "point_ci95_confirm": [
+              0.322775,
+              0.406182
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.171229,
+            "fh_hellinger": 0.032227,
+            "tvd": 0.967774,
+            "hop": 0.032227,
+            "linear_xeb": 4223.0,
+            "shannon_entropy_bits": 9.339393
+          },
+          "observables_median": {
+            "fb_overlap": 0.191555,
+            "fh_hellinger": 0.037109,
+            "tvd": 0.96289,
+            "hop": 0.037109,
+            "linear_xeb": 4863.0,
+            "shannon_entropy_bits": 9.273345
+          },
+          "structural_mean": {
+            "native_2q": 407.0,
+            "depth_total": 344.0,
+            "scheduled_duration_us": 11.276
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s2",
+              "primary_metric": 0.43256,
+              "primary_ci95": [
+                0.409697,
+                0.454389
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.355469,
+              "confirm_ci95": [
+                0.335363,
+                0.376034
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.515108,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.164841,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s3",
+              "primary_metric": 0.421415,
+              "primary_ci95": [
+                0.400043,
+                0.44267
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.41705,
+              "confirm_ci95": [
+                0.397513,
+                0.436354
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.567325,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.192701,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s4",
+              "primary_metric": 0.423139,
+              "primary_ci95": [
+                0.401884,
+                0.444968
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.343176,
+              "confirm_ci95": [
+                0.324563,
+                0.36271
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.527689,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.157797,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s5",
+              "primary_metric": 0.409007,
+              "primary_ci95": [
+                0.388095,
+                0.430722
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.294347,
+              "confirm_ci95": [
+                0.274581,
+                0.313192
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.534639,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.15653,
+              "native_2q": 407,
+              "depth_total": 344
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W17__L1__s6",
+              "primary_metric": 0.454963,
+              "primary_ci95": [
+                0.43623,
+                0.47392
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.417394,
+              "confirm_ci95": [
+                0.39832,
+                0.43532
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.551184,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.184276,
+              "native_2q": 407,
+              "depth_total": 344
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B5",
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 10,
+      "rounds": 2,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "r_approx",
+      "viability_threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.196667,
+          "confirm_mean": 0.135859,
+          "combined_mean": 0.166263,
+          "combined_median": 0.154486,
+          "marrakesh_matched_s2_s6_mean": 0.149603,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.159753,
+            0.238049
+          ],
+          "hierarchical_ci95_confirm": [
+            0.065968,
+            0.208991
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.159753,
+              0.238049
+            ],
+            "point_ci95_confirm": [
+              0.065968,
+              0.208991
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.574172,
+            "fh_hellinger": 0.335648,
+            "tvd": 0.696558,
+            "hop": 0.649317,
+            "linear_xeb": 1.942857,
+            "shannon_entropy_bits": 8.892501
+          },
+          "observables_median": {
+            "fb_overlap": 0.581463,
+            "fh_hellinger": 0.338179,
+            "tvd": 0.694456,
+            "hop": 0.663574,
+            "linear_xeb": 1.939234,
+            "shannon_entropy_bits": 8.870469
+          },
+          "structural_mean": {
+            "native_2q": 467.2,
+            "depth_total": 671.4,
+            "scheduled_duration_us": 24.67
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.1977,
+              "primary_ci95": [
+                0.171224,
+                0.224687
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.062138,
+              "confirm_ci95": [
+                0.037977,
+                0.084927
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.166015,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.506979,
+              "native_2q": 460,
+              "depth_total": 664
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.196317,
+              "primary_ci95": [
+                0.173659,
+                0.218362
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.195703,
+              "confirm_ci95": [
+                0.175335,
+                0.217188
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.116015,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.652168,
+              "native_2q": 471,
+              "depth_total": 639
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.268736,
+              "primary_ci95": [
+                0.243996,
+                0.29239
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.248626,
+              "confirm_ci95": [
+                0.224899,
+                0.273226
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.169596,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.65458,
+              "native_2q": 466,
+              "depth_total": 698
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.181389,
+              "primary_ci95": [
+                0.158014,
+                0.204073
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.127583,
+              "confirm_ci95": [
+                0.104453,
+                0.150773
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.163054,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.542068,
+              "native_2q": 468,
+              "depth_total": 669
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.139193,
+              "primary_ci95": [
+                0.118228,
+                0.16029
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.045247,
+              "confirm_ci95": [
+                0.022518,
+                0.069207
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.133333,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.515062,
+              "native_2q": 471,
+              "depth_total": 687
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.141643,
+          "confirm_mean": 0.137083,
+          "combined_mean": 0.139363,
+          "combined_median": 0.134838,
+          "marrakesh_matched_s2_s6_mean": 0.21911,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.12186,
+            0.163058
+          ],
+          "hierarchical_ci95_confirm": [
+            0.113384,
+            0.161929
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.12186,
+              0.163058
+            ],
+            "point_ci95_confirm": [
+              0.113384,
+              0.161929
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.557747,
+            "fh_hellinger": 0.311225,
+            "tvd": 0.712791,
+            "hop": 0.614356,
+            "linear_xeb": 1.658711,
+            "shannon_entropy_bits": 8.973978
+          },
+          "observables_median": {
+            "fb_overlap": 0.559727,
+            "fh_hellinger": 0.313301,
+            "tvd": 0.712163,
+            "hop": 0.617188,
+            "linear_xeb": 1.488614,
+            "shannon_entropy_bits": 8.984932
+          },
+          "structural_mean": {
+            "native_2q": 554.0,
+            "depth_total": 772.0,
+            "scheduled_duration_us": 20.348
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.13954,
+              "primary_ci95": [
+                0.113571,
+                0.165292
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.130136,
+              "confirm_ci95": [
+                0.104888,
+                0.156617
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.253146,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.54183,
+              "native_2q": 554,
+              "depth_total": 772
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.136496,
+              "primary_ci95": [
+                0.116009,
+                0.15743
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.105971,
+              "confirm_ci95": [
+                0.085991,
+                0.126006
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.175167,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.567654,
+              "native_2q": 554,
+              "depth_total": 772
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.148727,
+              "primary_ci95": [
+                0.123045,
+                0.174336
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.144531,
+              "confirm_ci95": [
+                0.119929,
+                0.168264
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.244394,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.561554,
+              "native_2q": 554,
+              "depth_total": 772
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.168347,
+              "primary_ci95": [
+                0.144909,
+                0.19166
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.173135,
+              "confirm_ci95": [
+                0.150575,
+                0.195001
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.223853,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.56304,
+              "native_2q": 554,
+              "depth_total": 772
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.115104,
+              "primary_ci95": [
+                0.0916,
+                0.138346
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.131641,
+              "confirm_ci95": [
+                0.108659,
+                0.154819
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.198991,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.554661,
+              "native_2q": 554,
+              "depth_total": 772
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.358148,
+          "confirm_mean": 0.289886,
+          "combined_mean": 0.324017,
+          "combined_median": 0.322302,
+          "marrakesh_matched_s2_s6_mean": 0.26523,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.329169,
+            0.387684
+          ],
+          "hierarchical_ci95_confirm": [
+            0.264968,
+            0.314906
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.329169,
+              0.387684
+            ],
+            "point_ci95_confirm": [
+              0.264968,
+              0.314906
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.734699,
+            "fh_hellinger": 0.540852,
+            "tvd": 0.537342,
+            "hop": 0.759277,
+            "linear_xeb": 5.383812,
+            "shannon_entropy_bits": 8.569729
+          },
+          "observables_median": {
+            "fb_overlap": 0.74389,
+            "fh_hellinger": 0.553385,
+            "tvd": 0.527313,
+            "hop": 0.771972,
+            "linear_xeb": 5.066396,
+            "shannon_entropy_bits": 8.527052
+          },
+          "structural_mean": {
+            "native_2q": 262.0,
+            "depth_total": 219.2,
+            "scheduled_duration_us": 7.61
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.406467,
+              "primary_ci95": [
+                0.381149,
+                0.431424
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.310692,
+              "confirm_ci95": [
+                0.283709,
+                0.337023
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.311704,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.735842,
+              "native_2q": 262,
+              "depth_total": 222
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.316908,
+              "primary_ci95": [
+                0.293352,
+                0.339121
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.293973,
+              "confirm_ci95": [
+                0.274273,
+                0.315068
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.22899,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.752107,
+              "native_2q": 262,
+              "depth_total": 220
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.37377,
+              "primary_ci95": [
+                0.351416,
+                0.397644
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.270833,
+              "confirm_ci95": [
+                0.246231,
+                0.294996
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.268736,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.725446,
+              "native_2q": 262,
+              "depth_total": 220
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.346396,
+              "primary_ci95": [
+                0.321888,
+                0.369648
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.258569,
+              "confirm_ci95": [
+                0.235126,
+                0.282573
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.262066,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.71621,
+              "native_2q": 262,
+              "depth_total": 216
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.347201,
+              "primary_ci95": [
+                0.322266,
+                0.370247
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.315365,
+              "confirm_ci95": [
+                0.292381,
+                0.339269
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.254655,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.74389,
+              "native_2q": 262,
+              "depth_total": 218
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.354734,
+          "confirm_mean": 0.300154,
+          "combined_mean": 0.327444,
+          "combined_median": 0.319553,
+          "marrakesh_matched_s2_s6_mean": 0.263379,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.33017,
+            0.383511
+          ],
+          "hierarchical_ci95_confirm": [
+            0.277887,
+            0.323419
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 5,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.33017,
+              0.383511
+            ],
+            "point_ci95_confirm": [
+              0.277887,
+              0.323419
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.739389,
+            "fh_hellinger": 0.547473,
+            "tvd": 0.530281,
+            "hop": 0.771191,
+            "linear_xeb": 5.442364,
+            "shannon_entropy_bits": 8.542682
+          },
+          "observables_median": {
+            "fb_overlap": 0.748686,
+            "fh_hellinger": 0.560531,
+            "tvd": 0.521215,
+            "hop": 0.768555,
+            "linear_xeb": 5.151237,
+            "shannon_entropy_bits": 8.519039
+          },
+          "structural_mean": {
+            "native_2q": 262.0,
+            "depth_total": 219.2,
+            "scheduled_duration_us": 7.61
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s2",
+              "primary_metric": 0.398799,
+              "primary_ci95": [
+                0.374058,
+                0.42506
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.306351,
+              "confirm_ci95": [
+                0.279948,
+                0.333049
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.297019,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.739754,
+              "native_2q": 262,
+              "depth_total": 222
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s3",
+              "primary_metric": 0.335045,
+              "primary_ci95": [
+                0.313551,
+                0.355972
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.299386,
+              "confirm_ci95": [
+                0.278013,
+                0.320381
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.230887,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.759217,
+              "native_2q": 262,
+              "depth_total": 220
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s4",
+              "primary_metric": 0.361907,
+              "primary_ci95": [
+                0.337312,
+                0.386359
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.277199,
+              "confirm_ci95": [
+                0.251517,
+                0.303532
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.285952,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.721256,
+              "native_2q": 262,
+              "depth_total": 220
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s5",
+              "primary_metric": 0.351941,
+              "primary_ci95": [
+                0.328312,
+                0.374685
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.283392,
+              "confirm_ci95": [
+                0.259575,
+                0.306894
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.260553,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.728034,
+              "native_2q": 262,
+              "depth_total": 216
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W10__L2__s6",
+              "primary_metric": 0.325977,
+              "primary_ci95": [
+                0.303514,
+                0.349805
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.33444,
+              "confirm_ci95": [
+                0.309894,
+                0.358271
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.24248,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.748686,
+              "native_2q": 262,
+              "depth_total": 218
+            }
+          ]
+        }
+      }
+    },
+    {
+      "boundary_id": "B6",
+      "family": "F3_Random_SU4",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 15,
+      "rounds": 2,
+      "n_instances": 5,
+      "instance_seed_range": "s2..s6 (paired portability repeat of Stage 5.2; never pooled to inflate N)",
+      "primary_metric_name": "hop",
+      "viability_threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.633594,
+          "confirm_mean": 0.608789,
+          "combined_mean": 0.621191,
+          "combined_median": 0.610351,
+          "marrakesh_matched_s2_s6_mean": 0.610644,
+          "marrakesh_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.595508,
+            0.673242
+          ],
+          "hierarchical_ci95_confirm": [
+            0.580273,
+            0.636333
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.595508,
+              0.673242
+            ],
+            "point_ci95_confirm": [
+              0.580273,
+              0.636333
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.182263,
+            "fh_hellinger": 0.0333,
+            "tvd": 0.955396,
+            "hop": 0.621191,
+            "linear_xeb": 0.471859,
+            "shannon_entropy_bits": 9.960178
+          },
+          "observables_median": {
+            "fb_overlap": 0.184192,
+            "fh_hellinger": 0.033927,
+            "tvd": 0.954781,
+            "hop": 0.620117,
+            "linear_xeb": 0.482858,
+            "shannon_entropy_bits": 9.962891
+          },
+          "structural_mean": {
+            "native_2q": 159.8,
+            "depth_total": 153.0,
+            "scheduled_duration_us": 6.242
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.579102,
+              "primary_ci95": [
+                0.549805,
+                0.609375
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.607422,
+              "confirm_ci95": [
+                0.577148,
+                0.636719
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.590332,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.173694,
+              "native_2q": 172,
+              "depth_total": 162
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.632812,
+              "primary_ci95": [
+                0.601562,
+                0.663086
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.626953,
+              "confirm_ci95": [
+                0.597656,
+                0.655273
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.628418,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.18477,
+              "native_2q": 163,
+              "depth_total": 184
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.613281,
+              "primary_ci95": [
+                0.582031,
+                0.643555
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.587891,
+              "confirm_ci95": [
+                0.556641,
+                0.618164
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.578614,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.179773,
+              "native_2q": 178,
+              "depth_total": 156
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.642578,
+              "primary_ci95": [
+                0.612305,
+                0.671875
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.578125,
+              "confirm_ci95": [
+                0.546875,
+                0.607422
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.629883,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.179779,
+              "native_2q": 157,
+              "depth_total": 149
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.700195,
+              "primary_ci95": [
+                0.671875,
+                0.728516
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.643555,
+              "confirm_ci95": [
+                0.614258,
+                0.671875
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.625976,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.193302,
+              "native_2q": 129,
+              "depth_total": 114
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.544727,
+          "confirm_mean": 0.516601,
+          "combined_mean": 0.530664,
+          "combined_median": 0.535644,
+          "marrakesh_matched_s2_s6_mean": 0.534668,
+          "marrakesh_matched_s2_s6_confirmed_passes": 0,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.519141,
+            0.568359
+          ],
+          "hierarchical_ci95_confirm": [
+            0.491206,
+            0.542969
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 3,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.519141,
+              0.568359
+            ],
+            "point_ci95_confirm": [
+              0.491206,
+              0.542969
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.158247,
+            "fh_hellinger": 0.02508,
+            "tvd": 0.966319,
+            "hop": 0.530664,
+            "linear_xeb": 0.094977,
+            "shannon_entropy_bits": 9.970825
+          },
+          "observables_median": {
+            "fb_overlap": 0.15767,
+            "fh_hellinger": 0.02486,
+            "tvd": 0.966527,
+            "hop": 0.532226,
+            "linear_xeb": 0.09275,
+            "shannon_entropy_bits": 9.969727
+          },
+          "structural_mean": {
+            "native_2q": 295.6,
+            "depth_total": 419.4,
+            "scheduled_duration_us": 11.407
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.55957,
+              "primary_ci95": [
+                0.530249,
+                0.588867
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.517578,
+              "confirm_ci95": [
+                0.486328,
+                0.547852
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.534668,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.160179,
+              "native_2q": 280,
+              "depth_total": 321
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.508789,
+              "primary_ci95": [
+                0.477539,
+                0.541016
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.499023,
+              "confirm_ci95": [
+                0.469727,
+                0.531274
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.517578,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.150469,
+              "native_2q": 355,
+              "depth_total": 523
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.542969,
+              "primary_ci95": [
+                0.513672,
+                0.57229
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.495117,
+              "confirm_ci95": [
+                0.463867,
+                0.524414
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "marrakesh_matched_combined_metric": 0.53418,
+              "marrakesh_matched_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.155652,
+              "native_2q": 337,
+              "depth_total": 508
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.5625,
+              "primary_ci95": [
+                0.533179,
+                0.592773
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.549805,
+              "confirm_ci95": [
+                0.519531,
+                0.580078
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.536621,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.167957,
+              "native_2q": 244,
+              "depth_total": 357
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.549805,
+              "primary_ci95": [
+                0.520508,
+                0.580103
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.521484,
+              "confirm_ci95": [
+                0.491211,
+                0.552734
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.550293,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.156976,
+              "native_2q": 262,
+              "depth_total": 388
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.623047,
+          "confirm_mean": 0.610547,
+          "combined_mean": 0.616797,
+          "combined_median": 0.603516,
+          "marrakesh_matched_s2_s6_mean": 0.632129,
+          "marrakesh_matched_s2_s6_confirmed_passes": 3,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.592383,
+            0.654492
+          ],
+          "hierarchical_ci95_confirm": [
+            0.576948,
+            0.653135
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 4,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.592383,
+              0.654492
+            ],
+            "point_ci95_confirm": [
+              0.576948,
+              0.653135
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.181311,
+            "fh_hellinger": 0.03295,
+            "tvd": 0.955762,
+            "hop": 0.616797,
+            "linear_xeb": 0.459187,
+            "shannon_entropy_bits": 9.961033
+          },
+          "observables_median": {
+            "fb_overlap": 0.17671,
+            "fh_hellinger": 0.031226,
+            "tvd": 0.958195,
+            "hop": 0.599609,
+            "linear_xeb": 0.378608,
+            "shannon_entropy_bits": 9.958984
+          },
+          "structural_mean": {
+            "native_2q": 173.0,
+            "depth_total": 154.4,
+            "scheduled_duration_us": 6.506
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.597656,
+              "primary_ci95": [
+                0.567383,
+                0.626953
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.59375,
+              "confirm_ci95": [
+                0.564453,
+                0.623047
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.603515,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.173172,
+              "native_2q": 190,
+              "depth_total": 175
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.645508,
+              "primary_ci95": [
+                0.614258,
+                0.673828
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.573242,
+              "confirm_ci95": [
+                0.542969,
+                0.604492
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.661133,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.181953,
+              "native_2q": 169,
+              "depth_total": 147
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.605469,
+              "primary_ci95": [
+                0.575195,
+                0.635742
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.601562,
+              "confirm_ci95": [
+                0.572266,
+                0.630859
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.594238,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.178104,
+              "native_2q": 190,
+              "depth_total": 179
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.597656,
+              "primary_ci95": [
+                0.569336,
+                0.626953
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.59668,
+              "confirm_ci95": [
+                0.566406,
+                0.62793
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.626464,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.17671,
+              "native_2q": 172,
+              "depth_total": 154
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.668945,
+              "primary_ci95": [
+                0.640625,
+                0.698242
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.6875,
+              "confirm_ci95": [
+                0.657227,
+                0.713892
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.675293,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.196615,
+              "native_2q": 144,
+              "depth_total": 117
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.629688,
+          "confirm_mean": 0.600977,
+          "combined_mean": 0.615332,
+          "combined_median": 0.617676,
+          "marrakesh_matched_s2_s6_mean": 0.624609,
+          "marrakesh_matched_s2_s6_confirmed_passes": 4,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.597456,
+            0.666216
+          ],
+          "hierarchical_ci95_confirm": [
+            0.560937,
+            0.643564
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 3,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.597456,
+              0.666216
+            ],
+            "point_ci95_confirm": [
+              0.560937,
+              0.643564
+            ],
+            "threshold": 0.58
+          },
+          "observables_mean": {
+            "fb_overlap": 0.183774,
+            "fh_hellinger": 0.033929,
+            "tvd": 0.954001,
+            "hop": 0.615332,
+            "linear_xeb": 0.517834,
+            "shannon_entropy_bits": 9.959544
+          },
+          "observables_median": {
+            "fb_overlap": 0.181474,
+            "fh_hellinger": 0.032933,
+            "tvd": 0.955641,
+            "hop": 0.61084,
+            "linear_xeb": 0.467247,
+            "shannon_entropy_bits": 9.959961
+          },
+          "structural_mean": {
+            "native_2q": 161.0,
+            "depth_total": 145.6,
+            "scheduled_duration_us": 5.982
+          },
+          "instances": [
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s2",
+              "primary_metric": 0.603516,
+              "primary_ci95": [
+                0.575195,
+                0.633789
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.560547,
+              "confirm_ci95": [
+                0.529272,
+                0.592773
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.590332,
+              "marrakesh_matched_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.172531,
+              "native_2q": 172,
+              "depth_total": 162
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s3",
+              "primary_metric": 0.636719,
+              "primary_ci95": [
+                0.609351,
+                0.665039
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.610352,
+              "confirm_ci95": [
+                0.582031,
+                0.639648
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.682617,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.189725,
+              "native_2q": 169,
+              "depth_total": 147
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s4",
+              "primary_metric": 0.624023,
+              "primary_ci95": [
+                0.59375,
+                0.65332
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.611328,
+              "confirm_ci95": [
+                0.582031,
+                0.641602
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.616211,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.183783,
+              "native_2q": 178,
+              "depth_total": 156
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s5",
+              "primary_metric": 0.59375,
+              "primary_ci95": [
+                0.564453,
+                0.623047
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.551758,
+              "confirm_ci95": [
+                0.521484,
+                0.584961
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "marrakesh_matched_combined_metric": 0.61377,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.172048,
+              "native_2q": 157,
+              "depth_total": 149
+            },
+            {
+              "workload_id": "F3_Random_SU4__C1_Sparse_NonLocal__W15__L2__s6",
+              "primary_metric": 0.69043,
+              "primary_ci95": [
+                0.662109,
+                0.71875
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.670898,
+              "confirm_ci95": [
+                0.642554,
+                0.700195
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "marrakesh_matched_combined_metric": 0.620117,
+              "marrakesh_matched_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.200784,
+              "native_2q": 129,
+              "depth_total": 114
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "original_private_settled_ledger_sha256": "1c120786c61381b1a25bd3084f638b0ce2e0644f14cc0cc3e9c1ed958e99143f",
+  "raw_counts_file": "stage5_3a_ibm_fez_raw_pub_counts.json"
+}

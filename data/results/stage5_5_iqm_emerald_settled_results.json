@@ -1,0 +1,4013 @@
+{
+  "scored_utc": "2026-11-16T07:10:40.959665+00:00",
+  "stage": "Stage_5.5_IQM_Emerald_Targeted_Cross_Architecture_Check_Window_1",
+  "backend": "emerald",
+  "reporting_guardrails": {
+    "cross_family_primary_average_prohibited": true,
+    "strict_instance_mece_distinguished_from_majority_vote": true,
+    "boundary_framing": "candidate_operating_boundaries_not_monotonic_width_cutoffs"
+  },
+  "n_jobs": 4,
+  "total_pubs": 240,
+  "total_physical_shots": 245760,
+  "billing_audit": {
+    "forecast_billed_credits": 88.5,
+    "settled_charged_credits": 97.5,
+    "delta_credits": 9.0,
+    "remaining_iqm_pool_credits": 48.0
+  },
+  "raw_counts_archive": "stage5_5_iqm_raw_pub_counts.json",
+  "raw_counts_archive_sha256": "a6560ca53ef8fa3049c2943d05fffd7a15a89c6644570891516d8573a5c1506a",
+  "settled_jobs": [
+    {
+      "job_manifest_id": "Stage_5.5_IQM_Win1_Primary__Job01",
+      "hardware_job_id": "01a1e32d-7c08-76d6-9e3a-aa1f1613cedf",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_credits": 21.75,
+      "settled_charged_credits": 21.75,
+      "job_telemetry": {
+        "job_id": "01a1e32d-7c08-76d6-9e3a-aa1f1613cedf",
+        "calibration_set_id": "7136ccfe-4227-4014-a26c-dceb0916e410",
+        "active_execution_s": 26.09212,
+        "station_compile_s": 2.658854,
+        "end_to_end_wall_s": 52.600896,
+        "timeline": {
+          "created": "2026-11-16T07:06:11.336592+00:00",
+          "received": "2026-11-16T07:06:13.298250+00:00",
+          "validation_started": "2026-11-16T07:06:13.480116+00:00",
+          "validation_ended": "2026-11-16T07:06:14.320102+00:00",
+          "compilation_started": "2026-11-16T07:06:14.414351+00:00",
+          "compilation_ended": "2026-11-16T07:06:17.073205+00:00",
+          "execution_started": "2026-11-16T07:06:37.152719+00:00",
+          "execution_ended": "2026-11-16T07:07:03.244839+00:00",
+          "post_processing_started": "2026-11-16T07:07:03.246711+00:00",
+          "post_processing_ended": "2026-11-16T07:07:03.378146+00:00",
+          "ready": "2026-11-16T07:07:03.384936+00:00",
+          "completed": "2026-11-16T07:07:03.937488+00:00"
+        },
+        "qpu_pulse_execution_s": 25.594589183999997,
+        "sweep_execution_estimate_s": 28.094589183999997,
+        "playlist_repeats": 1024,
+        "server_compilation_s": 2.658854,
+        "server_execution_s": 26.09212,
+        "server_runtime_s": 28.750974,
+        "billed_seconds": 29.0,
+        "payg_rate_credits_per_s": 0.75,
+        "charged_credits": 21.75,
+        "unrounded_runtime_credits": 21.5632,
+        "dashboard_url": "01a1e32d-7c08-76d6-9e3a-aa1f1613cedf"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.5_IQM_Win1_Primary__Job02",
+      "hardware_job_id": "01a1e32d-fde6-7597-a3d7-b20d4b8fc534",
+      "pass_type": "Primary",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_credits": 22.5,
+      "settled_charged_credits": 25.5,
+      "job_telemetry": {
+        "job_id": "01a1e32d-fde6-7597-a3d7-b20d4b8fc534",
+        "calibration_set_id": "7136ccfe-4227-4014-a26c-dceb0916e410",
+        "active_execution_s": 30.772788,
+        "station_compile_s": 3.079756,
+        "end_to_end_wall_s": 68.399819,
+        "timeline": {
+          "created": "2026-11-16T07:06:44.583020+00:00",
+          "received": "2026-11-16T07:06:46.947598+00:00",
+          "validation_started": "2026-11-16T07:06:47.055285+00:00",
+          "validation_ended": "2026-11-16T07:06:47.969526+00:00",
+          "compilation_started": "2026-11-16T07:06:48.062953+00:00",
+          "compilation_ended": "2026-11-16T07:06:51.142709+00:00",
+          "execution_started": "2026-11-16T07:07:21.501461+00:00",
+          "execution_ended": "2026-11-16T07:07:52.274249+00:00",
+          "post_processing_started": "2026-11-16T07:07:52.276140+00:00",
+          "post_processing_ended": "2026-11-16T07:07:52.400101+00:00",
+          "ready": "2026-11-16T07:07:52.407407+00:00",
+          "completed": "2026-11-16T07:07:52.982839+00:00"
+        },
+        "qpu_pulse_execution_s": 25.72861439999999,
+        "sweep_execution_estimate_s": 28.22861439999999,
+        "playlist_repeats": 1024,
+        "server_compilation_s": 3.079756,
+        "server_execution_s": 30.772788,
+        "server_runtime_s": 33.852544,
+        "billed_seconds": 34.0,
+        "payg_rate_credits_per_s": 0.75,
+        "charged_credits": 25.5,
+        "unrounded_runtime_credits": 25.3894,
+        "dashboard_url": "01a1e32d-fde6-7597-a3d7-b20d4b8fc534"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.5_IQM_Win1_Confirm__Job01",
+      "hardware_job_id": "01a1e32f-7628-74e9-abf5-bc6deb6c9058",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_credits": 21.75,
+      "settled_charged_credits": 28.5,
+      "job_telemetry": {
+        "job_id": "01a1e32f-7628-74e9-abf5-bc6deb6c9058",
+        "calibration_set_id": "7136ccfe-4227-4014-a26c-dceb0916e410",
+        "active_execution_s": 34.819927,
+        "station_compile_s": 2.889677,
+        "end_to_end_wall_s": 73.621212,
+        "timeline": {
+          "created": "2026-11-16T07:08:20.904893+00:00",
+          "received": "2026-11-16T07:08:24.366113+00:00",
+          "validation_started": "2026-11-16T07:08:24.470053+00:00",
+          "validation_ended": "2026-11-16T07:08:25.328440+00:00",
+          "compilation_started": "2026-11-16T07:08:25.423933+00:00",
+          "compilation_ended": "2026-11-16T07:08:28.313610+00:00",
+          "execution_started": "2026-11-16T07:08:59.024826+00:00",
+          "execution_ended": "2026-11-16T07:09:33.844753+00:00",
+          "post_processing_started": "2026-11-16T07:09:33.851768+00:00",
+          "post_processing_ended": "2026-11-16T07:09:33.978534+00:00",
+          "ready": "2026-11-16T07:09:33.985400+00:00",
+          "completed": "2026-11-16T07:09:34.526105+00:00"
+        },
+        "qpu_pulse_execution_s": 25.572700160000004,
+        "sweep_execution_estimate_s": 28.072700160000004,
+        "playlist_repeats": 1024,
+        "server_compilation_s": 2.889677,
+        "server_execution_s": 34.819927,
+        "server_runtime_s": 37.709604,
+        "billed_seconds": 38.0,
+        "payg_rate_credits_per_s": 0.75,
+        "charged_credits": 28.5,
+        "unrounded_runtime_credits": 28.2822,
+        "dashboard_url": "01a1e32f-7628-74e9-abf5-bc6deb6c9058"
+      }
+    },
+    {
+      "job_manifest_id": "Stage_5.5_IQM_Win1_Confirm__Job02",
+      "hardware_job_id": "01a1e32f-f4bf-73e3-a312-d6414619dd8f",
+      "pass_type": "Confirm",
+      "n_pubs": 60,
+      "total_physical_shots": 61440,
+      "forecast_billed_credits": 22.5,
+      "settled_charged_credits": 21.75,
+      "job_telemetry": {
+        "job_id": "01a1e32f-f4bf-73e3-a312-d6414619dd8f",
+        "calibration_set_id": "7136ccfe-4227-4014-a26c-dceb0916e410",
+        "active_execution_s": 25.123746,
+        "station_compile_s": 3.40608,
+        "end_to_end_wall_s": 66.259612,
+        "timeline": {
+          "created": "2026-11-16T07:08:53.311263+00:00",
+          "received": "2026-11-16T07:08:56.624926+00:00",
+          "validation_started": "2026-11-16T07:08:56.727120+00:00",
+          "validation_ended": "2026-11-16T07:08:57.573903+00:00",
+          "compilation_started": "2026-11-16T07:08:57.678956+00:00",
+          "compilation_ended": "2026-11-16T07:09:01.085036+00:00",
+          "execution_started": "2026-11-16T07:09:33.755788+00:00",
+          "execution_ended": "2026-11-16T07:09:58.879534+00:00",
+          "post_processing_started": "2026-11-16T07:09:58.886579+00:00",
+          "post_processing_ended": "2026-11-16T07:09:59.037959+00:00",
+          "ready": "2026-11-16T07:09:59.044514+00:00",
+          "completed": "2026-11-16T07:09:59.570875+00:00"
+        },
+        "qpu_pulse_execution_s": 25.750503424000005,
+        "sweep_execution_estimate_s": 28.250503424000005,
+        "playlist_repeats": 1024,
+        "server_compilation_s": 3.40608,
+        "server_execution_s": 25.123746,
+        "server_runtime_s": 28.529826,
+        "billed_seconds": 29.0,
+        "payg_rate_credits_per_s": 0.75,
+        "charged_credits": 21.75,
+        "unrounded_runtime_credits": 21.3974,
+        "dashboard_url": "01a1e32f-f4bf-73e3-a312-d6414619dd8f"
+      }
+    }
+  ],
+  "point_results": [
+    {
+      "point_id": "E1",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 12,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.334863,
+          "confirm_mean": 0.344824,
+          "combined_mean": 0.339844,
+          "combined_median": 0.340901,
+          "aux_pass_both_waves_count": 3,
+          "hierarchical_ci95_primary": [
+            0.278478,
+            0.386265
+          ],
+          "hierarchical_ci95_confirm": [
+            0.285457,
+            0.396602
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.278478,
+              0.386265
+            ],
+            "point_ci95_confirm": [
+              0.285457,
+              0.396602
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.164369,
+            "fh_hellinger": 0.029981,
+            "tvd": 0.970019,
+            "hop": 0.029981,
+            "linear_xeb": 121.8,
+            "shannon_entropy_bits": 8.902112
+          },
+          "observables_median": {
+            "fb_overlap": 0.130715,
+            "fh_hellinger": 0.01709,
+            "tvd": 0.98291,
+            "hop": 0.01709,
+            "linear_xeb": 69.0,
+            "shannon_entropy_bits": 8.921185
+          },
+          "structural_mean": {
+            "native_2q": 201.8,
+            "depth_total": 284.2,
+            "scheduled_duration_us": 12.348
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s0",
+              "primary_metric": 0.251139,
+              "primary_ci95": [
+                0.230139,
+                0.271488
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.230143,
+              "confirm_ci95": [
+                0.210445,
+                0.250004
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.12076,
+              "native_2q": 213,
+              "depth_total": 305
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s1",
+              "primary_metric": 0.28304,
+              "primary_ci95": [
+                0.261719,
+                0.302087
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.351237,
+              "confirm_ci95": [
+                0.328939,
+                0.372559
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.186791,
+              "native_2q": 188,
+              "depth_total": 249
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s2",
+              "primary_metric": 0.418132,
+              "primary_ci95": [
+                0.396969,
+                0.439132
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.420898,
+              "confirm_ci95": [
+                0.39974,
+                0.440759
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.258638,
+              "native_2q": 192,
+              "depth_total": 209
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s3",
+              "primary_metric": 0.342285,
+              "primary_ci95": [
+                0.322909,
+                0.361979
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.339518,
+              "confirm_ci95": [
+                0.319987,
+                0.358561
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.130715,
+              "native_2q": 208,
+              "depth_total": 317
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s4",
+              "primary_metric": 0.37972,
+              "primary_ci95": [
+                0.360836,
+                0.398437
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.382324,
+              "confirm_ci95": [
+                0.363603,
+                0.400557
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.124939,
+              "native_2q": 208,
+              "depth_total": 341
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.069499,
+          "confirm_mean": 0.070085,
+          "combined_mean": 0.069792,
+          "combined_median": 0.068196,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.04502,
+            0.095654
+          ],
+          "hierarchical_ci95_confirm": [
+            0.039583,
+            0.099095
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.04502,
+              0.095654
+            ],
+            "point_ci95_confirm": [
+              0.039583,
+              0.099095
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.015089,
+            "fh_hellinger": 0.000586,
+            "tvd": 0.999414,
+            "hop": 0.000586,
+            "linear_xeb": 1.4,
+            "shannon_entropy_bits": 9.629399
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.628135
+          },
+          "structural_mean": {
+            "native_2q": 318.0,
+            "depth_total": 472.0,
+            "scheduled_duration_us": 18.972
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s0",
+              "primary_metric": 0.111491,
+              "primary_ci95": [
+                0.092773,
+                0.12972
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.095378,
+              "confirm_ci95": [
+                0.077799,
+                0.111979
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 318,
+              "depth_total": 472
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s1",
+              "primary_metric": 0.051758,
+              "primary_ci95": [
+                0.034989,
+                0.069014
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.051758,
+              "confirm_ci95": [
+                0.033028,
+                0.07113
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 318,
+              "depth_total": 472
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s2",
+              "primary_metric": 0.036947,
+              "primary_ci95": [
+                0.01969,
+                0.053715
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.01888,
+              "confirm_ci95": [
+                0.001949,
+                0.036621
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 318,
+              "depth_total": 472
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s3",
+              "primary_metric": 0.062337,
+              "primary_ci95": [
+                0.045569,
+                0.079757
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.074056,
+              "confirm_ci95": [
+                0.057129,
+                0.091964
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 318,
+              "depth_total": 472
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s4",
+              "primary_metric": 0.084961,
+              "primary_ci95": [
+                0.067871,
+                0.10238
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.110352,
+              "confirm_ci95": [
+                0.092611,
+                0.128097
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.03125,
+              "native_2q": 318,
+              "depth_total": 472
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.574739,
+          "confirm_mean": 0.584701,
+          "combined_mean": 0.57972,
+          "combined_median": 0.580811,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.555759,
+            0.5945
+          ],
+          "hierarchical_ci95_confirm": [
+            0.559731,
+            0.608434
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.555759,
+              0.5945
+            ],
+            "point_ci95_confirm": [
+              0.559731,
+              0.608434
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.419907,
+            "fh_hellinger": 0.176758,
+            "tvd": 0.823242,
+            "hop": 0.176758,
+            "linear_xeb": 723.0,
+            "shannon_entropy_bits": 7.112708
+          },
+          "observables_median": {
+            "fb_overlap": 0.42504,
+            "fh_hellinger": 0.180664,
+            "tvd": 0.819336,
+            "hop": 0.180664,
+            "linear_xeb": 739.0,
+            "shannon_entropy_bits": 7.14115
+          },
+          "structural_mean": {
+            "native_2q": 197.0,
+            "depth_total": 191.0,
+            "scheduled_duration_us": 8.592
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s0",
+              "primary_metric": 0.574707,
+              "primary_ci95": [
+                0.553544,
+                0.595219
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.586914,
+              "confirm_ci95": [
+                0.565592,
+                0.608244
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.42183,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s1",
+              "primary_metric": 0.605143,
+              "primary_ci95": [
+                0.585775,
+                0.62452
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.588216,
+              "confirm_ci95": [
+                0.567379,
+                0.610189
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.434134,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s2",
+              "primary_metric": 0.557454,
+              "primary_ci95": [
+                0.536458,
+                0.577637
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.576335,
+              "confirm_ci95": [
+                0.555827,
+                0.596529
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.405035,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s3",
+              "primary_metric": 0.558594,
+              "primary_ci95": [
+                0.537923,
+                0.578784
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.548177,
+              "confirm_ci95": [
+                0.527344,
+                0.569661
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.402902,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s4",
+              "primary_metric": 0.577799,
+              "primary_ci95": [
+                0.556148,
+                0.597168
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.623861,
+              "confirm_ci95": [
+                0.604159,
+                0.643229
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.435632,
+              "native_2q": 197,
+              "depth_total": 191
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.584798,
+          "confirm_mean": 0.577702,
+          "combined_mean": 0.58125,
+          "combined_median": 0.581461,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.56308,
+            0.605925
+          ],
+          "hierarchical_ci95_confirm": [
+            0.557354,
+            0.598439
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.56308,
+              0.605925
+            ],
+            "point_ci95_confirm": [
+              0.557354,
+              0.598439
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.417664,
+            "fh_hellinger": 0.174707,
+            "tvd": 0.825293,
+            "hop": 0.174707,
+            "linear_xeb": 714.6,
+            "shannon_entropy_bits": 7.088252
+          },
+          "observables_median": {
+            "fb_overlap": 0.416927,
+            "fh_hellinger": 0.173828,
+            "tvd": 0.826172,
+            "hop": 0.173828,
+            "linear_xeb": 711.0,
+            "shannon_entropy_bits": 7.148314
+          },
+          "structural_mean": {
+            "native_2q": 197.0,
+            "depth_total": 191.0,
+            "scheduled_duration_us": 8.592
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s0",
+              "primary_metric": 0.57194,
+              "primary_ci95": [
+                0.552409,
+                0.593262
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.550618,
+              "confirm_ci95": [
+                0.529456,
+                0.570805
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.406106,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s1",
+              "primary_metric": 0.597819,
+              "primary_ci95": [
+                0.578288,
+                0.61768
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.605632,
+              "confirm_ci95": [
+                0.584631,
+                0.625818
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.434102,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s2",
+              "primary_metric": 0.587077,
+              "primary_ci95": [
+                0.567216,
+                0.606938
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.575846,
+              "confirm_ci95": [
+                0.555334,
+                0.596517
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.413372,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s3",
+              "primary_metric": 0.554362,
+              "primary_ci95": [
+                0.533854,
+                0.575846
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.56543,
+              "confirm_ci95": [
+                0.544104,
+                0.587081
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.408561,
+              "native_2q": 197,
+              "depth_total": 191
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W12__L1__s4",
+              "primary_metric": 0.612793,
+              "primary_ci95": [
+                0.591634,
+                0.632166
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.590983,
+              "confirm_ci95": [
+                0.571122,
+                0.611007
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.42618,
+              "native_2q": 197,
+              "depth_total": 191
+            }
+          ]
+        }
+      }
+    },
+    {
+      "point_id": "E2",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 14,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.310045,
+          "confirm_mean": 0.312193,
+          "combined_mean": 0.311119,
+          "combined_median": 0.304199,
+          "aux_pass_both_waves_count": 1,
+          "hierarchical_ci95_primary": [
+            0.284735,
+            0.334933
+          ],
+          "hierarchical_ci95_confirm": [
+            0.275495,
+            0.345957
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.284735,
+              0.334933
+            ],
+            "point_ci95_confirm": [
+              0.275495,
+              0.345957
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.116711,
+            "fh_hellinger": 0.015039,
+            "tvd": 0.984961,
+            "hop": 0.015039,
+            "linear_xeb": 245.4,
+            "shannon_entropy_bits": 9.512066
+          },
+          "observables_median": {
+            "fb_overlap": 0.116852,
+            "fh_hellinger": 0.013671,
+            "tvd": 0.986328,
+            "hop": 0.013671,
+            "linear_xeb": 223.0,
+            "shannon_entropy_bits": 9.466495
+          },
+          "structural_mean": {
+            "native_2q": 264.4,
+            "depth_total": 297.2,
+            "scheduled_duration_us": 12.818
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s0",
+              "primary_metric": 0.302874,
+              "primary_ci95": [
+                0.285017,
+                0.320735
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.305525,
+              "confirm_ci95": [
+                0.287807,
+                0.324079
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.091275,
+              "native_2q": 290,
+              "depth_total": 366
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s1",
+              "primary_metric": 0.341518,
+              "primary_ci95": [
+                0.3238,
+                0.360212
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.353655,
+              "confirm_ci95": [
+                0.334961,
+                0.371652
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.116852,
+              "native_2q": 255,
+              "depth_total": 270
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.335938,
+              "primary_ci95": [
+                0.3171,
+                0.355329
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.34947,
+              "confirm_ci95": [
+                0.330218,
+                0.369423
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.132118,
+              "native_2q": 262,
+              "depth_total": 310
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.302734,
+              "primary_ci95": [
+                0.281247,
+                0.323807
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.303153,
+              "confirm_ci95": [
+                0.281665,
+                0.324637
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.173788,
+              "native_2q": 254,
+              "depth_total": 250
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.26716,
+              "primary_ci95": [
+                0.248183,
+                0.286551
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.249163,
+              "confirm_ci95": [
+                0.230887,
+                0.267578
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.069524,
+              "native_2q": 261,
+              "depth_total": 290
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.099135,
+          "confirm_mean": 0.101953,
+          "combined_mean": 0.100544,
+          "combined_median": 0.12221,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.029063,
+            0.162948
+          ],
+          "hierarchical_ci95_confirm": [
+            0.039801,
+            0.161692
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.029063,
+              0.162948
+            ],
+            "point_ci95_confirm": [
+              0.039801,
+              0.161692
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.013794,
+            "fh_hellinger": 0.000488,
+            "tvd": 0.999512,
+            "hop": 0.000488,
+            "linear_xeb": 7.0,
+            "shannon_entropy_bits": 9.840208
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.851414
+          },
+          "structural_mean": {
+            "native_2q": 524.0,
+            "depth_total": 755.0,
+            "scheduled_duration_us": 29.03
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s0",
+              "primary_metric": 0.189453,
+              "primary_ci95": [
+                0.172433,
+                0.205082
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.197824,
+              "confirm_ci95": [
+                0.183172,
+                0.21303
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 524,
+              "depth_total": 755
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s1",
+              "primary_metric": 0.0399,
+              "primary_ci95": [
+                0.023713,
+                0.055804
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.053711,
+              "confirm_ci95": [
+                0.038215,
+                0.069754
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 524,
+              "depth_total": 755
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.15067,
+              "primary_ci95": [
+                0.135742,
+                0.166155
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.141183,
+              "confirm_ci95": [
+                0.126113,
+                0.155974
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 524,
+              "depth_total": 755
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.126814,
+              "primary_ci95": [
+                0.110352,
+                0.142997
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.117606,
+              "confirm_ci95": [
+                0.101842,
+                0.132952
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.022097,
+              "native_2q": 524,
+              "depth_total": 755
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": -0.011161,
+              "primary_ci95": [
+                -0.028184,
+                0.005999
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": -0.000558,
+              "confirm_ci95": [
+                -0.016745,
+                0.016187
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 524,
+              "depth_total": 755
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.463644,
+          "confirm_mean": 0.447796,
+          "combined_mean": 0.45572,
+          "combined_median": 0.46324,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.41512,
+            0.502214
+          ],
+          "hierarchical_ci95_confirm": [
+            0.400194,
+            0.489676
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 3,
+            "point_ci95_primary": [
+              0.41512,
+              0.502214
+            ],
+            "point_ci95_confirm": [
+              0.400194,
+              0.489676
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.251704,
+            "fh_hellinger": 0.064844,
+            "tvd": 0.935156,
+            "hop": 0.064844,
+            "linear_xeb": 1061.4,
+            "shannon_entropy_bits": 8.708786
+          },
+          "observables_median": {
+            "fb_overlap": 0.269728,
+            "fh_hellinger": 0.072754,
+            "tvd": 0.927246,
+            "hop": 0.072754,
+            "linear_xeb": 1191.0,
+            "shannon_entropy_bits": 8.757735
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 227.0,
+            "scheduled_duration_us": 9.888
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s0",
+              "primary_metric": 0.519252,
+              "primary_ci95": [
+                0.499299,
+                0.53976
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.513951,
+              "confirm_ci95": [
+                0.495532,
+                0.533207
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.291172,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s1",
+              "primary_metric": 0.467355,
+              "primary_ci95": [
+                0.446983,
+                0.486886
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.459124,
+              "confirm_ci95": [
+                0.438752,
+                0.478795
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.265005,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.467215,
+              "primary_ci95": [
+                0.445867,
+                0.488142
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.453404,
+              "confirm_ci95": [
+                0.433175,
+                0.473633
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.269728,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.37514,
+              "primary_ci95": [
+                0.355605,
+                0.396484
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.353795,
+              "confirm_ci95": [
+                0.333004,
+                0.374728
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.183547,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.489258,
+              "primary_ci95": [
+                0.469169,
+                0.509208
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.458705,
+              "confirm_ci95": [
+                0.439174,
+                0.478934
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.249068,
+              "native_2q": 272,
+              "depth_total": 227
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.45957,
+          "confirm_mean": 0.459905,
+          "combined_mean": 0.459738,
+          "combined_median": 0.466518,
+          "aux_pass_both_waves_count": 4,
+          "hierarchical_ci95_primary": [
+            0.4226,
+            0.495565
+          ],
+          "hierarchical_ci95_confirm": [
+            0.414927,
+            0.497771
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.4226,
+              0.495565
+            ],
+            "point_ci95_confirm": [
+              0.414927,
+              0.497771
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.246255,
+            "fh_hellinger": 0.06211,
+            "tvd": 0.937891,
+            "hop": 0.06211,
+            "linear_xeb": 1016.6,
+            "shannon_entropy_bits": 8.697563
+          },
+          "observables_median": {
+            "fb_overlap": 0.257687,
+            "fh_hellinger": 0.066407,
+            "tvd": 0.933593,
+            "hop": 0.066407,
+            "linear_xeb": 1087.0,
+            "shannon_entropy_bits": 8.730193
+          },
+          "structural_mean": {
+            "native_2q": 272.0,
+            "depth_total": 227.0,
+            "scheduled_duration_us": 9.888
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s0",
+              "primary_metric": 0.515346,
+              "primary_ci95": [
+                0.495393,
+                0.535861
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.515346,
+              "confirm_ci95": [
+                0.494974,
+                0.535854
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.288857,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s1",
+              "primary_metric": 0.467355,
+              "primary_ci95": [
+                0.448375,
+                0.487866
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.46024,
+              "confirm_ci95": [
+                0.439174,
+                0.482003
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.256659,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s2",
+              "primary_metric": 0.459124,
+              "primary_ci95": [
+                0.4375,
+                0.478795
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.473912,
+              "confirm_ci95": [
+                0.454517,
+                0.494141
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.259582,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s3",
+              "primary_metric": 0.390485,
+              "primary_ci95": [
+                0.369141,
+                0.412388
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.375698,
+              "confirm_ci95": [
+                0.353516,
+                0.397182
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.175252,
+              "native_2q": 272,
+              "depth_total": 227
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W14__L1__s4",
+              "primary_metric": 0.465541,
+              "primary_ci95": [
+                0.444475,
+                0.485212
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.47433,
+              "confirm_ci95": [
+                0.453823,
+                0.493443
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.250928,
+              "native_2q": 272,
+              "depth_total": 227
+            }
+          ]
+        }
+      }
+    },
+    {
+      "point_id": "E3",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 15,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.238047,
+          "confirm_mean": 0.251068,
+          "combined_mean": 0.244557,
+          "combined_median": 0.250325,
+          "aux_pass_both_waves_count": 2,
+          "hierarchical_ci95_primary": [
+            0.192057,
+            0.283178
+          ],
+          "hierarchical_ci95_confirm": [
+            0.212603,
+            0.281098
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.192057,
+              0.283178
+            ],
+            "point_ci95_confirm": [
+              0.212603,
+              0.281098
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.068472,
+            "fh_hellinger": 0.005469,
+            "tvd": 0.994531,
+            "hop": 0.005469,
+            "linear_xeb": 178.2,
+            "shannon_entropy_bits": 9.834708
+          },
+          "observables_median": {
+            "fb_overlap": 0.062002,
+            "fh_hellinger": 0.003907,
+            "tvd": 0.996093,
+            "hop": 0.003907,
+            "linear_xeb": 127.0,
+            "shannon_entropy_bits": 9.831815
+          },
+          "structural_mean": {
+            "native_2q": 311.8,
+            "depth_total": 359.8,
+            "scheduled_duration_us": 15.106
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s0",
+              "primary_metric": 0.158724,
+              "primary_ci95": [
+                0.141406,
+                0.175264
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.188932,
+              "confirm_ci95": [
+                0.171484,
+                0.205469
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.04916,
+              "native_2q": 319,
+              "depth_total": 457
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s1",
+              "primary_metric": 0.238932,
+              "primary_ci95": [
+                0.221484,
+                0.256257
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.261719,
+              "confirm_ci95": [
+                0.244271,
+                0.277477
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.037722,
+              "native_2q": 315,
+              "depth_total": 352
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.260937,
+              "primary_ci95": [
+                0.243096,
+                0.278535
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.270182,
+              "confirm_ci95": [
+                0.253125,
+                0.287764
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.065337,
+              "native_2q": 315,
+              "depth_total": 376
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.214714,
+              "primary_ci95": [
+                0.196875,
+                0.232422
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.236979,
+              "confirm_ci95": [
+                0.21901,
+                0.255078
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.073212,
+              "native_2q": 304,
+              "depth_total": 327
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.316927,
+              "primary_ci95": [
+                0.299349,
+                0.334766
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.297526,
+              "confirm_ci95": [
+                0.278776,
+                0.315234
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.116927,
+              "native_2q": 306,
+              "depth_total": 287
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.064505,
+          "confirm_mean": 0.064792,
+          "combined_mean": 0.064648,
+          "combined_median": 0.05332,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.036587,
+            0.096073
+          ],
+          "hierarchical_ci95_confirm": [
+            0.038176,
+            0.097319
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.036587,
+              0.096073
+            ],
+            "point_ci95_confirm": [
+              0.038176,
+              0.097319
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.00625,
+            "fh_hellinger": 0.000195,
+            "tvd": 0.999805,
+            "hop": 0.000195,
+            "linear_xeb": 5.4,
+            "shannon_entropy_bits": 9.954171
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.953364
+          },
+          "structural_mean": {
+            "native_2q": 474.0,
+            "depth_total": 613.0,
+            "scheduled_duration_us": 23.976
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s0",
+              "primary_metric": 0.01875,
+              "primary_ci95": [
+                0.001947,
+                0.035937
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.034375,
+              "confirm_ci95": [
+                0.018226,
+                0.050003
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 474,
+              "depth_total": 613
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s1",
+              "primary_metric": 0.058203,
+              "primary_ci95": [
+                0.0414,
+                0.075394
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.048438,
+              "confirm_ci95": [
+                0.032419,
+                0.063932
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 474,
+              "depth_total": 613
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.119271,
+              "primary_ci95": [
+                0.102344,
+                0.13516
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.127344,
+              "confirm_ci95": [
+                0.111585,
+                0.14349
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 474,
+              "depth_total": 613
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.061068,
+              "primary_ci95": [
+                0.044792,
+                0.077214
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.045443,
+              "confirm_ci95": [
+                0.028122,
+                0.062633
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 474,
+              "depth_total": 613
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.065234,
+              "primary_ci95": [
+                0.048828,
+                0.08138
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.068359,
+              "confirm_ci95": [
+                0.052601,
+                0.083467
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 474,
+              "depth_total": 613
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.434167,
+          "confirm_mean": 0.412552,
+          "combined_mean": 0.423359,
+          "combined_median": 0.434895,
+          "aux_pass_both_waves_count": 4,
+          "hierarchical_ci95_primary": [
+            0.41716,
+            0.451095
+          ],
+          "hierarchical_ci95_confirm": [
+            0.388437,
+            0.433073
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.41716,
+              0.451095
+            ],
+            "point_ci95_confirm": [
+              0.388437,
+              0.433073
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.178729,
+            "fh_hellinger": 0.03291,
+            "tvd": 0.96709,
+            "hop": 0.03291,
+            "linear_xeb": 1077.4,
+            "shannon_entropy_bits": 9.204561
+          },
+          "observables_median": {
+            "fb_overlap": 0.174715,
+            "fh_hellinger": 0.030762,
+            "tvd": 0.969238,
+            "hop": 0.030762,
+            "linear_xeb": 1007.0,
+            "shannon_entropy_bits": 9.175959
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 245.0,
+            "scheduled_duration_us": 10.536
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s0",
+              "primary_metric": 0.41862,
+              "primary_ci95": [
+                0.398698,
+                0.437897
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.401172,
+              "confirm_ci95": [
+                0.382028,
+                0.421224
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.157797,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s1",
+              "primary_metric": 0.43724,
+              "primary_ci95": [
+                0.416924,
+                0.456901
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.432552,
+              "confirm_ci95": [
+                0.414193,
+                0.451175
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.196304,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.446224,
+              "primary_ci95": [
+                0.427604,
+                0.466276
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.432161,
+              "confirm_ci95": [
+                0.411846,
+                0.452217
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.212572,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.41862,
+              "primary_ci95": [
+                0.39987,
+                0.437891
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.377214,
+              "confirm_ci95": [
+                0.356901,
+                0.396878
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.139047,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.45013,
+              "primary_ci95": [
+                0.431104,
+                0.470313
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.419661,
+              "confirm_ci95": [
+                0.400651,
+                0.439717
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.187925,
+              "native_2q": 314,
+              "depth_total": 245
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.427422,
+          "confirm_mean": 0.411979,
+          "combined_mean": 0.419701,
+          "combined_median": 0.425651,
+          "aux_pass_both_waves_count": 4,
+          "hierarchical_ci95_primary": [
+            0.407004,
+            0.447241
+          ],
+          "hierarchical_ci95_confirm": [
+            0.392521,
+            0.43107
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.407004,
+              0.447241
+            ],
+            "point_ci95_confirm": [
+              0.392521,
+              0.43107
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.169944,
+            "fh_hellinger": 0.02959,
+            "tvd": 0.97041,
+            "hop": 0.02959,
+            "linear_xeb": 968.6,
+            "shannon_entropy_bits": 9.230021
+          },
+          "observables_median": {
+            "fb_overlap": 0.169725,
+            "fh_hellinger": 0.028809,
+            "tvd": 0.971191,
+            "hop": 0.028809,
+            "linear_xeb": 943.0,
+            "shannon_entropy_bits": 9.247695
+          },
+          "structural_mean": {
+            "native_2q": 314.0,
+            "depth_total": 245.0,
+            "scheduled_duration_us": 10.536
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s0",
+              "primary_metric": 0.414974,
+              "primary_ci95": [
+                0.396481,
+                0.433597
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.407682,
+              "confirm_ci95": [
+                0.388802,
+                0.426042
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.132377,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s1",
+              "primary_metric": 0.423047,
+              "primary_ci95": [
+                0.404427,
+                0.442839
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.43112,
+              "confirm_ci95": [
+                0.412367,
+                0.449352
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.17397,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s2",
+              "primary_metric": 0.455469,
+              "primary_ci95": [
+                0.436842,
+                0.474225
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.429948,
+              "confirm_ci95": [
+                0.410807,
+                0.448828
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.203296,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s3",
+              "primary_metric": 0.401953,
+              "primary_ci95": [
+                0.382419,
+                0.42266
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.38151,
+              "confirm_ci95": [
+                0.360931,
+                0.401302
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.154672,
+              "native_2q": 314,
+              "depth_total": 245
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W15__L1__s4",
+              "primary_metric": 0.441667,
+              "primary_ci95": [
+                0.421224,
+                0.461592
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.409635,
+              "confirm_ci95": [
+                0.390231,
+                0.42904
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.185404,
+              "native_2q": 314,
+              "depth_total": 245
+            }
+          ]
+        }
+      }
+    },
+    {
+      "point_id": "E4",
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 16,
+      "rounds": 1,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "bitwise_polarization",
+      "viability_threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.231885,
+          "confirm_mean": 0.248853,
+          "combined_mean": 0.240369,
+          "combined_median": 0.240418,
+          "aux_pass_both_waves_count": 3,
+          "hierarchical_ci95_primary": [
+            0.199868,
+            0.265654
+          ],
+          "hierarchical_ci95_confirm": [
+            0.227,
+            0.269948
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.199868,
+              0.265654
+            ],
+            "point_ci95_confirm": [
+              0.227,
+              0.269948
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.049545,
+            "fh_hellinger": 0.00293,
+            "tvd": 0.99707,
+            "hop": 0.00293,
+            "linear_xeb": 191.0,
+            "shannon_entropy_bits": 9.904617
+          },
+          "observables_median": {
+            "fb_overlap": 0.058314,
+            "fh_hellinger": 0.003418,
+            "tvd": 0.996582,
+            "hop": 0.003418,
+            "linear_xeb": 223.0,
+            "shannon_entropy_bits": 9.898001
+          },
+          "structural_mean": {
+            "native_2q": 354.6,
+            "depth_total": 340.0,
+            "scheduled_duration_us": 14.402
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s0",
+              "primary_metric": 0.270996,
+              "primary_ci95": [
+                0.254388,
+                0.288455
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.272827,
+              "confirm_ci95": [
+                0.256223,
+                0.288455
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.042689,
+              "native_2q": 352,
+              "depth_total": 326
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s1",
+              "primary_metric": 0.224487,
+              "primary_ci95": [
+                0.20593,
+                0.242188
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.256348,
+              "confirm_ci95": [
+                0.23877,
+                0.274051
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.057035,
+              "native_2q": 346,
+              "depth_total": 340
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.196899,
+              "primary_ci95": [
+                0.18042,
+                0.213989
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.214478,
+              "confirm_ci95": [
+                0.197141,
+                0.230838
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.015625,
+              "native_2q": 364,
+              "depth_total": 374
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.275513,
+              "primary_ci95": [
+                0.257446,
+                0.293094
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.262817,
+              "confirm_ci95": [
+                0.244751,
+                0.280276
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.066188,
+              "native_2q": 351,
+              "depth_total": 303
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.191528,
+              "primary_ci95": [
+                0.173706,
+                0.209354
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.237793,
+              "confirm_ci95": [
+                0.219238,
+                0.255981
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.066188,
+              "native_2q": 360,
+              "depth_total": 357
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.065332,
+          "confirm_mean": 0.061938,
+          "combined_mean": 0.063635,
+          "combined_median": 0.057312,
+          "aux_pass_both_waves_count": 0,
+          "hierarchical_ci95_primary": [
+            0.029315,
+            0.105372
+          ],
+          "hierarchical_ci95_confirm": [
+            0.029169,
+            0.099366
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.029315,
+              0.105372
+            ],
+            "point_ci95_confirm": [
+              0.029169,
+              0.099366
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.00625,
+            "fh_hellinger": 0.000195,
+            "tvd": 0.999805,
+            "hop": 0.000195,
+            "linear_xeb": 11.8,
+            "shannon_entropy_bits": 9.969775
+          },
+          "observables_median": {
+            "fb_overlap": 0.0,
+            "fh_hellinger": 0.0,
+            "tvd": 1.0,
+            "hop": 0.0,
+            "linear_xeb": -1.0,
+            "shannon_entropy_bits": 9.970334
+          },
+          "structural_mean": {
+            "native_2q": 579.0,
+            "depth_total": 724.0,
+            "scheduled_duration_us": 28.318
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s0",
+              "primary_metric": 0.139893,
+              "primary_ci95": [
+                0.125366,
+                0.154788
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.127563,
+              "confirm_ci95": [
+                0.112671,
+                0.143066
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 579,
+              "depth_total": 724
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s1",
+              "primary_metric": 0.076782,
+              "primary_ci95": [
+                0.0625,
+                0.091312
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.072876,
+              "confirm_ci95": [
+                0.057489,
+                0.088745
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 579,
+              "depth_total": 724
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.052368,
+              "primary_ci95": [
+                0.036737,
+                0.06763
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.062256,
+              "confirm_ci95": [
+                0.047482,
+                0.076541
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 579,
+              "depth_total": 724
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.047729,
+              "primary_ci95": [
+                0.031491,
+                0.06348
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.029663,
+              "confirm_ci95": [
+                0.014157,
+                0.045782
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.03125,
+              "native_2q": 579,
+              "depth_total": 724
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.009888,
+              "primary_ci95": [
+                -0.005862,
+                0.025272
+              ],
+              "primary_aux_pass": false,
+              "confirm_metric": 0.017334,
+              "confirm_ci95": [
+                0.002197,
+                0.032477
+              ],
+              "confirm_aux_pass": false,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.0,
+              "native_2q": 579,
+              "depth_total": 724
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.451123,
+          "confirm_mean": 0.452368,
+          "combined_mean": 0.451746,
+          "combined_median": 0.429199,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.421407,
+            0.484108
+          ],
+          "hierarchical_ci95_confirm": [
+            0.425048,
+            0.480958
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 3,
+            "point_ci95_primary": [
+              0.421407,
+              0.484108
+            ],
+            "point_ci95_confirm": [
+              0.425048,
+              0.480958
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.180828,
+            "fh_hellinger": 0.034082,
+            "tvd": 0.965918,
+            "hop": 0.034082,
+            "linear_xeb": 2232.6,
+            "shannon_entropy_bits": 9.261931
+          },
+          "observables_median": {
+            "fb_overlap": 0.168261,
+            "fh_hellinger": 0.02832,
+            "tvd": 0.97168,
+            "hop": 0.02832,
+            "linear_xeb": 1855.0,
+            "shannon_entropy_bits": 9.377195
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 263.0,
+            "scheduled_duration_us": 11.184
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s0",
+              "primary_metric": 0.505249,
+              "primary_ci95": [
+                0.48718,
+                0.523688
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.48645,
+              "confirm_ci95": [
+                0.468008,
+                0.504401
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.208064,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s1",
+              "primary_metric": 0.475708,
+              "primary_ci95": [
+                0.455923,
+                0.494873
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.49353,
+              "confirm_ci95": [
+                0.474362,
+                0.512451
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.236585,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.432251,
+              "primary_ci95": [
+                0.413815,
+                0.450443
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.426147,
+              "confirm_ci95": [
+                0.406854,
+                0.444949
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.155967,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.42334,
+              "primary_ci95": [
+                0.405151,
+                0.441531
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.427734,
+              "confirm_ci95": [
+                0.40918,
+                0.44556
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.162128,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.419067,
+              "primary_ci95": [
+                0.401123,
+                0.437866
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.427979,
+              "confirm_ci95": [
+                0.409909,
+                0.446777
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.141396,
+              "native_2q": 359,
+              "depth_total": 263
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.451953,
+          "confirm_mean": 0.441406,
+          "combined_mean": 0.44668,
+          "combined_median": 0.439087,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.424533,
+            0.48069
+          ],
+          "hierarchical_ci95_confirm": [
+            0.416246,
+            0.471149
+          ],
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.424533,
+              0.48069
+            ],
+            "point_ci95_confirm": [
+              0.416246,
+              0.471149
+            ],
+            "threshold": 0.5
+          },
+          "observables_mean": {
+            "fb_overlap": 0.188463,
+            "fh_hellinger": 0.036816,
+            "tvd": 0.963184,
+            "hop": 0.036816,
+            "linear_xeb": 2411.8,
+            "shannon_entropy_bits": 9.261482
+          },
+          "observables_median": {
+            "fb_overlap": 0.178999,
+            "fh_hellinger": 0.032227,
+            "tvd": 0.967774,
+            "hop": 0.032227,
+            "linear_xeb": 2111.0,
+            "shannon_entropy_bits": 9.331994
+          },
+          "structural_mean": {
+            "native_2q": 359.0,
+            "depth_total": 263.0,
+            "scheduled_duration_us": 11.184
+          },
+          "instances": [
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s0",
+              "primary_metric": 0.497803,
+              "primary_ci95": [
+                0.479367,
+                0.514893
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.490234,
+              "confirm_ci95": [
+                0.47131,
+                0.508789
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.222998,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s1",
+              "primary_metric": 0.467163,
+              "primary_ci95": [
+                0.446411,
+                0.486209
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.451172,
+              "confirm_ci95": [
+                0.430542,
+                0.471561
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.233093,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s2",
+              "primary_metric": 0.434448,
+              "primary_ci95": [
+                0.416013,
+                0.453738
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.436035,
+              "confirm_ci95": [
+                0.418088,
+                0.454599
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.160805,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s3",
+              "primary_metric": 0.450073,
+              "primary_ci95": [
+                0.430417,
+                0.469974
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.428101,
+              "confirm_ci95": [
+                0.410031,
+                0.445316
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.172866,
+              "native_2q": 359,
+              "depth_total": 263
+            },
+            {
+              "workload_id": "F2_QFT_PhaseRecovery__C3_Dense_AllToAll__W16__L1__s4",
+              "primary_metric": 0.410278,
+              "primary_ci95": [
+                0.391721,
+                0.428711
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.401489,
+              "confirm_ci95": [
+                0.382935,
+                0.420779
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.152556,
+              "native_2q": 359,
+              "depth_total": 263
+            }
+          ]
+        }
+      }
+    },
+    {
+      "point_id": "E5",
+      "family": "F1_Weighted_QAOA",
+      "regime": "C0_HardwareLocal_Path",
+      "width": 15,
+      "rounds": 2,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "r_approx",
+      "viability_threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.609328,
+          "confirm_mean": 0.608504,
+          "combined_mean": 0.608916,
+          "combined_median": 0.60295,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.589364,
+            0.631593
+          ],
+          "hierarchical_ci95_confirm": [
+            0.58894,
+            0.631156
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.589364,
+              0.631593
+            ],
+            "point_ci95_confirm": [
+              0.58894,
+              0.631156
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.658416,
+            "fh_hellinger": 0.434405,
+            "tvd": 0.530053,
+            "hop": 0.990625,
+            "linear_xeb": 94.834038,
+            "shannon_entropy_bits": 9.025517
+          },
+          "observables_median": {
+            "fb_overlap": 0.648344,
+            "fh_hellinger": 0.420391,
+            "tvd": 0.537235,
+            "hop": 0.991211,
+            "linear_xeb": 80.2636,
+            "shannon_entropy_bits": 9.109424
+          },
+          "structural_mean": {
+            "native_2q": 56.0,
+            "depth_total": 33.0,
+            "scheduled_duration_us": 2.928
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s0",
+              "primary_metric": 0.592262,
+              "primary_ci95": [
+                0.579706,
+                0.605473
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.5891,
+              "confirm_ci95": [
+                0.575049,
+                0.602679
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.628899,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s1",
+              "primary_metric": 0.601049,
+              "primary_ci95": [
+                0.587682,
+                0.613489
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.604852,
+              "confirm_ci95": [
+                0.592105,
+                0.618115
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.648344,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s2",
+              "primary_metric": 0.58417,
+              "primary_ci95": [
+                0.570031,
+                0.598865
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.585472,
+              "confirm_ci95": [
+                0.572263,
+                0.599144
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.638138,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s3",
+              "primary_metric": 0.647727,
+              "primary_ci95": [
+                0.634941,
+                0.660511
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.646928,
+              "confirm_ci95": [
+                0.634943,
+                0.659806
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.712381,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s4",
+              "primary_metric": 0.621433,
+              "primary_ci95": [
+                0.608014,
+                0.63502
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.616168,
+              "confirm_ci95": [
+                0.602494,
+                0.629331
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.664318,
+              "native_2q": 56,
+              "depth_total": 33
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.641476,
+          "confirm_mean": 0.643841,
+          "combined_mean": 0.642658,
+          "combined_median": 0.635463,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.620172,
+            0.661149
+          ],
+          "hierarchical_ci95_confirm": [
+            0.625148,
+            0.664963
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.620172,
+              0.661149
+            ],
+            "point_ci95_confirm": [
+              0.625148,
+              0.664963
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.69412,
+            "fh_hellinger": 0.482546,
+            "tvd": 0.483719,
+            "hop": 0.993555,
+            "linear_xeb": 111.240688,
+            "shannon_entropy_bits": 8.804131
+          },
+          "observables_median": {
+            "fb_overlap": 0.685617,
+            "fh_hellinger": 0.470077,
+            "tvd": 0.489361,
+            "hop": 0.993653,
+            "linear_xeb": 99.309075,
+            "shannon_entropy_bits": 8.831255
+          },
+          "structural_mean": {
+            "native_2q": 56.0,
+            "depth_total": 33.0,
+            "scheduled_duration_us": 2.928
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s0",
+              "primary_metric": 0.635138,
+              "primary_ci95": [
+                0.621745,
+                0.648251
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.635789,
+              "confirm_ci95": [
+                0.622394,
+                0.648626
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.683779,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s1",
+              "primary_metric": 0.639083,
+              "primary_ci95": [
+                0.626128,
+                0.652035
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.626645,
+              "confirm_ci95": [
+                0.614307,
+                0.639494
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.685617,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s2",
+              "primary_metric": 0.608166,
+              "primary_ci95": [
+                0.594492,
+                0.622119
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.623605,
+              "confirm_ci95": [
+                0.611142,
+                0.636256
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.667429,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s3",
+              "primary_metric": 0.677912,
+              "primary_ci95": [
+                0.665661,
+                0.689633
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.680398,
+              "confirm_ci95": [
+                0.668675,
+                0.692472
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.743727,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s4",
+              "primary_metric": 0.647079,
+              "primary_ci95": [
+                0.633829,
+                0.659141
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.652768,
+              "confirm_ci95": [
+                0.64096,
+                0.664997
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.690049,
+              "native_2q": 56,
+              "depth_total": 33
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.626126,
+          "confirm_mean": 0.62646,
+          "combined_mean": 0.626293,
+          "combined_median": 0.626233,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.600049,
+            0.656586
+          ],
+          "hierarchical_ci95_confirm": [
+            0.599506,
+            0.653031
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.600049,
+              0.656586
+            ],
+            "point_ci95_confirm": [
+              0.599506,
+              0.653031
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.680851,
+            "fh_hellinger": 0.46498,
+            "tvd": 0.501289,
+            "hop": 0.99043,
+            "linear_xeb": 106.526661,
+            "shannon_entropy_bits": 8.892641
+          },
+          "observables_median": {
+            "fb_overlap": 0.666649,
+            "fh_hellinger": 0.444427,
+            "tvd": 0.506377,
+            "hop": 0.990234,
+            "linear_xeb": 96.977698,
+            "shannon_entropy_bits": 8.932829
+          },
+          "structural_mean": {
+            "native_2q": 56.0,
+            "depth_total": 33.0,
+            "scheduled_duration_us": 2.928
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s0",
+              "primary_metric": 0.599516,
+              "primary_ci95": [
+                0.585656,
+                0.613188
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.618583,
+              "confirm_ci95": [
+                0.605187,
+                0.632164
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.651341,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s1",
+              "primary_metric": 0.62942,
+              "primary_ci95": [
+                0.616468,
+                0.642683
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.623047,
+              "confirm_ci95": [
+                0.609581,
+                0.636205
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.666649,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s2",
+              "primary_metric": 0.589565,
+              "primary_ci95": [
+                0.574867,
+                0.603423
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.58045,
+              "confirm_ci95": [
+                0.566034,
+                0.595057
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.64771,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s3",
+              "primary_metric": 0.68093,
+              "primary_ci95": [
+                0.669123,
+                0.69345
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.676048,
+              "confirm_ci95": [
+                0.663441,
+                0.688033
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.748691,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s4",
+              "primary_metric": 0.631199,
+              "primary_ci95": [
+                0.618037,
+                0.643684
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.634171,
+              "confirm_ci95": [
+                0.621431,
+                0.647588
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.689862,
+              "native_2q": 56,
+              "depth_total": 33
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.621738,
+          "confirm_mean": 0.628428,
+          "combined_mean": 0.625083,
+          "combined_median": 0.622834,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.597277,
+            0.651153
+          ],
+          "hierarchical_ci95_confirm": [
+            0.601716,
+            0.659313
+          ],
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 5,
+            "n_confirmed_pass": 5,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.597277,
+              0.651153
+            ],
+            "point_ci95_confirm": [
+              0.601716,
+              0.659313
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.677843,
+            "fh_hellinger": 0.460613,
+            "tvd": 0.502277,
+            "hop": 0.989649,
+            "linear_xeb": 106.994015,
+            "shannon_entropy_bits": 8.903696
+          },
+          "observables_median": {
+            "fb_overlap": 0.67067,
+            "fh_hellinger": 0.449798,
+            "tvd": 0.511568,
+            "hop": 0.990234,
+            "linear_xeb": 90.670912,
+            "shannon_entropy_bits": 9.003895
+          },
+          "structural_mean": {
+            "native_2q": 56.0,
+            "depth_total": 33.0,
+            "scheduled_duration_us": 2.928
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s0",
+              "primary_metric": 0.599609,
+              "primary_ci95": [
+                0.586961,
+                0.612449
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.606213,
+              "confirm_ci95": [
+                0.593004,
+                0.619513
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.651104,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s1",
+              "primary_metric": 0.621505,
+              "primary_ci95": [
+                0.608447,
+                0.633843
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.63014,
+              "confirm_ci95": [
+                0.61626,
+                0.643195
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.674638,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s2",
+              "primary_metric": 0.589379,
+              "primary_ci95": [
+                0.574219,
+                0.603611
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.594587,
+              "confirm_ci95": [
+                0.580729,
+                0.608445
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.646925,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s3",
+              "primary_metric": 0.6788,
+              "primary_ci95": [
+                0.666548,
+                0.690607
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.684925,
+              "confirm_ci95": [
+                0.672408,
+                0.697268
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.7402,
+              "native_2q": 56,
+              "depth_total": 33
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C0_HardwareLocal_Path__W15__L2__s4",
+              "primary_metric": 0.619395,
+              "primary_ci95": [
+                0.606233,
+                0.632728
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.626274,
+              "confirm_ci95": [
+                0.613366,
+                0.638929
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Pass",
+              "mean_fb_overlap": 0.676349,
+              "native_2q": 56,
+              "depth_total": 33
+            }
+          ]
+        }
+      }
+    },
+    {
+      "point_id": "E6",
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 9,
+      "rounds": 2,
+      "n_instances": 5,
+      "instance_seed_range": "s0..s4",
+      "primary_metric_name": "r_approx",
+      "viability_threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.209314,
+          "confirm_mean": 0.202523,
+          "combined_mean": 0.205918,
+          "combined_median": 0.203463,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.189142,
+            0.228452
+          ],
+          "hierarchical_ci95_confirm": [
+            0.183342,
+            0.22278
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.189142,
+              0.228452
+            ],
+            "point_ci95_confirm": [
+              0.183342,
+              0.22278
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.706492,
+            "fh_hellinger": 0.499342,
+            "tvd": 0.595907,
+            "hop": 0.671289,
+            "linear_xeb": 1.916419,
+            "shannon_entropy_bits": 8.308391
+          },
+          "observables_median": {
+            "fb_overlap": 0.702095,
+            "fh_hellinger": 0.492939,
+            "tvd": 0.602821,
+            "hop": 0.666504,
+            "linear_xeb": 1.989291,
+            "shannon_entropy_bits": 8.335779
+          },
+          "structural_mean": {
+            "native_2q": 226.6,
+            "depth_total": 279.6,
+            "scheduled_duration_us": 12.396
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s0",
+              "primary_metric": 0.226719,
+              "primary_ci95": [
+                0.201797,
+                0.250236
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.218281,
+              "confirm_ci95": [
+                0.194061,
+                0.24149
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.701133,
+              "native_2q": 231,
+              "depth_total": 281
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s1",
+              "primary_metric": 0.184408,
+              "primary_ci95": [
+                0.160724,
+                0.208905
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.189616,
+              "confirm_ci95": [
+                0.165928,
+                0.213053
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.695111,
+              "native_2q": 225,
+              "depth_total": 278
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s2",
+              "primary_metric": 0.206719,
+              "primary_ci95": [
+                0.182342,
+                0.231016
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.189609,
+              "confirm_ci95": [
+                0.16367,
+                0.213361
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.720841,
+              "native_2q": 225,
+              "depth_total": 283
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s3",
+              "primary_metric": 0.213655,
+              "primary_ci95": [
+                0.185876,
+                0.239982
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.223251,
+              "confirm_ci95": [
+                0.193869,
+                0.251115
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.713469,
+              "native_2q": 225,
+              "depth_total": 279
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s4",
+              "primary_metric": 0.215069,
+              "primary_ci95": [
+                0.190653,
+                0.239109
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.191857,
+              "confirm_ci95": [
+                0.169092,
+                0.214996
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.701906,
+              "native_2q": 227,
+              "depth_total": 277
+            }
+          ]
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.159412,
+          "confirm_mean": 0.139526,
+          "combined_mean": 0.149469,
+          "combined_median": 0.154785,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.138875,
+            0.179469
+          ],
+          "hierarchical_ci95_confirm": [
+            0.103438,
+            0.173819
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 5,
+            "point_ci95_primary": [
+              0.138875,
+              0.179469
+            ],
+            "point_ci95_confirm": [
+              0.103438,
+              0.173819
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.640523,
+            "fh_hellinger": 0.41132,
+            "tvd": 0.65671,
+            "hop": 0.624805,
+            "linear_xeb": 1.107728,
+            "shannon_entropy_bits": 8.307667
+          },
+          "observables_median": {
+            "fb_overlap": 0.656948,
+            "fh_hellinger": 0.431582,
+            "tvd": 0.649992,
+            "hop": 0.625976,
+            "linear_xeb": 1.182022,
+            "shannon_entropy_bits": 8.303492
+          },
+          "structural_mean": {
+            "native_2q": 278.4,
+            "depth_total": 389.0,
+            "scheduled_duration_us": 15.936
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s0",
+              "primary_metric": 0.160078,
+              "primary_ci95": [
+                0.13375,
+                0.185
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.119375,
+              "confirm_ci95": [
+                0.095076,
+                0.144848
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.639503,
+              "native_2q": 273,
+              "depth_total": 381
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s1",
+              "primary_metric": 0.161214,
+              "primary_ci95": [
+                0.139722,
+                0.18457
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.148356,
+              "confirm_ci95": [
+                0.125975,
+                0.169843
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.651684,
+              "native_2q": 273,
+              "depth_total": 381
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s2",
+              "primary_metric": 0.158047,
+              "primary_ci95": [
+                0.134994,
+                0.181258
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.166406,
+              "confirm_ci95": [
+                0.143123,
+                0.18891
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.662107,
+              "native_2q": 273,
+              "depth_total": 381
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s3",
+              "primary_metric": 0.18716,
+              "primary_ci95": [
+                0.161175,
+                0.211449
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.179433,
+              "confirm_ci95": [
+                0.152257,
+                0.205507
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.66471,
+              "native_2q": 273,
+              "depth_total": 381
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s4",
+              "primary_metric": 0.130559,
+              "primary_ci95": [
+                0.10554,
+                0.15302
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.084059,
+              "confirm_ci95": [
+                0.061672,
+                0.105925
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.584612,
+              "native_2q": 300,
+              "depth_total": 421
+            }
+          ]
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.294567,
+          "confirm_mean": 0.298496,
+          "combined_mean": 0.296531,
+          "combined_median": 0.279687,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.252283,
+            0.341311
+          ],
+          "hierarchical_ci95_confirm": [
+            0.263407,
+            0.334312
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.252283,
+              0.341311
+            ],
+            "point_ci95_confirm": [
+              0.263407,
+              0.334312
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.769491,
+            "fh_hellinger": 0.592781,
+            "tvd": 0.506068,
+            "hop": 0.733692,
+            "linear_xeb": 3.567783,
+            "shannon_entropy_bits": 7.990681
+          },
+          "observables_median": {
+            "fb_overlap": 0.768998,
+            "fh_hellinger": 0.591394,
+            "tvd": 0.499968,
+            "hop": 0.732911,
+            "linear_xeb": 3.720612,
+            "shannon_entropy_bits": 8.003612
+          },
+          "structural_mean": {
+            "native_2q": 200.0,
+            "depth_total": 152.6,
+            "scheduled_duration_us": 7.238
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s0",
+              "primary_metric": 0.309844,
+              "primary_ci95": [
+                0.283516,
+                0.334926
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.318594,
+              "confirm_ci95": [
+                0.293123,
+                0.342813
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.781257,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s1",
+              "primary_metric": 0.244222,
+              "primary_ci95": [
+                0.2198,
+                0.268068
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.242839,
+              "confirm_ci95": [
+                0.220052,
+                0.266606
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.739957,
+              "native_2q": 200,
+              "depth_total": 152
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s2",
+              "primary_metric": 0.261562,
+              "primary_ci95": [
+                0.236016,
+                0.286719
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.297812,
+              "confirm_ci95": [
+                0.272266,
+                0.323516
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.768998,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s3",
+              "primary_metric": 0.382643,
+              "primary_ci95": [
+                0.354702,
+                0.410411
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.349355,
+              "confirm_ci95": [
+                0.321073,
+                0.377974
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.810138,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s4",
+              "primary_metric": 0.274564,
+              "primary_ci95": [
+                0.249089,
+                0.299063
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.283879,
+              "confirm_ci95": [
+                0.258184,
+                0.308368
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.747103,
+              "native_2q": 200,
+              "depth_total": 152
+            }
+          ]
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.29444,
+          "confirm_mean": 0.292652,
+          "combined_mean": 0.293546,
+          "combined_median": 0.300256,
+          "aux_pass_both_waves_count": 5,
+          "hierarchical_ci95_primary": [
+            0.258174,
+            0.334402
+          ],
+          "hierarchical_ci95_confirm": [
+            0.261418,
+            0.325195
+          ],
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Confirmed Fail",
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 5,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 4,
+            "point_ci95_primary": [
+              0.258174,
+              0.334402
+            ],
+            "point_ci95_confirm": [
+              0.261418,
+              0.325195
+            ],
+            "threshold": 0.35
+          },
+          "observables_mean": {
+            "fb_overlap": 0.766907,
+            "fh_hellinger": 0.588524,
+            "tvd": 0.513019,
+            "hop": 0.731543,
+            "linear_xeb": 3.382879,
+            "shannon_entropy_bits": 8.01744
+          },
+          "observables_median": {
+            "fb_overlap": 0.761685,
+            "fh_hellinger": 0.580167,
+            "tvd": 0.520744,
+            "hop": 0.746582,
+            "linear_xeb": 3.390295,
+            "shannon_entropy_bits": 8.035341
+          },
+          "structural_mean": {
+            "native_2q": 200.0,
+            "depth_total": 152.6,
+            "scheduled_duration_us": 7.238
+          },
+          "instances": [
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s0",
+              "primary_metric": 0.2925,
+              "primary_ci95": [
+                0.267885,
+                0.31758
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.324297,
+              "confirm_ci95": [
+                0.298979,
+                0.349381
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.771713,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s1",
+              "primary_metric": 0.254964,
+              "primary_ci95": [
+                0.231118,
+                0.277753
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.249837,
+              "confirm_ci95": [
+                0.227374,
+                0.273281
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.746161,
+              "native_2q": 200,
+              "depth_total": 152
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s2",
+              "primary_metric": 0.2575,
+              "primary_ci95": [
+                0.231006,
+                0.282969
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.262578,
+              "confirm_ci95": [
+                0.237031,
+                0.28727
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.752892,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s3",
+              "primary_metric": 0.363451,
+              "primary_ci95": [
+                0.337037,
+                0.391391
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.329823,
+              "confirm_ci95": [
+                0.30256,
+                0.357607
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Unresolved Within Budget",
+              "mean_fb_overlap": 0.799299,
+              "native_2q": 200,
+              "depth_total": 153
+            },
+            {
+              "workload_id": "F1_Weighted_QAOA__C3_Dense_AllToAll__W09__L2__s4",
+              "primary_metric": 0.303786,
+              "primary_ci95": [
+                0.279594,
+                0.329331
+              ],
+              "primary_aux_pass": true,
+              "confirm_metric": 0.296725,
+              "confirm_ci95": [
+                0.271785,
+                0.320241
+              ],
+              "confirm_aux_pass": true,
+              "instance_mece_outcome": "Confirmed Fail",
+              "mean_fb_overlap": 0.764466,
+              "native_2q": 200,
+              "depth_total": 152
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "original_private_settled_ledger_sha256": "a5d85f99dc37d7a559ebec447a0c4748bb96f1562162fa411369fa09ec2e70b1",
+  "raw_counts_file": "stage5_5_iqm_raw_pub_counts.json"
+}

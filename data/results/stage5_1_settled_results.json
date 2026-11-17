@@ -1,0 +1,4180 @@
+{
+  "stage": "Stage_5.1_Settled_IBM_Coarse_Frontier",
+  "scored_at_utc": "2026-11-16T05:12:46.146527+00:00",
+  "backend": "ibm_marrakesh",
+  "locked_stage5_1_qpy_manifest_sha256": "6ea84d6a47b279dc37e7a28ecad0259219a474e3b1b54e2551578a43f729220b",
+  "raw_counts_archive_sha256": "e2b140f0cd41ea43c484ee6c80ce47280e5a2bf317d187e0edc6d70c09c1e0cb",
+  "settled_jobs": [
+    {
+      "job_manifest_id": "Stage_5.1_Primary__Job01",
+      "hardware_job_id": "dbt8ti9vvpic738mm8ng",
+      "pass_type": "Primary",
+      "n_pubs": 75,
+      "total_physical_shots": 76800,
+      "forecast_billed_seconds": 24,
+      "settled_billed_seconds": 25
+    },
+    {
+      "job_manifest_id": "Stage_5.1_Primary__Job02",
+      "hardware_job_id": "dbt8tj7asvbs73b9ervg",
+      "pass_type": "Primary",
+      "n_pubs": 75,
+      "total_physical_shots": 76800,
+      "forecast_billed_seconds": 24,
+      "settled_billed_seconds": 24
+    },
+    {
+      "job_manifest_id": "Stage_5.1_Primary__Job03",
+      "hardware_job_id": "dbt8tjvq0h0s73bkfm70",
+      "pass_type": "Primary",
+      "n_pubs": 74,
+      "total_physical_shots": 75776,
+      "forecast_billed_seconds": 23,
+      "settled_billed_seconds": 24
+    },
+    {
+      "job_manifest_id": "Stage_5.1_Confirm__Job01",
+      "hardware_job_id": "dbt8ul9vvpic738mm9t0",
+      "pass_type": "Confirm",
+      "n_pubs": 75,
+      "total_physical_shots": 76800,
+      "forecast_billed_seconds": 24,
+      "settled_billed_seconds": 25
+    },
+    {
+      "job_manifest_id": "Stage_5.1_Confirm__Job02",
+      "hardware_job_id": "dbt8um7q0h0s73bkfnbg",
+      "pass_type": "Confirm",
+      "n_pubs": 75,
+      "total_physical_shots": 76800,
+      "forecast_billed_seconds": 24,
+      "settled_billed_seconds": 24
+    },
+    {
+      "job_manifest_id": "Stage_5.1_Confirm__Job03",
+      "hardware_job_id": "dbt8umpvvpic738mm9v0",
+      "pass_type": "Confirm",
+      "n_pubs": 74,
+      "total_physical_shots": 75776,
+      "forecast_billed_seconds": 24,
+      "settled_billed_seconds": 24
+    }
+  ],
+  "total_forecast_seconds": 143,
+  "total_settled_seconds": 146,
+  "point_outcome_counts_across_28_points": {
+    "Arm1_SABRE_MatchedBudget": {
+      "Confirmed Pass": 7,
+      "Unresolved Within Budget": 5,
+      "Confirmed Fail": 16
+    },
+    "Arm2_TKET_MatchedBudget": {
+      "Confirmed Pass": 2,
+      "Unresolved Within Budget": 4,
+      "Confirmed Fail": 22
+    },
+    "Arm3_Prometheus_Native": {
+      "Confirmed Pass": 7,
+      "Unresolved Within Budget": 6,
+      "Confirmed Fail": 15
+    },
+    "Arm4_Prometheus_Selector": {
+      "Confirmed Pass": 7,
+      "Unresolved Within Budget": 9,
+      "Confirmed Fail": 12
+    }
+  },
+  "point_results": [
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C0_HardwareLocal_Path",
+      "width": 15,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.6053,
+          "confirm_mean": 0.629232,
+          "combined_mean": 0.617266,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.595781,
+              0.614819
+            ],
+            "point_ci95_confirm": [
+              0.620411,
+              0.638053
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.666357,
+          "mean_fh_hellinger": 0.444199,
+          "mean_tvd": 0.51785,
+          "mean_hop": 0.991455,
+          "mean_linear_xeb": 87.446774,
+          "mean_shannon_entropy_bits": 9.0114,
+          "mean_native_2q": 56.0,
+          "mean_depth_total": 45.5,
+          "mean_tau_shot_ns": 3976.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.454051,
+          "confirm_mean": 0.427762,
+          "combined_mean": 0.440906,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.443097,
+              0.465004
+            ],
+            "point_ci95_confirm": [
+              0.416994,
+              0.438529
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.422619,
+          "mean_fh_hellinger": 0.179319,
+          "mean_tvd": 0.761788,
+          "mean_hop": 0.933838,
+          "mean_linear_xeb": 32.549652,
+          "mean_shannon_entropy_bits": 9.6527,
+          "mean_native_2q": 56.0,
+          "mean_depth_total": 56.0,
+          "mean_tau_shot_ns": 3976.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.614429,
+          "confirm_mean": 0.603619,
+          "combined_mean": 0.609024,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.60573,
+              0.623128
+            ],
+            "point_ci95_confirm": [
+              0.593979,
+              0.613258
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.653551,
+          "mean_fh_hellinger": 0.427182,
+          "mean_tvd": 0.532332,
+          "mean_hop": 0.991455,
+          "mean_linear_xeb": 83.487582,
+          "mean_shannon_entropy_bits": 9.0568,
+          "mean_native_2q": 56.0,
+          "mean_depth_total": 45.5,
+          "mean_tau_shot_ns": 3976.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.615978,
+          "confirm_mean": 0.610197,
+          "combined_mean": 0.613088,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.606691,
+              0.625265
+            ],
+            "point_ci95_confirm": [
+              0.600554,
+              0.61984
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.657635,
+          "mean_fh_hellinger": 0.432559,
+          "mean_tvd": 0.523468,
+          "mean_hop": 0.99292,
+          "mean_linear_xeb": 86.96681,
+          "mean_shannon_entropy_bits": 9.0276,
+          "mean_native_2q": 56.0,
+          "mean_depth_total": 45.5,
+          "mean_tau_shot_ns": 3976.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 15,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.493915,
+          "confirm_mean": 0.504781,
+          "combined_mean": 0.499348,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.483088,
+              0.504742
+            ],
+            "point_ci95_confirm": [
+              0.493245,
+              0.516317
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.511818,
+          "mean_fh_hellinger": 0.262063,
+          "mean_tvd": 0.674252,
+          "mean_hop": 0.947754,
+          "mean_linear_xeb": 39.131077,
+          "mean_shannon_entropy_bits": 9.544,
+          "mean_native_2q": 174.5,
+          "mean_depth_total": 167.0,
+          "mean_tau_shot_ns": 8576.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.41162,
+          "confirm_mean": 0.40318,
+          "combined_mean": 0.4074,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.399614,
+              0.423625
+            ],
+            "point_ci95_confirm": [
+              0.391701,
+              0.414659
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.408354,
+          "mean_fh_hellinger": 0.167875,
+          "mean_tvd": 0.757351,
+          "mean_hop": 0.903809,
+          "mean_linear_xeb": 26.601793,
+          "mean_shannon_entropy_bits": 9.733,
+          "mean_native_2q": 269.5,
+          "mean_depth_total": 358.5,
+          "mean_tau_shot_ns": 12198.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.480936,
+          "confirm_mean": 0.482936,
+          "combined_mean": 0.481936,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.469887,
+              0.491986
+            ],
+            "point_ci95_confirm": [
+              0.471378,
+              0.494495
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.489689,
+          "mean_fh_hellinger": 0.240196,
+          "mean_tvd": 0.685838,
+          "mean_hop": 0.942383,
+          "mean_linear_xeb": 38.914001,
+          "mean_shannon_entropy_bits": 9.5592,
+          "mean_native_2q": 182.5,
+          "mean_depth_total": 148.5,
+          "mean_tau_shot_ns": 8242.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.50457,
+          "confirm_mean": 0.510317,
+          "combined_mean": 0.507443,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.493235,
+              0.515905
+            ],
+            "point_ci95_confirm": [
+              0.499291,
+              0.521342
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.521011,
+          "mean_fh_hellinger": 0.271768,
+          "mean_tvd": 0.661496,
+          "mean_hop": 0.95044,
+          "mean_linear_xeb": 43.962307,
+          "mean_shannon_entropy_bits": 9.5122,
+          "mean_native_2q": 178.0,
+          "mean_depth_total": 141.5,
+          "mean_tau_shot_ns": 7814.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 24,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.398654,
+          "confirm_mean": 0.40206,
+          "combined_mean": 0.400357,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.389677,
+              0.407631
+            ],
+            "point_ci95_confirm": [
+              0.392801,
+              0.41132
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.045108,
+          "mean_fh_hellinger": 0.002053,
+          "mean_tvd": 0.989062,
+          "mean_hop": 0.957031,
+          "mean_linear_xeb": 190.230599,
+          "mean_shannon_entropy_bits": 9.998,
+          "mean_native_2q": 371.0,
+          "mean_depth_total": 233.0,
+          "mean_tau_shot_ns": 11694.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.218567,
+          "confirm_mean": 0.232442,
+          "combined_mean": 0.225505,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.208887,
+              0.228247
+            ],
+            "point_ci95_confirm": [
+              0.223181,
+              0.241704
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.013988,
+          "mean_fh_hellinger": 0.000251,
+          "mean_tvd": 0.997796,
+          "mean_hop": 0.829102,
+          "mean_linear_xeb": 36.131753,
+          "mean_shannon_entropy_bits": 9.9995,
+          "mean_native_2q": 510.0,
+          "mean_depth_total": 569.5,
+          "mean_tau_shot_ns": 18004.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.398898,
+          "confirm_mean": 0.409122,
+          "combined_mean": 0.40401,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.389447,
+              0.408349
+            ],
+            "point_ci95_confirm": [
+              0.399491,
+              0.418753
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.051383,
+          "mean_fh_hellinger": 0.002652,
+          "mean_tvd": 0.985425,
+          "mean_hop": 0.951416,
+          "mean_linear_xeb": 263.209385,
+          "mean_shannon_entropy_bits": 9.9956,
+          "mean_native_2q": 378.0,
+          "mean_depth_total": 206.5,
+          "mean_tau_shot_ns": 10878.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.399146,
+          "confirm_mean": 0.409107,
+          "combined_mean": 0.404127,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.389857,
+              0.408435
+            ],
+            "point_ci95_confirm": [
+              0.400367,
+              0.417848
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.0489,
+          "mean_fh_hellinger": 0.002397,
+          "mean_tvd": 0.986726,
+          "mean_hop": 0.948486,
+          "mean_linear_xeb": 244.677206,
+          "mean_shannon_entropy_bits": 9.9966,
+          "mean_native_2q": 364.0,
+          "mean_depth_total": 213.5,
+          "mean_tau_shot_ns": 10846.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 12,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.350635,
+          "confirm_mean": 0.345936,
+          "combined_mean": 0.348286,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.336698,
+              0.364572
+            ],
+            "point_ci95_confirm": [
+              0.332933,
+              0.35894
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.639096,
+          "mean_fh_hellinger": 0.408466,
+          "mean_tvd": 0.618772,
+          "mean_hop": 0.847656,
+          "mean_linear_xeb": 16.016514,
+          "mean_shannon_entropy_bits": 9.0965,
+          "mean_native_2q": 341.0,
+          "mean_depth_total": 284.0,
+          "mean_tau_shot_ns": 13704.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.093817,
+          "confirm_mean": 0.10668,
+          "combined_mean": 0.100249,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.082271,
+              0.105364
+            ],
+            "point_ci95_confirm": [
+              0.094824,
+              0.118535
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.337438,
+          "mean_fh_hellinger": 0.11952,
+          "mean_tvd": 0.84793,
+          "mean_hop": 0.634521,
+          "mean_linear_xeb": 1.692983,
+          "mean_shannon_entropy_bits": 9.5312,
+          "mean_native_2q": 502.5,
+          "mean_depth_total": 748.0,
+          "mean_tau_shot_ns": 22754.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.329259,
+          "confirm_mean": 0.329433,
+          "combined_mean": 0.329346,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.315221,
+              0.343296
+            ],
+            "point_ci95_confirm": [
+              0.315727,
+              0.343138
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.614715,
+          "mean_fh_hellinger": 0.377884,
+          "mean_tvd": 0.637882,
+          "mean_hop": 0.824219,
+          "mean_linear_xeb": 14.823072,
+          "mean_shannon_entropy_bits": 9.1477,
+          "mean_native_2q": 355.0,
+          "mean_depth_total": 310.0,
+          "mean_tau_shot_ns": 14602.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.342515,
+          "confirm_mean": 0.34853,
+          "combined_mean": 0.345523,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.328899,
+              0.356131
+            ],
+            "point_ci95_confirm": [
+              0.334383,
+              0.362677
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.632635,
+          "mean_fh_hellinger": 0.400242,
+          "mean_tvd": 0.617046,
+          "mean_hop": 0.839112,
+          "mean_linear_xeb": 15.850612,
+          "mean_shannon_entropy_bits": 9.0958,
+          "mean_native_2q": 341.0,
+          "mean_depth_total": 284.0,
+          "mean_tau_shot_ns": 13704.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 18,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.235508,
+          "confirm_mean": 0.250893,
+          "combined_mean": 0.2432,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.223999,
+              0.247017
+            ],
+            "point_ci95_confirm": [
+              0.239078,
+              0.262708
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.095196,
+          "mean_fh_hellinger": 0.009157,
+          "mean_tvd": 0.963381,
+          "mean_hop": 0.783203,
+          "mean_linear_xeb": 11.048538,
+          "mean_shannon_entropy_bits": 9.9806,
+          "mean_native_2q": 638.0,
+          "mean_depth_total": 500.0,
+          "mean_tau_shot_ns": 22648.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.144555,
+          "confirm_mean": 0.133937,
+          "combined_mean": 0.139246,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.133198,
+              0.155911
+            ],
+            "point_ci95_confirm": [
+              0.122796,
+              0.145077
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.049312,
+          "mean_fh_hellinger": 0.002497,
+          "mean_tvd": 0.986808,
+          "mean_hop": 0.691651,
+          "mean_linear_xeb": 3.532169,
+          "mean_shannon_entropy_bits": 9.9888,
+          "mean_native_2q": 915.0,
+          "mean_depth_total": 1078.0,
+          "mean_tau_shot_ns": 31532.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.257135,
+          "confirm_mean": 0.267954,
+          "combined_mean": 0.262545,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.245231,
+              0.26904
+            ],
+            "point_ci95_confirm": [
+              0.25564,
+              0.280269
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.110391,
+          "mean_fh_hellinger": 0.012214,
+          "mean_tvd": 0.95429,
+          "mean_hop": 0.794678,
+          "mean_linear_xeb": 15.597877,
+          "mean_shannon_entropy_bits": 9.9725,
+          "mean_native_2q": 685.5,
+          "mean_depth_total": 518.5,
+          "mean_tau_shot_ns": 23838.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.260818,
+          "confirm_mean": 0.270609,
+          "combined_mean": 0.265713,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.249082,
+              0.272554
+            ],
+            "point_ci95_confirm": [
+              0.258605,
+              0.282613
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.106246,
+          "mean_fh_hellinger": 0.011371,
+          "mean_tvd": 0.956855,
+          "mean_hop": 0.80664,
+          "mean_linear_xeb": 12.990412,
+          "mean_shannon_entropy_bits": 9.98,
+          "mean_native_2q": 656.0,
+          "mean_depth_total": 484.5,
+          "mean_tau_shot_ns": 22328.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 9,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.266493,
+          "confirm_mean": 0.253444,
+          "combined_mean": 0.259968,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.250216,
+              0.282769
+            ],
+            "point_ci95_confirm": [
+              0.236574,
+              0.270314
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.710611,
+          "mean_fh_hellinger": 0.506577,
+          "mean_tvd": 0.587584,
+          "mean_hop": 0.722901,
+          "mean_linear_xeb": 2.624997,
+          "mean_shannon_entropy_bits": 7.957,
+          "mean_native_2q": 317.5,
+          "mean_depth_total": 475.0,
+          "mean_tau_shot_ns": 21068.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.134623,
+          "confirm_mean": 0.139095,
+          "combined_mean": 0.136859,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.117188,
+              0.152057
+            ],
+            "point_ci95_confirm": [
+              0.123054,
+              0.155136
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.626713,
+          "mean_fh_hellinger": 0.393652,
+          "mean_tvd": 0.669684,
+          "mean_hop": 0.615235,
+          "mean_linear_xeb": 1.123575,
+          "mean_shannon_entropy_bits": 8.3326,
+          "mean_native_2q": 422.0,
+          "mean_depth_total": 728.5,
+          "mean_tau_shot_ns": 21982.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.337601,
+          "confirm_mean": 0.342759,
+          "combined_mean": 0.34018,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.320154,
+              0.355048
+            ],
+            "point_ci95_confirm": [
+              0.326056,
+              0.359462
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.809765,
+          "mean_fh_hellinger": 0.655748,
+          "mean_tvd": 0.461917,
+          "mean_hop": 0.77124,
+          "mean_linear_xeb": 4.116273,
+          "mean_shannon_entropy_bits": 7.8958,
+          "mean_native_2q": 200.0,
+          "mean_depth_total": 189.0,
+          "mean_tau_shot_ns": 8694.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.352905,
+          "confirm_mean": 0.349201,
+          "combined_mean": 0.351053,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.335687,
+              0.370123
+            ],
+            "point_ci95_confirm": [
+              0.332642,
+              0.36576
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.818715,
+          "mean_fh_hellinger": 0.67031,
+          "mean_tvd": 0.451602,
+          "mean_hop": 0.782959,
+          "mean_linear_xeb": 4.346429,
+          "mean_shannon_entropy_bits": 7.8834,
+          "mean_native_2q": 200.0,
+          "mean_depth_total": 189.0,
+          "mean_tau_shot_ns": 8694.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 15,
+      "rounds": 2,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.103895,
+          "confirm_mean": 0.123442,
+          "combined_mean": 0.113668,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.091063,
+              0.116727
+            ],
+            "point_ci95_confirm": [
+              0.110827,
+              0.136056
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.135318,
+          "mean_fh_hellinger": 0.019021,
+          "mean_tvd": 0.947068,
+          "mean_hop": 0.634765,
+          "mean_linear_xeb": 1.357209,
+          "mean_shannon_entropy_bits": 9.9222,
+          "mean_native_2q": 1251.0,
+          "mean_depth_total": 1061.5,
+          "mean_tau_shot_ns": 46830.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.037686,
+          "confirm_mean": 0.050007,
+          "combined_mean": 0.043847,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.025164,
+              0.050209
+            ],
+            "point_ci95_confirm": [
+              0.037944,
+              0.06207
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.097892,
+          "mean_fh_hellinger": 0.009958,
+          "mean_tvd": 0.969794,
+          "mean_hop": 0.537598,
+          "mean_linear_xeb": 0.230839,
+          "mean_shannon_entropy_bits": 9.9267,
+          "mean_native_2q": 1666.0,
+          "mean_depth_total": 2243.0,
+          "mean_tau_shot_ns": 63140.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.260925,
+          "confirm_mean": 0.247738,
+          "combined_mean": 0.254332,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.247437,
+              0.274414
+            ],
+            "point_ci95_confirm": [
+              0.234097,
+              0.261379
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.277803,
+          "mean_fh_hellinger": 0.077316,
+          "mean_tvd": 0.851553,
+          "mean_hop": 0.758301,
+          "mean_linear_xeb": 8.243555,
+          "mean_shannon_entropy_bits": 9.9098,
+          "mean_native_2q": 602.0,
+          "mean_depth_total": 318.0,
+          "mean_tau_shot_ns": 13440.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.272532,
+          "confirm_mean": 0.251845,
+          "combined_mean": 0.262188,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.258875,
+              0.286189
+            ],
+            "point_ci95_confirm": [
+              0.237752,
+              0.265937
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.284451,
+          "mean_fh_hellinger": 0.081151,
+          "mean_tvd": 0.845241,
+          "mean_hop": 0.76416,
+          "mean_linear_xeb": 9.266884,
+          "mean_shannon_entropy_bits": 9.8848,
+          "mean_native_2q": 602.0,
+          "mean_depth_total": 318.0,
+          "mean_tau_shot_ns": 13440.0
+        }
+      }
+    },
+    {
+      "family": "F1_Weighted_QAOA",
+      "regime": "C3_Dense_AllToAll",
+      "width": 21,
+      "rounds": 1,
+      "primary_metric_name": "r_approx",
+      "threshold": 0.35,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.055829,
+          "confirm_mean": 0.078055,
+          "combined_mean": 0.066942,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.04574,
+              0.065918
+            ],
+            "point_ci95_confirm": [
+              0.068411,
+              0.0877
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.016014,
+          "mean_fh_hellinger": 0.000258,
+          "mean_tvd": 0.999041,
+          "mean_hop": 0.598633,
+          "mean_linear_xeb": 0.963891,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 1522.5,
+          "mean_depth_total": 958.0,
+          "mean_tau_shot_ns": 42946.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.010689,
+          "confirm_mean": 0.019999,
+          "combined_mean": 0.015345,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.000707,
+              0.020672
+            ],
+            "point_ci95_confirm": [
+              0.010235,
+              0.029764
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.012314,
+          "mean_fh_hellinger": 0.000151,
+          "mean_tvd": 0.999396,
+          "mean_hop": 0.531983,
+          "mean_linear_xeb": 0.237416,
+          "mean_shannon_entropy_bits": 9.9985,
+          "mean_native_2q": 2536.0,
+          "mean_depth_total": 3033.0,
+          "mean_tau_shot_ns": 84336.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.216111,
+          "confirm_mean": 0.204718,
+          "combined_mean": 0.210415,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.205651,
+              0.226571
+            ],
+            "point_ci95_confirm": [
+              0.194042,
+              0.215394
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.035572,
+          "mean_fh_hellinger": 0.001265,
+          "mean_tvd": 0.996303,
+          "mean_hop": 0.787354,
+          "mean_linear_xeb": 6.58416,
+          "mean_shannon_entropy_bits": 9.998,
+          "mean_native_2q": 620.0,
+          "mean_depth_total": 230.0,
+          "mean_tau_shot_ns": 10374.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.2118,
+          "confirm_mean": 0.206638,
+          "combined_mean": 0.209219,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.20068,
+              0.22292
+            ],
+            "point_ci95_confirm": [
+              0.195961,
+              0.217314
+            ],
+            "threshold": 0.35
+          },
+          "mean_fb_overlap": 0.037235,
+          "mean_fh_hellinger": 0.001387,
+          "mean_tvd": 0.995748,
+          "mean_hop": 0.76709,
+          "mean_linear_xeb": 7.841207,
+          "mean_shannon_entropy_bits": 9.998,
+          "mean_native_2q": 620.0,
+          "mean_depth_total": 230.0,
+          "mean_tau_shot_ns": 10374.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 9,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.639323,
+          "confirm_mean": 0.639215,
+          "combined_mean": 0.639269,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.624472,
+              0.654174
+            ],
+            "point_ci95_confirm": [
+              0.624632,
+              0.653797
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.540286,
+          "mean_fh_hellinger": 0.291992,
+          "mean_tvd": 0.708008,
+          "mean_hop": 0.291992,
+          "mean_linear_xeb": 148.5,
+          "mean_shannon_entropy_bits": 5.2817,
+          "mean_native_2q": 110.0,
+          "mean_depth_total": 238.0,
+          "mean_tau_shot_ns": 10992.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.415365,
+          "confirm_mean": 0.383572,
+          "combined_mean": 0.399468,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.399114,
+              0.431615
+            ],
+            "point_ci95_confirm": [
+              0.366608,
+              0.400536
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.296191,
+          "mean_fh_hellinger": 0.09082,
+          "mean_tvd": 0.90918,
+          "mean_hop": 0.09082,
+          "mean_linear_xeb": 45.5,
+          "mean_shannon_entropy_bits": 7.1159,
+          "mean_native_2q": 226.5,
+          "mean_depth_total": 448.5,
+          "mean_tau_shot_ns": 14116.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.644748,
+          "confirm_mean": 0.657986,
+          "combined_mean": 0.651367,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.629044,
+              0.660452
+            ],
+            "point_ci95_confirm": [
+              0.642523,
+              0.673449
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.562123,
+          "mean_fh_hellinger": 0.316406,
+          "mean_tvd": 0.683594,
+          "mean_hop": 0.316406,
+          "mean_linear_xeb": 161.0,
+          "mean_shannon_entropy_bits": 5.1646,
+          "mean_native_2q": 107.0,
+          "mean_depth_total": 168.0,
+          "mean_tau_shot_ns": 8124.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.666233,
+          "confirm_mean": 0.65256,
+          "combined_mean": 0.659396,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.651152,
+              0.681313
+            ],
+            "point_ci95_confirm": [
+              0.637275,
+              0.667846
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.570461,
+          "mean_fh_hellinger": 0.325684,
+          "mean_tvd": 0.674316,
+          "mean_hop": 0.325684,
+          "mean_linear_xeb": 165.75,
+          "mean_shannon_entropy_bits": 5.1014,
+          "mean_native_2q": 107.0,
+          "mean_depth_total": 168.0,
+          "mean_tau_shot_ns": 8124.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 12,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.548258,
+          "confirm_mean": 0.554362,
+          "combined_mean": 0.55131,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.53338,
+              0.563137
+            ],
+            "point_ci95_confirm": [
+              0.54005,
+              0.568674
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.322983,
+          "mean_fh_hellinger": 0.104492,
+          "mean_tvd": 0.895508,
+          "mean_hop": 0.104492,
+          "mean_linear_xeb": 427.0,
+          "mean_shannon_entropy_bits": 7.263,
+          "mean_native_2q": 205.0,
+          "mean_depth_total": 302.5,
+          "mean_tau_shot_ns": 13348.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.286377,
+          "confirm_mean": 0.262939,
+          "combined_mean": 0.274658,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.271666,
+              0.301088
+            ],
+            "point_ci95_confirm": [
+              0.248435,
+              0.277444
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.131475,
+          "mean_fh_hellinger": 0.017334,
+          "mean_tvd": 0.982666,
+          "mean_hop": 0.017334,
+          "mean_linear_xeb": 70.0,
+          "mean_shannon_entropy_bits": 9.1945,
+          "mean_native_2q": 450.0,
+          "mean_depth_total": 965.0,
+          "mean_tau_shot_ns": 27720.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.512126,
+          "confirm_mean": 0.514811,
+          "combined_mean": 0.513468,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.497178,
+              0.527073
+            ],
+            "point_ci95_confirm": [
+              0.500539,
+              0.529084
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.302761,
+          "mean_fh_hellinger": 0.092774,
+          "mean_tvd": 0.907227,
+          "mean_hop": 0.092774,
+          "mean_linear_xeb": 379.0,
+          "mean_shannon_entropy_bits": 7.6414,
+          "mean_native_2q": 208.0,
+          "mean_depth_total": 340.0,
+          "mean_tau_shot_ns": 14558.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.521077,
+          "confirm_mean": 0.544434,
+          "combined_mean": 0.532755,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.506813,
+              0.535342
+            ],
+            "point_ci95_confirm": [
+              0.530351,
+              0.558516
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.311843,
+          "mean_fh_hellinger": 0.097412,
+          "mean_tvd": 0.902588,
+          "mean_hop": 0.097412,
+          "mean_linear_xeb": 398.0,
+          "mean_shannon_entropy_bits": 7.526,
+          "mean_native_2q": 205.0,
+          "mean_depth_total": 302.5,
+          "mean_tau_shot_ns": 13348.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 15,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.339323,
+          "confirm_mean": 0.354947,
+          "combined_mean": 0.347135,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.326013,
+              0.352633
+            ],
+            "point_ci95_confirm": [
+              0.342767,
+              0.367128
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.073212,
+          "mean_fh_hellinger": 0.005371,
+          "mean_tvd": 0.994629,
+          "mean_hop": 0.005371,
+          "mean_linear_xeb": 175.0,
+          "mean_shannon_entropy_bits": 9.5407,
+          "mean_native_2q": 330.0,
+          "mean_depth_total": 421.5,
+          "mean_tau_shot_ns": 18272.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.090104,
+          "confirm_mean": 0.105013,
+          "combined_mean": 0.097558,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.078569,
+              0.101639
+            ],
+            "point_ci95_confirm": [
+              0.093869,
+              0.116157
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.941,
+          "mean_native_2q": 714.0,
+          "mean_depth_total": 1132.0,
+          "mean_tau_shot_ns": 32224.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.543229,
+          "confirm_mean": 0.557486,
+          "combined_mean": 0.550358,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.528193,
+              0.558265
+            ],
+            "point_ci95_confirm": [
+              0.542744,
+              0.572229
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.341282,
+          "mean_fh_hellinger": 0.116699,
+          "mean_tvd": 0.883301,
+          "mean_hop": 0.116699,
+          "mean_linear_xeb": 3823.0,
+          "mean_shannon_entropy_bits": 8.1896,
+          "mean_native_2q": 314.0,
+          "mean_depth_total": 300.0,
+          "mean_tau_shot_ns": 12696.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.557813,
+          "confirm_mean": 0.552409,
+          "combined_mean": 0.555111,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.542639,
+              0.572986
+            ],
+            "point_ci95_confirm": [
+              0.537323,
+              0.567495
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.344848,
+          "mean_fh_hellinger": 0.119141,
+          "mean_tvd": 0.880859,
+          "mean_hop": 0.119141,
+          "mean_linear_xeb": 3903.0,
+          "mean_shannon_entropy_bits": 8.1895,
+          "mean_native_2q": 314.0,
+          "mean_depth_total": 300.0,
+          "mean_tau_shot_ns": 12696.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 18,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.302517,
+          "confirm_mean": 0.320855,
+          "combined_mean": 0.311686,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.289585,
+              0.31545
+            ],
+            "point_ci95_confirm": [
+              0.308783,
+              0.332927
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.043717,
+          "mean_fh_hellinger": 0.002685,
+          "mean_tvd": 0.997314,
+          "mean_hop": 0.002685,
+          "mean_linear_xeb": 703.0,
+          "mean_shannon_entropy_bits": 9.8481,
+          "mean_native_2q": 486.5,
+          "mean_depth_total": 558.0,
+          "mean_tau_shot_ns": 22596.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.010851,
+          "confirm_mean": 0.000434,
+          "combined_mean": 0.005642,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.001431,
+              0.020271
+            ],
+            "point_ci95_confirm": [
+              -0.008737,
+              0.009605
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9937,
+          "mean_native_2q": 1068.0,
+          "mean_depth_total": 1909.0,
+          "mean_tau_shot_ns": 52504.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.460991,
+          "confirm_mean": 0.446669,
+          "combined_mean": 0.45383,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.447689,
+              0.474294
+            ],
+            "point_ci95_confirm": [
+              0.433368,
+              0.45997
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.191449,
+          "mean_fh_hellinger": 0.037354,
+          "mean_tvd": 0.962646,
+          "mean_hop": 0.037354,
+          "mean_linear_xeb": 9791.0,
+          "mean_shannon_entropy_bits": 9.4515,
+          "mean_native_2q": 458.0,
+          "mean_depth_total": 366.0,
+          "mean_tau_shot_ns": 14712.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.441569,
+          "confirm_mean": 0.466525,
+          "combined_mean": 0.454047,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.428037,
+              0.455101
+            ],
+            "point_ci95_confirm": [
+              0.45254,
+              0.480511
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.179286,
+          "mean_fh_hellinger": 0.032471,
+          "mean_tvd": 0.967529,
+          "mean_hop": 0.032471,
+          "mean_linear_xeb": 8511.0,
+          "mean_shannon_entropy_bits": 9.4513,
+          "mean_native_2q": 458.0,
+          "mean_depth_total": 366.0,
+          "mean_tau_shot_ns": 14712.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 21,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.272182,
+          "confirm_mean": 0.264555,
+          "combined_mean": 0.268369,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.26088,
+              0.283484
+            ],
+            "point_ci95_confirm": [
+              0.253078,
+              0.276032
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9769,
+          "mean_native_2q": 666.0,
+          "mean_depth_total": 628.0,
+          "mean_tau_shot_ns": 25338.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.065337,
+          "confirm_mean": 0.061617,
+          "combined_mean": 0.063477,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.056421,
+              0.074253
+            ],
+            "point_ci95_confirm": [
+              0.052599,
+              0.070634
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.998,
+          "mean_native_2q": 1596.0,
+          "mean_depth_total": 2230.0,
+          "mean_tau_shot_ns": 61804.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.416015,
+          "confirm_mean": 0.447777,
+          "combined_mean": 0.431896,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.403328,
+              0.428703
+            ],
+            "point_ci95_confirm": [
+              0.435392,
+              0.460162
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.12498,
+          "mean_fh_hellinger": 0.016113,
+          "mean_tvd": 0.983886,
+          "mean_hop": 0.016113,
+          "mean_linear_xeb": 33791.0,
+          "mean_shannon_entropy_bits": 9.7569,
+          "mean_native_2q": 629.0,
+          "mean_depth_total": 432.0,
+          "mean_tau_shot_ns": 16908.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.439128,
+          "confirm_mean": 0.437965,
+          "combined_mean": 0.438546,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.426213,
+              0.452042
+            ],
+            "point_ci95_confirm": [
+              0.425352,
+              0.450578
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.134049,
+          "mean_fh_hellinger": 0.018799,
+          "mean_tvd": 0.981201,
+          "mean_hop": 0.018799,
+          "mean_linear_xeb": 39423.0,
+          "mean_shannon_entropy_bits": 9.7298,
+          "mean_native_2q": 629.0,
+          "mean_depth_total": 432.0,
+          "mean_tau_shot_ns": 16908.0
+        }
+      }
+    },
+    {
+      "family": "F2_QFT_PhaseRecovery",
+      "regime": "C3_Dense_AllToAll",
+      "width": 24,
+      "rounds": 1,
+      "primary_metric_name": "bitwise_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.210246,
+          "confirm_mean": 0.221395,
+          "combined_mean": 0.215821,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.199827,
+              0.220665
+            ],
+            "point_ci95_confirm": [
+              0.210516,
+              0.232274
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.015625,
+          "mean_fh_hellinger": 0.000489,
+          "mean_tvd": 0.999512,
+          "mean_hop": 0.000489,
+          "mean_linear_xeb": 8191.0,
+          "mean_shannon_entropy_bits": 9.9951,
+          "mean_native_2q": 850.0,
+          "mean_depth_total": 699.5,
+          "mean_tau_shot_ns": 26914.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": -0.02539,
+          "confirm_mean": -0.019165,
+          "combined_mean": -0.022278,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.034097,
+              -0.016684
+            ],
+            "point_ci95_confirm": [
+              -0.027311,
+              -0.011019
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9995,
+          "mean_native_2q": 1788.0,
+          "mean_depth_total": 2033.0,
+          "mean_tau_shot_ns": 56236.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.41866,
+          "confirm_mean": 0.402791,
+          "combined_mean": 0.410726,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.405383,
+              0.431938
+            ],
+            "point_ci95_confirm": [
+              0.38906,
+              0.416523
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.092037,
+          "mean_fh_hellinger": 0.008789,
+          "mean_tvd": 0.991211,
+          "mean_hop": 0.008789,
+          "mean_linear_xeb": 147455.0,
+          "mean_shannon_entropy_bits": 9.8786,
+          "mean_native_2q": 827.0,
+          "mean_depth_total": 498.0,
+          "mean_tau_shot_ns": 19788.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.366089,
+          "confirm_mean": 0.342529,
+          "combined_mean": 0.354309,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.353603,
+              0.378575
+            ],
+            "point_ci95_confirm": [
+              0.330228,
+              0.35483
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.068021,
+          "mean_fh_hellinger": 0.005615,
+          "mean_tvd": 0.994385,
+          "mean_hop": 0.005615,
+          "mean_linear_xeb": 94207.0,
+          "mean_shannon_entropy_bits": 9.9478,
+          "mean_native_2q": 840.0,
+          "mean_depth_total": 561.5,
+          "mean_tau_shot_ns": 21866.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C0_HardwareLocal_Path",
+      "width": 15,
+      "rounds": 4,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.743164,
+          "confirm_mean": 0.728515,
+          "combined_mean": 0.73584,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.723826,
+              0.762502
+            ],
+            "point_ci95_confirm": [
+              0.709523,
+              0.747508
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.213959,
+          "mean_fh_hellinger": 0.045791,
+          "mean_tvd": 0.936668,
+          "mean_hop": 0.73584,
+          "mean_linear_xeb": 1.16308,
+          "mean_shannon_entropy_bits": 9.9441,
+          "mean_native_2q": 99.5,
+          "mean_depth_total": 90.5,
+          "mean_tau_shot_ns": 5346.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.566894,
+          "confirm_mean": 0.550782,
+          "combined_mean": 0.558838,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.545306,
+              0.588483
+            ],
+            "point_ci95_confirm": [
+              0.529372,
+              0.572191
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.156921,
+          "mean_fh_hellinger": 0.024637,
+          "mean_tvd": 0.96331,
+          "mean_hop": 0.558838,
+          "mean_linear_xeb": 0.202634,
+          "mean_shannon_entropy_bits": 9.9656,
+          "mean_native_2q": 112.0,
+          "mean_depth_total": 111.5,
+          "mean_tau_shot_ns": 5572.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.730957,
+          "confirm_mean": 0.742188,
+          "combined_mean": 0.736572,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.712636,
+              0.749278
+            ],
+            "point_ci95_confirm": [
+              0.723361,
+              0.761014
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.216641,
+          "mean_fh_hellinger": 0.046949,
+          "mean_tvd": 0.934576,
+          "mean_hop": 0.736572,
+          "mean_linear_xeb": 1.266561,
+          "mean_shannon_entropy_bits": 9.9341,
+          "mean_native_2q": 99.5,
+          "mean_depth_total": 90.5,
+          "mean_tau_shot_ns": 5346.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.729492,
+          "confirm_mean": 0.750489,
+          "combined_mean": 0.73999,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.71067,
+              0.748315
+            ],
+            "point_ci95_confirm": [
+              0.731651,
+              0.769326
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.218158,
+          "mean_fh_hellinger": 0.047618,
+          "mean_tvd": 0.933738,
+          "mean_hop": 0.73999,
+          "mean_linear_xeb": 1.266073,
+          "mean_shannon_entropy_bits": 9.9412,
+          "mean_native_2q": 99.5,
+          "mean_depth_total": 90.5,
+          "mean_tau_shot_ns": 5346.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 9,
+      "rounds": 4,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.599122,
+          "confirm_mean": 0.586914,
+          "combined_mean": 0.593018,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.57804,
+              0.620203
+            ],
+            "point_ci95_confirm": [
+              0.565159,
+              0.608669
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.837833,
+          "mean_fh_hellinger": 0.702041,
+          "mean_tvd": 0.386652,
+          "mean_hop": 0.593018,
+          "mean_linear_xeb": 0.218044,
+          "mean_shannon_entropy_bits": 8.5314,
+          "mean_native_2q": 195.5,
+          "mean_depth_total": 299.5,
+          "mean_tau_shot_ns": 13276.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.533691,
+          "confirm_mean": 0.538086,
+          "combined_mean": 0.535889,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.511928,
+              0.555455
+            ],
+            "point_ci95_confirm": [
+              0.516839,
+              0.559333
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.809724,
+          "mean_fh_hellinger": 0.656607,
+          "mean_tvd": 0.434899,
+          "mean_hop": 0.535889,
+          "mean_linear_xeb": 0.099231,
+          "mean_shannon_entropy_bits": 8.5377,
+          "mean_native_2q": 266.0,
+          "mean_depth_total": 422.0,
+          "mean_tau_shot_ns": 13794.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.563965,
+          "confirm_mean": 0.551758,
+          "combined_mean": 0.557862,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.542364,
+              0.585566
+            ],
+            "point_ci95_confirm": [
+              0.529641,
+              0.573875
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.827618,
+          "mean_fh_hellinger": 0.68557,
+          "mean_tvd": 0.411217,
+          "mean_hop": 0.557862,
+          "mean_linear_xeb": 0.144878,
+          "mean_shannon_entropy_bits": 8.5714,
+          "mean_native_2q": 200.0,
+          "mean_depth_total": 293.0,
+          "mean_tau_shot_ns": 13202.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.580566,
+          "confirm_mean": 0.576172,
+          "combined_mean": 0.578369,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.559151,
+              0.601982
+            ],
+            "point_ci95_confirm": [
+              0.554242,
+              0.598102
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.842489,
+          "mean_fh_hellinger": 0.709952,
+          "mean_tvd": 0.393596,
+          "mean_hop": 0.578369,
+          "mean_linear_xeb": 0.205972,
+          "mean_shannon_entropy_bits": 8.5606,
+          "mean_native_2q": 195.5,
+          "mean_depth_total": 299.5,
+          "mean_tau_shot_ns": 13276.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 15,
+      "rounds": 2,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.575195,
+          "confirm_mean": 0.593261,
+          "combined_mean": 0.584228,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.554301,
+              0.596089
+            ],
+            "point_ci95_confirm": [
+              0.572358,
+              0.614165
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.175763,
+          "mean_fh_hellinger": 0.030901,
+          "mean_tvd": 0.958944,
+          "mean_hop": 0.584228,
+          "mean_linear_xeb": 0.347583,
+          "mean_shannon_entropy_bits": 9.9642,
+          "mean_native_2q": 151.0,
+          "mean_depth_total": 136.0,
+          "mean_tau_shot_ns": 7286.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.521485,
+          "confirm_mean": 0.527344,
+          "combined_mean": 0.524414,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.499381,
+              0.543588
+            ],
+            "point_ci95_confirm": [
+              0.506105,
+              0.548583
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.159241,
+          "mean_fh_hellinger": 0.02536,
+          "mean_tvd": 0.966073,
+          "mean_hop": 0.524414,
+          "mean_linear_xeb": 0.116714,
+          "mean_shannon_entropy_bits": 9.9596,
+          "mean_native_2q": 314.5,
+          "mean_depth_total": 398.5,
+          "mean_tau_shot_ns": 13226.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.599609,
+          "confirm_mean": 0.614258,
+          "combined_mean": 0.606934,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.578543,
+              0.620675
+            ],
+            "point_ci95_confirm": [
+              0.593358,
+              0.635158
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.180354,
+          "mean_fh_hellinger": 0.03254,
+          "mean_tvd": 0.956712,
+          "mean_hop": 0.606934,
+          "mean_linear_xeb": 0.417811,
+          "mean_shannon_entropy_bits": 9.9653,
+          "mean_native_2q": 163.0,
+          "mean_depth_total": 148.0,
+          "mean_tau_shot_ns": 7858.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.611816,
+          "confirm_mean": 0.631836,
+          "combined_mean": 0.621826,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 1,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.590556,
+              0.633077
+            ],
+            "point_ci95_confirm": [
+              0.610947,
+              0.652725
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.181229,
+          "mean_fh_hellinger": 0.032846,
+          "mean_tvd": 0.957114,
+          "mean_hop": 0.621826,
+          "mean_linear_xeb": 0.419738,
+          "mean_shannon_entropy_bits": 9.9585,
+          "mean_native_2q": 155.5,
+          "mean_depth_total": 144.0,
+          "mean_tau_shot_ns": 7734.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 12,
+      "rounds": 2,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.545899,
+          "confirm_mean": 0.542969,
+          "combined_mean": 0.544434,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.524817,
+              0.56698
+            ],
+            "point_ci95_confirm": [
+              0.521896,
+              0.564042
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.435558,
+          "mean_fh_hellinger": 0.189732,
+          "mean_tvd": 0.761186,
+          "mean_hop": 0.544434,
+          "mean_linear_xeb": 0.11844,
+          "mean_shannon_entropy_bits": 9.7575,
+          "mean_native_2q": 315.0,
+          "mean_depth_total": 282.5,
+          "mean_tau_shot_ns": 13116.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.495605,
+          "confirm_mean": 0.500489,
+          "combined_mean": 0.498047,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.473846,
+              0.517364
+            ],
+            "point_ci95_confirm": [
+              0.478704,
+              0.522273
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.410336,
+          "mean_fh_hellinger": 0.168386,
+          "mean_tvd": 0.783461,
+          "mean_hop": 0.498047,
+          "mean_linear_xeb": -0.001724,
+          "mean_shannon_entropy_bits": 9.7545,
+          "mean_native_2q": 462.0,
+          "mean_depth_total": 694.5,
+          "mean_tau_shot_ns": 21150.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.53418,
+          "confirm_mean": 0.52832,
+          "combined_mean": 0.53125,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.51259,
+              0.555769
+            ],
+            "point_ci95_confirm": [
+              0.506736,
+              0.549905
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.429018,
+          "mean_fh_hellinger": 0.184069,
+          "mean_tvd": 0.766402,
+          "mean_hop": 0.53125,
+          "mean_linear_xeb": 0.103063,
+          "mean_shannon_entropy_bits": 9.7379,
+          "mean_native_2q": 321.0,
+          "mean_depth_total": 305.5,
+          "mean_tau_shot_ns": 14260.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.541015,
+          "confirm_mean": 0.541016,
+          "combined_mean": 0.541016,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.518387,
+              0.563644
+            ],
+            "point_ci95_confirm": [
+              0.519602,
+              0.562429
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.432454,
+          "mean_fh_hellinger": 0.187043,
+          "mean_tvd": 0.76365,
+          "mean_hop": 0.541015,
+          "mean_linear_xeb": 0.109889,
+          "mean_shannon_entropy_bits": 9.7481,
+          "mean_native_2q": 315.0,
+          "mean_depth_total": 282.5,
+          "mean_tau_shot_ns": 13116.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 18,
+      "rounds": 1,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.551269,
+          "confirm_mean": 0.552246,
+          "combined_mean": 0.551758,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.529336,
+              0.573203
+            ],
+            "point_ci95_confirm": [
+              0.530302,
+              0.57419
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.05879,
+          "mean_fh_hellinger": 0.003457,
+          "mean_tvd": 0.995495,
+          "mean_hop": 0.551758,
+          "mean_linear_xeb": 0.157705,
+          "mean_shannon_entropy_bits": 9.9946,
+          "mean_native_2q": 271.5,
+          "mean_depth_total": 245.5,
+          "mean_tau_shot_ns": 11510.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.523438,
+          "confirm_mean": 0.532227,
+          "combined_mean": 0.527832,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.501503,
+              0.545372
+            ],
+            "point_ci95_confirm": [
+              0.509432,
+              0.555021
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.056114,
+          "mean_fh_hellinger": 0.003149,
+          "mean_tvd": 0.995884,
+          "mean_hop": 0.527832,
+          "mean_linear_xeb": 0.054704,
+          "mean_shannon_entropy_bits": 9.9974,
+          "mean_native_2q": 408.0,
+          "mean_depth_total": 471.0,
+          "mean_tau_shot_ns": 15250.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.533691,
+          "confirm_mean": 0.524414,
+          "combined_mean": 0.529053,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.511421,
+              0.555962
+            ],
+            "point_ci95_confirm": [
+              0.50282,
+              0.546008
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.057112,
+          "mean_fh_hellinger": 0.003263,
+          "mean_tvd": 0.995728,
+          "mean_hop": 0.529053,
+          "mean_linear_xeb": 0.096053,
+          "mean_shannon_entropy_bits": 9.9966,
+          "mean_native_2q": 279.0,
+          "mean_depth_total": 235.5,
+          "mean_tau_shot_ns": 11516.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.550782,
+          "confirm_mean": 0.54248,
+          "combined_mean": 0.546631,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.529197,
+              0.572366
+            ],
+            "point_ci95_confirm": [
+              0.52107,
+              0.563891
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.058996,
+          "mean_fh_hellinger": 0.003481,
+          "mean_tvd": 0.995448,
+          "mean_hop": 0.546631,
+          "mean_linear_xeb": 0.166982,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 273.0,
+          "mean_depth_total": 235.0,
+          "mean_tau_shot_ns": 11328.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C3_Dense_AllToAll",
+      "width": 9,
+      "rounds": 2,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.52539,
+          "confirm_mean": 0.521484,
+          "combined_mean": 0.523437,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.50363,
+              0.547151
+            ],
+            "point_ci95_confirm": [
+              0.500403,
+              0.542565
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.805352,
+          "mean_fh_hellinger": 0.648715,
+          "mean_tvd": 0.443572,
+          "mean_hop": 0.523437,
+          "mean_linear_xeb": 0.065382,
+          "mean_shannon_entropy_bits": 8.5816,
+          "mean_native_2q": 314.5,
+          "mean_depth_total": 525.5,
+          "mean_tau_shot_ns": 21898.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.507324,
+          "confirm_mean": 0.481445,
+          "combined_mean": 0.494385,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.486081,
+              0.528567
+            ],
+            "point_ci95_confirm": [
+              0.45952,
+              0.503371
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.78988,
+          "mean_fh_hellinger": 0.623913,
+          "mean_tvd": 0.464581,
+          "mean_hop": 0.494385,
+          "mean_linear_xeb": -0.009108,
+          "mean_shannon_entropy_bits": 8.5936,
+          "mean_native_2q": 468.0,
+          "mean_depth_total": 844.0,
+          "mean_tau_shot_ns": 25214.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.510742,
+          "confirm_mean": 0.523926,
+          "combined_mean": 0.517334,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.489507,
+              0.531977
+            ],
+            "point_ci95_confirm": [
+              0.502862,
+              0.54499
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.804663,
+          "mean_fh_hellinger": 0.647514,
+          "mean_tvd": 0.44693,
+          "mean_hop": 0.517334,
+          "mean_linear_xeb": 0.056947,
+          "mean_shannon_entropy_bits": 8.5885,
+          "mean_native_2q": 331.0,
+          "mean_depth_total": 524.5,
+          "mean_tau_shot_ns": 21704.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.53418,
+          "confirm_mean": 0.534668,
+          "combined_mean": 0.534424,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.5126,
+              0.55576
+            ],
+            "point_ci95_confirm": [
+              0.513424,
+              0.555911
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.808559,
+          "mean_fh_hellinger": 0.653885,
+          "mean_tvd": 0.44638,
+          "mean_hop": 0.534424,
+          "mean_linear_xeb": 0.077035,
+          "mean_shannon_entropy_bits": 8.5705,
+          "mean_native_2q": 323.5,
+          "mean_depth_total": 516.5,
+          "mean_tau_shot_ns": 21772.0
+        }
+      }
+    },
+    {
+      "family": "F3_Random_SU4",
+      "regime": "C3_Dense_AllToAll",
+      "width": 12,
+      "rounds": 1,
+      "primary_metric_name": "hop",
+      "threshold": 0.58,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.554688,
+          "confirm_mean": 0.560547,
+          "combined_mean": 0.557617,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 2,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.533788,
+              0.575587
+            ],
+            "point_ci95_confirm": [
+              0.538784,
+              0.58231
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.442851,
+          "mean_fh_hellinger": 0.19617,
+          "mean_tvd": 0.754746,
+          "mean_hop": 0.557617,
+          "mean_linear_xeb": 0.14247,
+          "mean_shannon_entropy_bits": 9.7573,
+          "mean_native_2q": 306.0,
+          "mean_depth_total": 272.5,
+          "mean_tau_shot_ns": 12708.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.505371,
+          "confirm_mean": 0.522461,
+          "combined_mean": 0.513916,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.48327,
+              0.527473
+            ],
+            "point_ci95_confirm": [
+              0.500191,
+              0.544731
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.420325,
+          "mean_fh_hellinger": 0.176688,
+          "mean_tvd": 0.775637,
+          "mean_hop": 0.513916,
+          "mean_linear_xeb": 0.04335,
+          "mean_shannon_entropy_bits": 9.7565,
+          "mean_native_2q": 430.5,
+          "mean_depth_total": 560.5,
+          "mean_tau_shot_ns": 17600.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.541504,
+          "confirm_mean": 0.537598,
+          "combined_mean": 0.539551,
+          "instance_outcomes": [
+            "Unresolved Within Budget",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.519061,
+              0.563947
+            ],
+            "point_ci95_confirm": [
+              0.516349,
+              0.558847
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.432573,
+          "mean_fh_hellinger": 0.187157,
+          "mean_tvd": 0.763275,
+          "mean_hop": 0.539551,
+          "mean_linear_xeb": 0.112176,
+          "mean_shannon_entropy_bits": 9.7489,
+          "mean_native_2q": 319.5,
+          "mean_depth_total": 289.0,
+          "mean_tau_shot_ns": 13444.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.544434,
+          "confirm_mean": 0.547363,
+          "combined_mean": 0.545898,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Unresolved Within Budget"
+          ],
+          "point_classification": {
+            "point_outcome": "Unresolved Within Budget",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 1,
+            "n_confirmed_fail": 1,
+            "point_ci95_primary": [
+              0.523184,
+              0.565683
+            ],
+            "point_ci95_confirm": [
+              0.525941,
+              0.568785
+            ],
+            "threshold": 0.58
+          },
+          "mean_fb_overlap": 0.44054,
+          "mean_fh_hellinger": 0.194077,
+          "mean_tvd": 0.756072,
+          "mean_hop": 0.545898,
+          "mean_linear_xeb": 0.155037,
+          "mean_shannon_entropy_bits": 9.76,
+          "mean_native_2q": 306.0,
+          "mean_depth_total": 272.5,
+          "mean_tau_shot_ns": 12708.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C0_HardwareLocal_Path",
+      "width": 21,
+      "rounds": 8,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.721587,
+          "confirm_mean": 0.72368,
+          "combined_mean": 0.722633,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.710894,
+              0.732279
+            ],
+            "point_ci95_confirm": [
+              0.712741,
+              0.734618
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.458003,
+          "mean_fh_hellinger": 0.210449,
+          "mean_tvd": 0.789551,
+          "mean_hop": 0.210449,
+          "mean_linear_xeb": 441343.0,
+          "mean_shannon_entropy_bits": 7.3025,
+          "mean_native_2q": 141.0,
+          "mean_depth_total": 60.5,
+          "mean_tau_shot_ns": 4728.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.711682,
+          "confirm_mean": 0.702241,
+          "combined_mean": 0.706961,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.700263,
+              0.7231
+            ],
+            "point_ci95_confirm": [
+              0.691027,
+              0.713455
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.454495,
+          "mean_fh_hellinger": 0.206787,
+          "mean_tvd": 0.793213,
+          "mean_hop": 0.206787,
+          "mean_linear_xeb": 433663.0,
+          "mean_shannon_entropy_bits": 7.4097,
+          "mean_native_2q": 160.0,
+          "mean_depth_total": 76.0,
+          "mean_tau_shot_ns": 4824.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.736607,
+          "confirm_mean": 0.716657,
+          "combined_mean": 0.726632,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.72643,
+              0.746784
+            ],
+            "point_ci95_confirm": [
+              0.70549,
+              0.727825
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.463591,
+          "mean_fh_hellinger": 0.215332,
+          "mean_tvd": 0.784668,
+          "mean_hop": 0.215332,
+          "mean_linear_xeb": 451583.0,
+          "mean_shannon_entropy_bits": 7.2143,
+          "mean_native_2q": 140.0,
+          "mean_depth_total": 61.0,
+          "mean_tau_shot_ns": 4734.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.719494,
+          "confirm_mean": 0.726376,
+          "combined_mean": 0.722935,
+          "instance_outcomes": [
+            "Confirmed Pass",
+            "Confirmed Pass"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Pass",
+            "n_instances": 2,
+            "n_confirmed_pass": 2,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 0,
+            "point_ci95_primary": [
+              0.708945,
+              0.730043
+            ],
+            "point_ci95_confirm": [
+              0.715661,
+              0.737092
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.44952,
+          "mean_fh_hellinger": 0.203369,
+          "mean_tvd": 0.796631,
+          "mean_hop": 0.203369,
+          "mean_linear_xeb": 426495.0,
+          "mean_shannon_entropy_bits": 7.3137,
+          "mean_native_2q": 140.0,
+          "mean_depth_total": 61.0,
+          "mean_tau_shot_ns": 4734.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 15,
+      "rounds": 4,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.373698,
+          "confirm_mean": 0.392709,
+          "combined_mean": 0.383203,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.356095,
+              0.3913
+            ],
+            "point_ci95_confirm": [
+              0.375251,
+              0.410166
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.361766,
+          "mean_fh_hellinger": 0.131836,
+          "mean_tvd": 0.868164,
+          "mean_hop": 0.131836,
+          "mean_linear_xeb": 4319.0,
+          "mean_shannon_entropy_bits": 8.3786,
+          "mean_native_2q": 252.5,
+          "mean_depth_total": 178.0,
+          "mean_tau_shot_ns": 10726.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.202734,
+          "confirm_mean": 0.204622,
+          "combined_mean": 0.203678,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.188916,
+              0.216553
+            ],
+            "point_ci95_confirm": [
+              0.189927,
+              0.219317
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.147311,
+          "mean_fh_hellinger": 0.024658,
+          "mean_tvd": 0.975342,
+          "mean_hop": 0.024658,
+          "mean_linear_xeb": 807.0,
+          "mean_shannon_entropy_bits": 9.6252,
+          "mean_native_2q": 439.0,
+          "mean_depth_total": 604.5,
+          "mean_tau_shot_ns": 19180.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.372396,
+          "confirm_mean": 0.382356,
+          "combined_mean": 0.377376,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.355184,
+              0.389608
+            ],
+            "point_ci95_confirm": [
+              0.364942,
+              0.399771
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.354753,
+          "mean_fh_hellinger": 0.126465,
+          "mean_tvd": 0.873535,
+          "mean_hop": 0.126465,
+          "mean_linear_xeb": 4143.0,
+          "mean_shannon_entropy_bits": 8.4248,
+          "mean_native_2q": 252.0,
+          "mean_depth_total": 185.5,
+          "mean_tau_shot_ns": 10830.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.384049,
+          "confirm_mean": 0.384701,
+          "combined_mean": 0.384375,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.366739,
+              0.40136
+            ],
+            "point_ci95_confirm": [
+              0.366994,
+              0.402407
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.38444,
+          "mean_fh_hellinger": 0.148926,
+          "mean_tvd": 0.851074,
+          "mean_hop": 0.148926,
+          "mean_linear_xeb": 4879.0,
+          "mean_shannon_entropy_bits": 8.2797,
+          "mean_native_2q": 251.0,
+          "mean_depth_total": 177.0,
+          "mean_tau_shot_ns": 10516.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C1_Sparse_NonLocal",
+      "width": 24,
+      "rounds": 4,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.237671,
+          "confirm_mean": 0.253662,
+          "combined_mean": 0.245667,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.226482,
+              0.24886
+            ],
+            "point_ci95_confirm": [
+              0.242183,
+              0.265141
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.068325,
+          "mean_fh_hellinger": 0.004883,
+          "mean_tvd": 0.995117,
+          "mean_hop": 0.004883,
+          "mean_linear_xeb": 81919.0,
+          "mean_shannon_entropy_bits": 9.9793,
+          "mean_native_2q": 505.5,
+          "mean_depth_total": 247.5,
+          "mean_tau_shot_ns": 13942.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.031941,
+          "confirm_mean": 0.035035,
+          "combined_mean": 0.033488,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.022542,
+              0.041341
+            ],
+            "point_ci95_confirm": [
+              0.025869,
+              0.0442
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 10.0,
+          "mean_native_2q": 838.0,
+          "mean_depth_total": 936.0,
+          "mean_tau_shot_ns": 27782.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.229492,
+          "confirm_mean": 0.257975,
+          "combined_mean": 0.243733,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.217967,
+              0.241017
+            ],
+            "point_ci95_confirm": [
+              0.24621,
+              0.26974
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.056532,
+          "mean_fh_hellinger": 0.003418,
+          "mean_tvd": 0.996582,
+          "mean_hop": 0.003418,
+          "mean_linear_xeb": 57343.0,
+          "mean_shannon_entropy_bits": 9.9763,
+          "mean_native_2q": 510.5,
+          "mean_depth_total": 261.5,
+          "mean_tau_shot_ns": 14512.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.244018,
+          "confirm_mean": 0.252482,
+          "combined_mean": 0.24825,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.232646,
+              0.255391
+            ],
+            "point_ci95_confirm": [
+              0.240857,
+              0.264107
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.040205,
+          "mean_fh_hellinger": 0.002197,
+          "mean_tvd": 0.997803,
+          "mean_hop": 0.002197,
+          "mean_linear_xeb": 36863.0,
+          "mean_shannon_entropy_bits": 9.981,
+          "mean_native_2q": 510.5,
+          "mean_depth_total": 261.5,
+          "mean_tau_shot_ns": 14512.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 15,
+      "rounds": 4,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.022526,
+          "confirm_mean": 0.022136,
+          "combined_mean": 0.022331,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.010831,
+              0.034221
+            ],
+            "point_ci95_confirm": [
+              0.010139,
+              0.034132
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.066756,
+          "mean_fh_hellinger": 0.004883,
+          "mean_tvd": 0.995117,
+          "mean_hop": 0.004883,
+          "mean_linear_xeb": 159.0,
+          "mean_shannon_entropy_bits": 9.955,
+          "mean_native_2q": 774.5,
+          "mean_depth_total": 523.0,
+          "mean_tau_shot_ns": 27324.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": -0.028971,
+          "confirm_mean": -0.024935,
+          "combined_mean": -0.026953,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.039978,
+              -0.017964
+            ],
+            "point_ci95_confirm": [
+              -0.036496,
+              -0.013374
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9629,
+          "mean_native_2q": 1334.0,
+          "mean_depth_total": 1884.5,
+          "mean_tau_shot_ns": 53812.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.021615,
+          "confirm_mean": 0.013085,
+          "combined_mean": 0.01735,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.009827,
+              0.033402
+            ],
+            "point_ci95_confirm": [
+              0.000978,
+              0.025193
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.03633,
+          "mean_fh_hellinger": 0.001953,
+          "mean_tvd": 0.998047,
+          "mean_hop": 0.001953,
+          "mean_linear_xeb": 63.0,
+          "mean_shannon_entropy_bits": 9.9543,
+          "mean_native_2q": 802.5,
+          "mean_depth_total": 571.5,
+          "mean_tau_shot_ns": 29966.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.024935,
+          "confirm_mean": 0.027734,
+          "combined_mean": 0.026335,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.013191,
+              0.036679
+            ],
+            "point_ci95_confirm": [
+              0.015434,
+              0.040035
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.071368,
+          "mean_fh_hellinger": 0.005127,
+          "mean_tvd": 0.994873,
+          "mean_hop": 0.005127,
+          "mean_linear_xeb": 167.0,
+          "mean_shannon_entropy_bits": 9.9528,
+          "mean_native_2q": 774.5,
+          "mean_depth_total": 523.0,
+          "mean_tau_shot_ns": 27324.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C2_Intermediate_NonLocal",
+      "width": 21,
+      "rounds": 2,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.129976,
+          "confirm_mean": 0.148438,
+          "combined_mean": 0.139207,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.118689,
+              0.141263
+            ],
+            "point_ci95_confirm": [
+              0.136558,
+              0.160317
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.052594,
+          "mean_fh_hellinger": 0.00293,
+          "mean_tvd": 0.99707,
+          "mean_hop": 0.00293,
+          "mean_linear_xeb": 6143.0,
+          "mean_shannon_entropy_bits": 9.9812,
+          "mean_native_2q": 591.5,
+          "mean_depth_total": 305.0,
+          "mean_tau_shot_ns": 17186.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": -0.003767,
+          "confirm_mean": 0.000652,
+          "combined_mean": -0.001558,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.012943,
+              0.00541
+            ],
+            "point_ci95_confirm": [
+              -0.008545,
+              0.009848
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9995,
+          "mean_native_2q": 1238.0,
+          "mean_depth_total": 1550.5,
+          "mean_tau_shot_ns": 44398.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.091192,
+          "confirm_mean": 0.127279,
+          "combined_mean": 0.109235,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.080437,
+              0.101947
+            ],
+            "point_ci95_confirm": [
+              0.115953,
+              0.138604
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.034486,
+          "mean_fh_hellinger": 0.001221,
+          "mean_tvd": 0.998779,
+          "mean_hop": 0.001221,
+          "mean_linear_xeb": 2559.0,
+          "mean_shannon_entropy_bits": 9.9912,
+          "mean_native_2q": 639.0,
+          "mean_depth_total": 360.5,
+          "mean_tau_shot_ns": 20006.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.125465,
+          "confirm_mean": 0.157506,
+          "combined_mean": 0.141485,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.114518,
+              0.136412
+            ],
+            "point_ci95_confirm": [
+              0.144858,
+              0.170153
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.042689,
+          "mean_fh_hellinger": 0.002442,
+          "mean_tvd": 0.997559,
+          "mean_hop": 0.002442,
+          "mean_linear_xeb": 5119.0,
+          "mean_shannon_entropy_bits": 9.9779,
+          "mean_native_2q": 591.5,
+          "mean_depth_total": 305.0,
+          "mean_tau_shot_ns": 17186.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C3_Dense_AllToAll",
+      "width": 12,
+      "rounds": 2,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": 0.088948,
+          "confirm_mean": 0.113606,
+          "combined_mean": 0.101277,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.073032,
+              0.104865
+            ],
+            "point_ci95_confirm": [
+              0.097204,
+              0.130009
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.228384,
+          "mean_fh_hellinger": 0.05249,
+          "mean_tvd": 0.94751,
+          "mean_hop": 0.05249,
+          "mean_linear_xeb": 214.0,
+          "mean_shannon_entropy_bits": 9.3735,
+          "mean_native_2q": 524.0,
+          "mean_depth_total": 359.0,
+          "mean_tau_shot_ns": 18916.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": -0.031169,
+          "confirm_mean": -0.028483,
+          "combined_mean": -0.029826,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.04303,
+              -0.019308
+            ],
+            "point_ci95_confirm": [
+              -0.041204,
+              -0.015762
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.7404,
+          "mean_native_2q": 838.5,
+          "mean_depth_total": 1384.5,
+          "mean_tau_shot_ns": 40448.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": 0.098388,
+          "confirm_mean": 0.102458,
+          "combined_mean": 0.100423,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.083132,
+              0.113645
+            ],
+            "point_ci95_confirm": [
+              0.085938,
+              0.118977
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.209301,
+          "mean_fh_hellinger": 0.043945,
+          "mean_tvd": 0.956055,
+          "mean_hop": 0.043945,
+          "mean_linear_xeb": 179.0,
+          "mean_shannon_entropy_bits": 9.4142,
+          "mean_native_2q": 542.5,
+          "mean_depth_total": 370.0,
+          "mean_tau_shot_ns": 19744.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": 0.09375,
+          "confirm_mean": 0.10319,
+          "combined_mean": 0.09847,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              0.077717,
+              0.109783
+            ],
+            "point_ci95_confirm": [
+              0.086773,
+              0.119607
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.211805,
+          "mean_fh_hellinger": 0.044922,
+          "mean_tvd": 0.955078,
+          "mean_hop": 0.044922,
+          "mean_linear_xeb": 183.0,
+          "mean_shannon_entropy_bits": 9.3902,
+          "mean_native_2q": 524.0,
+          "mean_depth_total": 359.0,
+          "mean_tau_shot_ns": 18916.0
+        }
+      }
+    },
+    {
+      "family": "F4_Twirled_Clifford_Mirror",
+      "regime": "C3_Dense_AllToAll",
+      "width": 18,
+      "rounds": 2,
+      "primary_metric_name": "survival_polarization",
+      "threshold": 0.5,
+      "arms": {
+        "Arm1_SABRE_MatchedBudget": {
+          "primary_mean": -0.00803,
+          "confirm_mean": -0.002061,
+          "combined_mean": -0.005046,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.018008,
+              0.001948
+            ],
+            "point_ci95_confirm": [
+              -0.01219,
+              0.008067
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 1738.5,
+          "mean_depth_total": 1232.0,
+          "mean_tau_shot_ns": 62700.0
+        },
+        "Arm2_TKET_MatchedBudget": {
+          "primary_mean": 0.008409,
+          "confirm_mean": 0.020182,
+          "combined_mean": 0.014296,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.00128,
+              0.018099
+            ],
+            "point_ci95_confirm": [
+              0.009665,
+              0.0307
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 2445.5,
+          "mean_depth_total": 2989.0,
+          "mean_tau_shot_ns": 84322.0
+        },
+        "Arm3_Prometheus_Native": {
+          "primary_mean": -0.012207,
+          "confirm_mean": -0.015788,
+          "combined_mean": -0.013997,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.021894,
+              -0.00252
+            ],
+            "point_ci95_confirm": [
+              -0.025882,
+              -0.005694
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 1780.0,
+          "mean_depth_total": 1122.5,
+          "mean_tau_shot_ns": 56692.0
+        },
+        "Arm4_Prometheus_Selector": {
+          "primary_mean": -0.006456,
+          "confirm_mean": -0.009278,
+          "combined_mean": -0.007867,
+          "instance_outcomes": [
+            "Confirmed Fail",
+            "Confirmed Fail"
+          ],
+          "point_classification": {
+            "point_outcome": "Confirmed Fail",
+            "n_instances": 2,
+            "n_confirmed_pass": 0,
+            "n_unresolved": 0,
+            "n_confirmed_fail": 2,
+            "point_ci95_primary": [
+              -0.016573,
+              0.003661
+            ],
+            "point_ci95_confirm": [
+              -0.019583,
+              0.001028
+            ],
+            "threshold": 0.5
+          },
+          "mean_fb_overlap": 0.0,
+          "mean_fh_hellinger": 0.0,
+          "mean_tvd": 1.0,
+          "mean_hop": 0.0,
+          "mean_linear_xeb": -1.0,
+          "mean_shannon_entropy_bits": 9.9976,
+          "mean_native_2q": 1780.0,
+          "mean_depth_total": 1122.5,
+          "mean_tau_shot_ns": 56692.0
+        }
+      }
+    }
+  ],
+  "settled_results_sha256": "f396322facacd4d4ec8e4e6db96ab634439fdeedda8c3c8d5afd0e4f163de360",
+  "original_private_settled_ledger_sha256": "cc4342a29aa2a3e7f3cd48ee1b6ccd0391113983a4144eb30324c9327c90551d",
+  "raw_counts_file": "stage5_1_raw_pub_counts.json"
+}
