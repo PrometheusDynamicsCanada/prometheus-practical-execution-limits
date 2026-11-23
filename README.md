@@ -2,17 +2,17 @@
 
 *Portfolio Hub: [Prometheus Quantum Overview](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview) · [1,648-PUB Master Ledger](data/ALL_1648_EXECUTIONS_MASTER_LEDGER.csv) · [Data Dictionary](DATA_DICTIONARY.md)*
 
-**Near a processor's operating limit, Prometheus kept 15-qubit IBM and 12-qubit IQM dense Fourier circuits passing strict two-wave checks where Qiskit SABRE and Quantinuum TKET passed 0.**
+## Introduction
 
-## At a Glance
+- **The question:** How wide and demanding can a circuit become before its hardware output stops clearing a strict two-run quality check, and can better compilation shift that boundary?
+- **The test:** Across `24` live QPU jobs (`129` unique logical circuits, `1,648` physical PUBs, `1,687,552` physical shots on `156Q` `ibm_marrakesh`, `ibm_fez`, and `54Q` `IQM Emerald`), we compared Qiskit SABRE O3, Quantinuum TKET, and Prometheus using a strict rule requiring bit polarization `>= 0.50` plus exact majority-vote answer recovery in **both** primary and confirmation waves.
+- **The finding:** On `15`-qubit dense Quantum Fourier Transform (`QFT`) circuits on `ibm_marrakesh`, Prometheus passed **`10/10` fresh instances** and **`5/5` paired repeat instances 32 hours later** (`14.27%` vs. `0.29%` SABRE exact-answer probability per shot); neither baseline passed any (`0/10` and `0/5`). On `54Q` `IQM Emerald`, Prometheus passed **`5/5` `12`-qubit dense QFT instances** vs. `0/5` for both baselines.
+- **The significance:** Keeps demanding Fourier and phase-recovery subroutines above usable quality thresholds on current processors without hardware upgrades.
+- **The boundary:** At `16Q-17Q` on `ibm_marrakesh` (`+32h`), `14Q-16Q` on `IQM Emerald`, and `15Q` on `ibm_fez` (`1/4/0` unresolved), results became marginal or failed across compilers; on `15Q` local path QAOA (`0` SWAPs), all compilers passed `5/5`.
+- **The evidence:** Simplified pass-rate chart and summary table below, with all boundary tables, scientific multi-panel figures, and raw-histogram verification underneath.
 
-- **Strict acceptance rule:** Every `Confirmed Pass` required bit polarization `>= 0.50` plus exact majority-vote recovery in **both** primary and confirmation waves.
-- **IBM Marrakesh (`15Q` Dense QFT):** **`10/10` fresh passes** (`0/10` SABRE & TKET), and **`5/5` confirmed passes 32 hours later** (`14.27%` vs. `0.29%` SABRE exact-answer probability per shot).
-- **IQM Emerald (`12Q` Dense QFT):** **`5/5` confirmed passes** on square-lattice hardware vs. **`0/5`** for both baselines.
-- **Disclosed limits (`24` jobs, `1,648` PUBs, `1.69M` shots):** Unresolved/failed boundaries at `16Q-17Q` and on `ibm_fez` (`1/4/0` unresolved at `15Q`) are reported openly below.
-
-![15-Qubit Dense QFT on IBM Marrakesh: Repeat Test 32 Hours Later](assets/fig0_opening_15q_repeat_passes.png)
-*Repeat test 32 hours later on `ibm_marrakesh` (`15Q` Dense QFT): Prometheus Native passed `5/5` dual-wave checks; SABRE O3 and TKET passed `0/5`.*
+![All 15-qubit dense QFT circuits passed two-wave quality checks with Prometheus; baselines passed 0](assets/fig0_simple_15q_qft_passes.png)
+*Opening summary: Mean bit polarization (`>= 0.50` threshold) and strict two-wave pass counts on `15Q` IBM Marrakesh (fresh & `+32h`) and `12Q` IQM Emerald.*
 
 ---
 
@@ -20,7 +20,7 @@
 
 *Hardware IDs:* Marrakesh W1 `dbta4g7a..`..`dbta5ava..` (`6` jobs, `81,920` shots), Marrakesh `+32h` `dbu6cvc9..`..`dbu6elae..` (`4` jobs, `40,960` shots), Emerald `01a1e32d-..`..`01a1e32f-..` (`4` jobs, `40,960` shots). `*(mean)*` observables shown:
 
-| Cohort & Strategy | Confirmed Passes `(↑)` | Polarization `(↑)` | Exact Prob $P(z^*) = F_H$ `(↑)` | Overlap $F_B$ `(↑)` | `TVD` `(↓)` | `XEB` `(↑)` | Entropy `(↓)` | `2Q` Gates / Depth `(↓)` |
+| Cohort & Strategy | Confirmed Passes `(↑)` | Polarization `(↑)` | Exact Prob $P(z^*) = F_H$ `(↑)` | Output Agreement $F_B$ `(↑)` | `TVD` `(↓)` | `XEB` `(↑)` | Entropy `(↓)` | `2Q` Gates / Depth `(↓)` |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **`15Q` Marrakesh W1: SABRE O3** | `0 / 10` | `0.3271` | `1.01%` | `0.0937` | `0.9899` | `328.6` | `9.55` | `330.6` / `436.1` |
 | **`15Q` Marrakesh W1: TKET** | `0 / 10` | `0.1007` | `0.04%` | `0.0131` | `0.9996` | `13.4` | `9.93` | `714.0` / `1132.0` |
@@ -32,10 +32,15 @@
 | **`12Q` IQM Emerald: TKET** | `0 / 5` | `0.0698` | `0.06%` | `0.0151` | `0.9994` | `1.4` | `9.63` | `318.0` / `472.0` |
 | **`12Q` IQM Emerald: Prometheus** | **`5 / 5`** | **`0.5813`** (`+71.1%`) | **`17.47%`** (`17.68%` Nat) | **`0.4177`** | **`0.8253`** | **`714.6`** | **`7.09`** | **`197.0` / `191.0`** (`-32.8%` depth) |
 
-*Metric Key:* On single-target `F2_QFT_PhaseRecovery`, $F_H = F_B^2 = \text{HOP} = P_{\text{meas}}(z^*)$ is exact complete-answer probability per shot.
+*Metric Key:* Output-distribution agreement is $F_B = \sum_x \sqrt{P_{\text{ideal}}(x)P_{\text{meas}}(x)}$; on single-target `QFT` phase recovery, $F_H = F_B^2 = \text{HOP} = P_{\text{meas}}(z^*)$ equals exact complete-answer probability per shot.
 
-- **Offline `numpy` raw-histogram verifier (`1,648` PUBs, `0.00e+00` max diff):** `python scripts/verify_practical_limits_campaign.py`
-- **Start a supported pilot:** [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca) | [prometheusdynamics.ca](https://prometheusdynamics.ca)
+---
+
+## Inspect the Evidence & Reproduce Supported Checks Offline
+
+- **Command:** `python scripts/verify_practical_limits_campaign.py`
+- **Dependencies & measured runtime:** Python 3 + `numpy` (`0` cloud credentials, **`~80.6 s`** measured runtime because it recomputes all `1,648` `12Q-17Q` raw bitstring histograms from `data/raw_counts/*.json` with `0.00e+00` max diff).
+- **Start a pilot:** [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca) | [prometheusdynamics.ca](https://prometheusdynamics.ca)
 
 ---
 
@@ -47,9 +52,7 @@
 ### `Stage 5.3A` Portability Check (`ibm_fez`, `15Q` Dense QFT, `4` Jobs `dbtbc89v..`..`dbtgpepv..`, `N = 5`, `40` PUBs, `40,960` Shots)
 - `SABRE O3`: Pol `0.2193` `*(mean)*` / `0.2065` `*(med)*`, `0/0/5` (`Fail`), $F_H$ `0.39%`, $F_B$ `0.0533`, `TVD` `0.9961`, `XEB` `127.0`, `2Q/Depth` `340.2 / 449.2`.
 - `TKET`: Pol `0.1122` `*(mean)*` / `0.1255` `*(med)*`, `0/0/5` (`Fail`), $F_H$ `0.08%`, $F_B$ `0.0192`, `TVD` `0.9992`, `XEB` `24.6`, `2Q/Depth` `708.0 / 1232.2`.
-- **`Prometheus Native`**: Pol **`0.5135`** `*(mean)*` / **`0.5131`** `*(med)*` (`+134.2%`), **`5/5` majority vote**, strict `1/4/0` (`Unresolved`), $F_H$ **`10.56%`**, $F_B$ **`0.3240`**, `TVD` **`0.8944`**, `XEB` **`3458.2`**, `2Q/Depth` **`314.0 / 300.0`**. (`Prom Selector`: Pol `0.5006`, `0/4/1` `Unresolved`.)
-
-### All 6 Boundary Points (`B1`-`B6`: `Pass / Unresolved / Fail` Counts)
+- **`Prometheus Native`**: Pol **`0.5135`** `*(mean)*` / **`0.5131`** `*(med)*` (`+134.2%`), **`5/5` majority vote**, strict `1/4/0` (`Unresolved`), $F_H$ **`10.56%`**, $F_B$ **`0.3240`**, `TVD` **`0.8944`**, `XEB` **`3458.2`**, `2Q/Depth` **`314.0 / 300.0`**.
 
 | Point & Threshold | Cohort (`Processor`, `N`) | `SABRE O3` `*(mean)*` (`P/U/F`) | `TKET` `*(mean)*` (`P/U/F`) | `Prom Native` `*(mean)*` (`P/U/F`) | `Prom Selector` `*(mean)*` (`P/U/F`) |
 | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -60,15 +63,14 @@
 | **`B5`: `10Q` Dense QAOA** (`>= 0.35`) | `marrakesh` W1 (`10`) / `+32h` (`5`) / `fez` (`5`) | `0.149` (`0/0/10`) · `0.209` (`0/0/5`) · `0.166` (`0/0/5`) | `0.214` (`0/0/10`) · `0.204` (`0/0/5`) · `0.139` (`0/0/5`) | **`0.258`** (`0/0/10`) · **`0.387`** (`2/3/0`) · `0.324` (`0/4/1`) | `0.255` (`0/0/10`) · `0.385` (`2/3/0`) · **`0.327`** (`0/5/0`) |
 | **`B6`: `15Q` Sparse `SU(4)`** (`>= 0.58`) | `marrakesh` W1 (`10`) / `+32h` (`5`) / `fez` (`5`) | `0.600` (`5/3/2`) · `0.608` (`1/4/0`) · **`0.621`** (`2/3/0`) | `0.532` (`0/3/7`) · `0.532` (`0/2/3`) · `0.531` (`0/3/2`) | **`0.625`** (`4/6/0`) · `0.618` (`1/4/0`) · `0.617` (`1/4/0`) | `0.610` (**`7/2/1`**) · **`0.623`** (`1/4/0`) · `0.615` (**`3/2/0`**) |
 
-### All 6 Points on `54Q` `IQM Emerald` (`Stage 5.5`, `N = 5` / Point, `240` PUBs, `245,760` Shots)
-- **`E1` `12Q` Dense QFT:** Prom **`5/0/0` (`Confirmed Pass`, `0.5813`)** vs. SABRE `0/0/5` (`0.3398`) & TKET `0/0/5` (`0.0698`).
-- **`E2`-`E4` `14Q-16Q` Dense QFT:** Prom `0.4597` (`0/2/3` Unres at `14Q`), `0.4234` (`0/0/5` Fail at `15Q`), `0.4517` (`0/2/3` Fail at `16Q`) vs. `0/0/5` Fail for all baselines.
-- **`E5` `15Q` Local Path QAOA (`0` SWAPs):** All arms `5/0/0` (`Confirmed Pass`; TKET `0.6427`, Prom `0.6263`, SABRE `0.6089`). **`E6` `9Q` Dense QAOA:** All arms `Confirmed Fail` (Prom `0.2965` vs. SABRE `0.2059`).
+*(IQM Emerald `Stage 5.5` [`E1`-`E6`]: `12Q` QFT `5/5` Pass; `14Q-16Q` QFT Unresolved/Fail; `15Q` Local Path QAOA `5/5` Pass across all compilers; `9Q` Dense QAOA Fail across all compilers.)*
 
 </details>
 
 <details>
-<summary><strong>2. Multi-Width Operating Curves & Cross-Processor Figures - Click to expand</strong></summary>
+<summary><strong>2. Full Scientific Multi-Panel Figures (Instance-Level Repeatability & 28-Point Sweep) - Click to expand</strong></summary>
+
+![Instance-Level +32h Repeatability](assets/fig0_opening_15q_repeat_passes.png)
 
 ![Dense QFT Operating Boundary and 32-Hour Repeatability on ibm_marrakesh](assets/fig1_operating_boundary_and_32h_repeatability.png)
 
