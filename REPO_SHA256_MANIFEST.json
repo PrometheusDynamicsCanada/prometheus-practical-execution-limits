@@ -8,7 +8,7 @@
     "LICENSE": "a214fc704360fbd5de37600c8e7f97872cef5c021d6605a554a27fb093ad5ea6",
     "PUBLIC_DISCLOSURE.md": "0ef55c9c9c4c33cafa61495267ba78a278386738050c10fce46ea1b4f909b319",
     "README.md": "144f3a4724d4a70ee55752d31bc271ea2497e9ee3a3ad4cb721b79066ffb77a8",
-    "REPOSITORY_SHA256SUMS.txt": "767cb1b2932560b70b4ce1983f7959ee07964b080113baa32698d1b67ed7676b",
+    "REPOSITORY_SHA256SUMS.txt": "de63f716d0b61fe0aa1a4fc9febb47dfedaccdec858439641ec8ec1f96b1c4de",
     "assets/fig0_opening_15q_repeat_passes.png": "083ff06c153f8e0db0828ec7ce80c0c7ead52fc89d6d2f6b2dc482c5110328e1",
     "assets/fig1_operating_boundary_and_32h_repeatability.png": "a2e2fc754e12b4561a0e1de4b6fab3aece1459d15c8309bca738f0e8bf833763",
     "assets/fig2_cross_processor_and_cross_architecture_summary.png": "c6d4f76aefdaf255059dcb0abdc20cd73114052c1bfd5d875c4e6d26db30e71d",
@@ -160,6 +160,6 @@
     "data/results/stage5_3b_marrakesh_w2_settled_results.json": "a6336191b7e88f06672899468f3335f2c38b3c5696bae149a7893fddc9716524",
     "data/results/stage5_5_iqm_emerald_settled_results.json": "225a469bc8d474b21eb4d2f4c0efa794eb5a1f23772a1e63f44f968da47fb8c5",
     "scripts/verify_practical_limits_campaign.py": "7ea65afe7ade86af418b0317e2c2004e953f05862769bb774c5ccae4fd214d6b",
-    "assets/fig0_simple_15q_qft_passes.png": "329c20e32eec584e1eee720948943239cacadff02d754aca66d488050b3f780a"
+    "assets/fig0_simple_15q_qft_passes.png": "3675b90ccb1799eab05253e8602068f4581b714332bf94d570fad600aecb576b"
   }
 }
