@@ -1,24 +1,26 @@
-# Practical Execution Limits Across Processors & Time
+# Practical Execution Limits on Demanding Quantum Circuits
 
-*Portfolio Hub: [Prometheus Quantum Overview](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview) · [1,648-PUB Master Ledger](data/ALL_1648_EXECUTIONS_MASTER_LEDGER.csv) · [Data Dictionary](DATA_DICTIONARY.md)*
+*Portfolio Hub: [Prometheus Quantum Overview](https://github.com/PrometheusDynamicsCanada/prometheus-quantum-overview) · [Master Ledger](data/ALL_1648_EXECUTIONS_MASTER_LEDGER.csv) · [Data Dictionary](DATA_DICTIONARY.md)*
 
-## Introduction
+Demanding Fourier and phase-estimation subroutines fail once circuit depth pushes hardware output below usable signal thresholds. We tested how wide dense Quantum Fourier Transform (QFT) circuits can grow while still passing a strict two-run quality check (bit polarization at least 0.50 and exact majority-vote answer recovery in both runs).
 
-- **The question:** How wide and demanding can a circuit become before its hardware output stops clearing a strict two-run quality check, and can better compilation shift that boundary?
-- **The test:** Across `24` live QPU jobs (`129` unique logical circuits, `1,648` physical PUBs, `1,687,552` physical shots on `156Q` `ibm_marrakesh`, `ibm_fez`, and `54Q` `IQM Emerald`), we compared Qiskit SABRE O3, Quantinuum TKET, and Prometheus using a strict rule requiring bit polarization `>= 0.50` plus exact majority-vote answer recovery in **both** primary and confirmation waves.
-- **The finding:** On `15`-qubit dense Quantum Fourier Transform (`QFT`) circuits on `ibm_marrakesh`, Prometheus passed **`10/10` fresh instances** and **`5/5` paired repeat instances 32 hours later** (`14.27%` vs. `0.29%` SABRE exact-answer probability per shot); neither baseline passed any (`0/10` and `0/5`). On `54Q` `IQM Emerald`, Prometheus passed **`5/5` `12`-qubit dense QFT instances** vs. `0/5` for both baselines.
-- **The significance:** Keeps demanding Fourier and phase-recovery subroutines above usable quality thresholds on current processors without hardware upgrades.
-- **The boundary:** At `16Q-17Q` on `ibm_marrakesh` (`+32h`), `14Q-16Q` on `IQM Emerald`, and `15Q` on `ibm_fez` (`1/4/0` unresolved), results became marginal or failed across compilers; on `15Q` local path QAOA (`0` SWAPs), all compilers passed `5/5`.
-- **The evidence:** Simplified pass-rate chart and summary table below, with all boundary tables, scientific multi-panel figures, and raw-histogram verification underneath.
+On 156-qubit IBM Marrakesh, Prometheus passed all 10 fresh 15-qubit dense QFT tests and all 5 repeated tests 32 hours later (recovering the exact 15-bit answer on 14.27% of shots vs. 0.29% for Qiskit SABRE), while Qiskit SABRE O3 and Quantinuum TKET passed none (0 of 10 and 0 of 5). In separate tests on 54-qubit IQM Emerald, Prometheus passed all 5 12-qubit dense QFT instances while both baselines passed none.
+
+This shifts the usable ceiling for demanding subroutines on current hardware by roughly two to three qubits, though hardware noise still overtakes all tested compilers at 16 to 17 qubits on IBM Marrakesh (+32h), at 14 to 16 qubits on IQM Emerald, and at 15 qubits on IBM Fez, while simple 15-qubit local-path QAOA circuits requiring zero routing swaps passed 5 of 5 across every compiler.
+
+This repository contains the circuits, raw shot counts, and offline verification tools from 24 completed hardware jobs (129 unique workloads, 1.69 million measurement shots).
 
 ![All 15-qubit dense QFT circuits passed two-wave quality checks with Prometheus; baselines passed 0](assets/fig0_simple_15q_qft_passes.png)
-*Opening summary: Mean bit polarization (`>= 0.50` threshold) and strict two-wave pass counts on `15Q` IBM Marrakesh (fresh & `+32h`) and `12Q` IQM Emerald.*
+*Summary figure: Average bit polarization (>= 0.50 threshold) and strict two-run pass counts on 15-qubit IBM Marrakesh (fresh and +32h) and 12-qubit IQM Emerald.*
+
+**[Read the detailed results](#detailed-results) · [Verify the data](#verify-the-data) · [Request an evaluation](https://prometheusdynamics.ca/connect/) · [Book a demonstration](mailto:william@prometheusdynamics.ca?subject=Prometheus%20Evaluation)**
 
 ---
 
+<a id="detailed-results"></a>
 ## Executive Summary (`15Q` IBM Marrakesh Fresh & `+32h` + `12Q` IQM Emerald Dense QFT)
 
-*Hardware IDs:* Marrakesh W1 `dbta4g7a..`..`dbta5ava..` (`6` jobs, `81,920` shots), Marrakesh `+32h` `dbu6cvc9..`..`dbu6elae..` (`4` jobs, `40,960` shots), Emerald `01a1e32d-..`..`01a1e32f-..` (`4` jobs, `40,960` shots). `*(mean)*` observables shown:
+*Hardware IDs:* Marrakesh W1 `dbta4g7a..`..`dbta5ava..` (`6` jobs, `81,920` shots), Marrakesh `+32h` `dbu6cvc9..`..`dbu6elae..` (`4` jobs, `40,960` shots), Emerald `01a1e32d-..`..`01a1e32f-..` (`4` jobs, `40,960` shots). *(mean)* observables shown:
 
 | Cohort & Strategy | Confirmed Passes `(↑)` | Polarization `(↑)` | Exact Prob $P(z^*) = F_H$ `(↑)` | Output Agreement $F_B$ `(↑)` | `TVD` `(↓)` | `XEB` `(↑)` | Entropy `(↓)` | `2Q` Gates / Depth `(↓)` |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -36,11 +38,12 @@
 
 ---
 
+<a id="verify-the-data"></a>
 ## Inspect the Evidence & Reproduce Supported Checks Offline
 
 - **Command:** `python scripts/verify_practical_limits_campaign.py`
 - **Dependencies & measured runtime:** Python 3 + `numpy` (`0` cloud credentials, **`~80.6 s`** measured runtime because it recomputes all `1,648` `12Q-17Q` raw bitstring histograms from `data/raw_counts/*.json` with `0.00e+00` max diff).
-- **Start a pilot:** [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca) | [prometheusdynamics.ca](https://prometheusdynamics.ca)
+- **Request an evaluation or book a demonstration:** [prometheusdynamics.ca/connect](https://prometheusdynamics.ca/connect/) | [william@prometheusdynamics.ca](mailto:william@prometheusdynamics.ca?subject=Prometheus%20Evaluation)
 
 ---
 
@@ -50,11 +53,11 @@
 <summary><strong>1. All Boundary Points Across ibm_marrakesh, ibm_fez (Stage 5.3A), and IQM Emerald (Stage 5.5) - Click to expand</strong></summary>
 
 ### `Stage 5.3A` Portability Check (`ibm_fez`, `15Q` Dense QFT, `4` Jobs `dbtbc89v..`..`dbtgpepv..`, `N = 5`, `40` PUBs, `40,960` Shots)
-- `SABRE O3`: Pol `0.2193` `*(mean)*` / `0.2065` `*(med)*`, `0/0/5` (`Fail`), $F_H$ `0.39%`, $F_B$ `0.0533`, `TVD` `0.9961`, `XEB` `127.0`, `2Q/Depth` `340.2 / 449.2`.
-- `TKET`: Pol `0.1122` `*(mean)*` / `0.1255` `*(med)*`, `0/0/5` (`Fail`), $F_H$ `0.08%`, $F_B$ `0.0192`, `TVD` `0.9992`, `XEB` `24.6`, `2Q/Depth` `708.0 / 1232.2`.
-- **`Prometheus Native`**: Pol **`0.5135`** `*(mean)*` / **`0.5131`** `*(med)*` (`+134.2%`), **`5/5` majority vote**, strict `1/4/0` (`Unresolved`), $F_H$ **`10.56%`**, $F_B$ **`0.3240`**, `TVD` **`0.8944`**, `XEB` **`3458.2`**, `2Q/Depth` **`314.0 / 300.0`**.
+- `SABRE O3`: Pol `0.2193` *(mean)* / `0.2065` *(med)*, `0/0/5` (`Fail`), $F_H$ `0.39%`, $F_B$ `0.0533`, `TVD` `0.9961`, `XEB` `127.0`, `2Q/Depth` `340.2 / 449.2`.
+- `TKET`: Pol `0.1122` *(mean)* / `0.1255` *(med)*, `0/0/5` (`Fail`), $F_H$ `0.08%`, $F_B$ `0.0192`, `TVD` `0.9992`, `XEB` `24.6`, `2Q/Depth` `708.0 / 1232.2`.
+- **`Prometheus Native`**: Pol **`0.5135`** *(mean)* / **`0.5131`** *(med)* (`+134.2%`), **`5/5` majority vote**, strict `1/4/0` (`Unresolved`), $F_H$ **`10.56%`**, $F_B$ **`0.3240`**, `TVD` **`0.8944`**, `XEB` **`3458.2`**, `2Q/Depth` **`314.0 / 300.0`**.
 
-| Point & Threshold | Cohort (`Processor`, `N`) | `SABRE O3` `*(mean)*` (`P/U/F`) | `TKET` `*(mean)*` (`P/U/F`) | `Prom Native` `*(mean)*` (`P/U/F`) | `Prom Selector` `*(mean)*` (`P/U/F`) |
+| Point & Threshold | Cohort (`Processor`, `N`) | `SABRE O3` *(mean)* (`P/U/F`) | `TKET` *(mean)* (`P/U/F`) | `Prom Native` *(mean)* (`P/U/F`) | `Prom Selector` *(mean)* (`P/U/F`) |
 | :--- | :--- | :---: | :---: | :---: | :---: |
 | **`B1`: `14Q` Dense QFT** (`>= 0.50`) | `marrakesh` W1 (`10`) / `+32h` (`5`) / `fez` (`5`) | `0.438` (`1/4/5`) · `0.321` (`0/0/5`) · `0.289` (`0/0/5`) | `0.096` (`0/0/10`) · `0.214` (`0/0/5`) · `0.189` (`0/0/5`) | `0.637` (**`10/0/0`**) · **`0.538` (`4/1/0`)** · `0.468` (`0/5/0`) | **`0.641` (`10/0/0`)** · `0.538` (**`4/1/0`**) · **`0.485`** (`0/5/0`) |
 | **`B2`: `15Q` Dense QFT** (`>= 0.50`) | `marrakesh` W1 (`10`) / `+32h` (`5`) / `fez` (`5`) | `0.327` (`0/0/10`) · `0.255` (`0/0/5`) · `0.219` (`0/0/5`) | `0.101` (`0/0/10`) · `0.113` (`0/0/5`) · `0.112` (`0/0/5`) | `0.573` (**`10/0/0`**) · **`0.566` (`5/0/0`)** · **`0.514`** (`1/4/0`) | **`0.578` (`10/0/0`)** · `0.561` (`4/1/0`) · `0.501` (`0/4/1`) |
